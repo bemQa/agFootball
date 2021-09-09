@@ -1,0 +1,194 @@
+@import "vars"
+
+.page
+	&-top
+		min-height: 308px
+		padding: 108px 0 50px
+		background: linear-gradient(90deg, #FDD000 -0.35%, #FEF035 24.74%, #FFFFC2 48.78%, #FEF035 76.48%, #FDD000 100%)
+		position: relative
+		.wrapper
+			max-width: 1114px
+	&-row
+		display: flex
+		flex-flow: row nowrap
+		align-items: flex-end
+		justify-content: space-between
+	&-col
+		&-1,&-3
+			min-width: 195px
+			width: 195px
+		&-2
+			text-align: center
+			padding: 0 15px
+	&-name
+		display: block
+		font-family: $OfficinaSansBlackC
+		font-size: 18px
+		line-height: 32px
+		font-weight: 900
+		text-transform: uppercase
+		color: #9F0C12
+		margin: 0 0 12px
+		span
+			display: block
+			font-size: 28px
+			line-height: 32px
+	&-title
+		display: block
+		font-family: $OfficinaSansBlackC
+		font-size: 21px
+		line-height: 25px
+		font-weight: 900
+		color: #9F0C12
+		text-transform: uppercase
+		text-align: center
+		max-width: 250px
+		margin: 0 auto
+	&-list
+		li
+			padding-bottom: 9px
+			a
+				display: flex
+				flex-flow: row nowrap
+				align-items: center
+				justify-content: center
+				font-size: 14px
+				line-height: 16px
+				color: #9F0C12
+				.hb-ico
+					margin-right: 8px
+	&-logOff
+		display: inline-block
+		font-size: 16px
+		line-height: 18px
+		font-weight: normal
+		text-decoration: underline
+		color: #EB2316
+		margin: 2px 0 0
+		&:hover
+			text-decoration: none
+	&-link
+		display: inline-block
+		font-size: 14px
+		line-height: 16px
+		color: #9F0C12
+		margin: 10px 0 4px
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	&-points
+		padding-right: 5px
+		margin-bottom: -4px
+		margin-left: -5px
+		.points
+			position: relative
+			padding: 21px 32px 28px 0
+			&::after
+				content: ''
+				position: absolute
+				top: 0
+				right: 0
+				width: 119px
+				height: 88px
+				background-image: url(../img/ball-min.png)
+				background-repeat: no-repeat
+				background-position: center
+				background-size: cover
+			&-text
+				display: block
+				min-width: 163px
+				background: #fff
+				box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.08)
+				border-radius: 30px
+				font-family: $OfficinaSansBoldC
+				font-size: 16px
+				line-height: 19px
+				font-weight: bold
+				color: #531D0D
+				padding: 10px 13px
+			&-num
+				position: absolute
+				top: 12px
+				right: 25px
+				display: flex
+				align-items: center
+				justify-content: center
+				min-width: 56px
+				width: 56px
+				height: 56px
+				background-color: #fff
+				box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+				border-radius: 50%
+				text-align: center
+				font-family: $OfficinaSansBlackC
+				font-size: 28px
+				line-height: 36px
+				font-weight: 900
+				text-transform: uppercase
+				color: #531D0D
+				z-index: 10
+				padding: 11px 0 9px
+	&-content
+		padding: 39px 0 40px
+		background: radial-gradient(50.17% 63.64% at 49.83% 49.09%, #F70000 0%, #E50000 52.04%, #A70000 100%)
+	&.page-second
+		.page
+			&-top
+				&::after
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					background-image: url(../img/page-bg-min.png)
+					background-repeat: no-repeat
+					background-position: top center
+					background-size: cover
+
+@media only screen and (max-width : 920px)
+	.page
+		&-top
+			padding-top: 130px
+		&.page-second
+			.page
+				&-top
+					min-height: 423px
+
+@media only screen and (max-width : 768px)
+	.page
+		&-top
+			padding-bottom: 40px
+		&-name
+			font-size: 21px
+			span
+				font-size: 28px
+		&-row
+			flex-flow: row wrap
+		&-col
+			&-1,&-2,&-3
+				width: 100%
+				min-width: auto
+			&-2
+				order: 1
+				padding-bottom: 35px
+			&-1
+				order: 2
+				max-width: 220px
+				margin: 0 auto
+				text-align: center
+				padding-bottom: 26px
+			&-3
+				order: 3
+				.points
+					max-width: 195px
+					width: 100%
+					margin: 0 auto
+		&-content
+			padding: 40px 0 50px
+			position: relative
+			background-image: url(../img/page-mob.svg)
+			background-repeat: no-repeat
+			background-position: center
+			background-size: cover
+			margin-top: -10px

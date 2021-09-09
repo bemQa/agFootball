@@ -1,0 +1,209 @@
+@import "vars"
+
+.footer
+	padding-top: 10px
+	width: 100%
+	background: #fff
+	z-index: 500
+	position: relative
+	&::after
+		content: ''
+		position: absolute
+		top: -116px
+		left: 0
+		width: 100%
+		height: 164px
+		background-image: url(../img/footer-bg.svg)
+		background-repeat: no-repeat
+		background-position: center
+		background-size: 100% 100%
+	.wrapper
+		max-width: 1170px
+		position: relative
+		z-index: 40
+	&-top
+		display: none
+		align-items: center
+		justify-content: center
+		padding: 18px 10px
+		text-align: center
+	&-toggle
+		display: inline-block
+		cursor: pointer
+		padding-right: 24px
+		font-family: $OfficinaSansBookC
+		font-size: 16px
+		line-height: 20px
+		color: #46248A
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			right: 0
+			transform: translate(0,-50%)
+			transition: $transition
+			width: 20px
+			height: 20px
+			background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.8151 0.500153C14.9723 0.500153 19.1302 4.56751 19.1302 9.55696C19.1302 14.5464 14.9723 18.6138 9.8151 18.6138C4.65786 18.6138 0.5 14.5464 0.5 9.55696C0.5 4.56751 4.65786 0.500153 9.8151 0.500153Z' stroke='%2346248A'/%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M15 8.23638L14.6759 6.99951L10 11.453L5.32414 6.99951L5 8.23638L10 12.9995L15 8.23638Z' fill='%2346248A'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='6' height='10' fill='white' transform='translate(15 6.99951) rotate(90)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+	&-wrap
+		padding: 30px 0 30px
+	&-middle
+		text-align: center
+		padding-bottom: 8px
+		p
+			max-width: 918px
+			margin: 0 auto 14px
+			font-size: 12px
+			line-height: 14px
+			color: #46248A
+			a
+				color: #46248A
+	&-list
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+		justify-content: space-between
+		max-width: 850px
+		margin: 0 auto 38px
+		li
+			a
+				display: inline-block
+				font-size: 16px
+				line-height: 18px
+				color: #46248A
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+	&-bottom
+		.wrapper
+			max-width: 1256px
+			display: flex
+			flex-flow: row nowrap
+			align-items: flex-end
+			justify-content: space-between
+	&-descr,&-social
+		min-width: 170px
+		width: 170px
+	&-info
+		text-align: center
+		p
+			font-size: 12px
+			line-height: 14px
+			color: #46248A
+			a
+				color: #46248A
+	&-logo
+		img,svg
+			display: block
+			margin: 0 auto 19px
+	&-phone
+		display: inline-block
+		font-family: $OfficinaSansBlackC
+		font-size: 21px
+		line-height: 26px
+		text-transform: uppercase
+		color: #46248A
+		margin: 0 0 1px
+	&-mail
+		display: inline-block
+		font-size: 16px
+		line-height: 18px
+		color: #46248A
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	&-social
+		display: flex
+		justify-content: flex-end
+	&.active
+		.footer
+			&-toggle
+				&::after
+					transform: translate(0,-50%) rotate(180deg)
+	&.footer-fixed
+		position: fixed
+		bottom: 0
+		left: 0
+		padding-top: 0
+		.footer
+			&-top
+				display: flex
+			&-wrap
+				display: none
+
+.social-list
+	display: flex
+	flex-flow: row nowrap
+	align-items: center
+	li
+		height: 30px
+		padding-left: 8px
+		a
+			display: inline-block
+			width: 30px
+			height: 30px
+			border: 1px solid #46248A
+			border-radius: 50%
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+			&.vk-ico
+				background-image: url("data:image/svg+xml,%3Csvg width='16' height='10' viewBox='0 0 16 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.3722 0.439318L12.7758 0.439318C12.6698 0.439317 12.5658 0.470965 12.4749 0.530893C12.3839 0.590821 12.3094 0.676788 12.2593 0.779644C12.2593 0.779644 11.2238 2.88032 10.8912 3.58788C9.99633 5.49127 9.41686 4.89373 9.41686 4.01035L9.41686 0.964434C9.41686 0.709908 9.32506 0.465806 9.16167 0.285829C8.99828 0.105852 8.77667 0.0047417 8.5456 0.0047417L6.59346 0.00474174C6.32762 -0.0170308 6.06113 0.0364201 5.81931 0.160018C5.57749 0.283616 5.36837 0.473257 5.21182 0.710928C5.21182 0.710928 6.20308 0.534386 6.20308 2.0056C6.20308 2.37042 6.22014 3.41991 6.23569 4.30016C6.23862 4.42988 6.20535 4.55746 6.14036 4.66569C6.07537 4.77391 5.98181 4.85757 5.87229 4.90536C5.76277 4.95315 5.64258 4.96277 5.52794 4.93293C5.41329 4.90309 5.30973 4.83522 5.23121 4.73849C4.43218 3.51436 3.7703 2.1884 3.25998 0.789413C3.21616 0.684761 3.146 0.596152 3.05783 0.534098C2.96966 0.472045 2.86718 0.439151 2.76255 0.439318C2.19948 0.439318 1.07272 0.439318 0.40357 0.439318C0.338683 0.438832 0.274658 0.455705 0.216997 0.488487C0.159335 0.521269 0.109761 0.56898 0.0725324 0.627522C0.0353042 0.686064 0.0115351 0.753687 0.00326721 0.82458C-0.00500067 0.895473 0.00247981 0.967517 0.025066 1.03452C0.741367 3.19877 3.82696 10 7.34886 10L8.83123 10C8.98655 10 9.1355 9.93203 9.24533 9.81106C9.35516 9.69008 9.41686 9.52601 9.41686 9.35492L9.41686 8.36896C9.41686 8.24528 9.44971 8.12429 9.51136 8.02092C9.57302 7.91755 9.66079 7.8363 9.76385 7.7872C9.86691 7.73809 9.98076 7.72327 10.0914 7.74456C10.202 7.76585 10.3045 7.82232 10.3864 7.90701L12.1606 9.74327C12.32 9.90818 12.5304 9.99999 12.7491 10L15.079 10C16.2027 10 16.2027 9.14107 15.5901 8.47643C15.1589 8.00868 13.603 6.20217 13.603 6.20217C13.4697 6.05013 13.3902 5.8506 13.3789 5.63964C13.3676 5.42868 13.4251 5.22022 13.5411 5.05191C14.044 4.3229 14.8666 3.12956 15.2155 2.61834C15.6924 1.9196 16.5554 0.439318 15.3722 0.439318Z' fill='%2346248A'/%3E%3C/svg%3E%0A")
+				background-size: 16px
+			&.youtube-ico
+				background-image: url("data:image/svg+xml,%3Csvg width='15' height='11' viewBox='0 0 15 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M7.50031 11H7.49737C7.04531 10.997 3.04434 10.9613 1.90833 10.6485C1.11576 10.4311 0.49052 9.79962 0.276234 8.9954C-0.0202434 7.86353 0.00030453 5.68914 0.00030453 5.5134C0.00030453 5.34064 -0.0202434 3.14839 0.276234 2.00758V2.0046C0.487584 1.20931 1.12751 0.557 1.90539 0.339561C1.90833 0.339561 1.90833 0.339561 1.91126 0.336583C3.03259 0.0387219 7.04238 0.00297861 7.49443 0H7.50324C7.95823 0.00297861 11.971 0.0387219 13.0923 0.351476C13.8819 0.565936 14.5072 1.20038 14.7214 2.0046C15.0297 3.14541 15.0003 5.34362 14.9974 5.5283C15.0003 5.70999 15.0179 7.8665 14.7214 9.00433V9.00731C14.5072 9.81153 13.8819 10.446 13.0893 10.6604H13.0864C11.9651 10.9583 7.9553 10.997 7.50324 11H7.50031ZM1.40931 2.31438C1.14805 3.32115 1.17447 5.4866 1.17447 5.50745V5.52234C1.16567 6.12402 1.19502 7.86353 1.40931 8.68562C1.51498 9.0788 1.8232 9.39155 2.21361 9.49878C3.05021 9.72813 6.30852 9.79962 7.50031 9.80856C8.69502 9.79962 11.9592 9.73111 12.7899 9.5107C13.1803 9.40347 13.4886 9.09071 13.5913 8.69754C13.8085 7.86055 13.8349 6.12998 13.8261 5.53425C13.8261 5.5283 13.8261 5.52234 13.8261 5.51638C13.8379 4.90875 13.8144 3.14839 13.5913 2.31736V2.31438C13.4856 1.91822 13.1774 1.60547 12.787 1.49824C11.9592 1.26889 8.69502 1.1974 7.50031 1.18846C6.30559 1.1974 3.04727 1.26591 2.21361 1.48633C1.82907 1.59653 1.51498 1.91822 1.40931 2.31438ZM6.00618 7.9082V3.0918L10.107 5.49851L6.00618 7.9082Z' fill='%2346248A'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='15' height='11' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A")
+				background-size: 15px
+			&.inst-ico
+				background-image: url("data:image/svg+xml,%3Csvg width='15' height='14' viewBox='0 0 15 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.62876 3.63721C5.73294 3.63721 4.16211 5.18095 4.16211 7.10386C4.16211 9.02676 5.70585 10.5705 7.62876 10.5705C9.55167 10.5705 11.0954 8.99968 11.0954 7.10386C11.0954 5.20803 9.52458 3.63721 7.62876 3.63721ZM7.62876 9.32468C6.41002 9.32468 5.40794 8.3226 5.40794 7.10386C5.40794 5.88511 6.41002 4.88303 7.62876 4.88303C8.8475 4.88303 9.84958 5.88511 9.84958 7.10386C9.84958 8.3226 8.8475 9.32468 7.62876 9.32468Z' fill='%2346248A'/%3E%3Cpath d='M11.2307 4.34182C11.6645 4.34182 12.0161 3.99018 12.0161 3.55641C12.0161 3.12264 11.6645 2.771 11.2307 2.771C10.797 2.771 10.4453 3.12264 10.4453 3.55641C10.4453 3.99018 10.797 4.34182 11.2307 4.34182Z' fill='%2346248A'/%3E%3Cpath d='M13.262 1.52496C12.5579 0.793715 11.5558 0.414551 10.4183 0.414551L4.83917 0.414551C2.48294 0.414551 0.912109 1.98538 0.912109 4.34161L0.91211 9.89367C0.91211 11.0582 1.29127 12.0603 2.0496 12.7916C2.78085 13.4957 3.75585 13.8478 4.86626 13.8478L10.3912 13.8478C11.5558 13.8478 12.5308 13.4687 13.235 12.7916C13.9662 12.0874 14.3454 11.0853 14.3454 9.92075L14.3454 4.34161C14.3454 3.20412 13.9662 2.22912 13.262 1.52496ZM13.1537 9.92075C13.1537 10.7603 12.8558 11.4374 12.3683 11.8978C11.8808 12.3582 11.2037 12.602 10.3912 12.602L4.86626 12.602C4.05376 12.602 3.37668 12.3582 2.88918 11.8978C2.40169 11.4103 2.15794 10.7332 2.15794 9.89367L2.15794 4.34161C2.15794 3.52912 2.40169 2.85204 2.88918 2.36454C3.3496 1.90413 4.05376 1.66038 4.86626 1.66038L10.4454 1.66038C11.2579 1.66038 11.935 1.90413 12.4225 2.39162C12.8829 2.87912 13.1537 3.5562 13.1537 4.34161L13.1537 9.92075Z' fill='%2346248A'/%3E%3C/svg%3E%0A")
+				background-size: 14px
+
+@media only screen and (max-width : 750px)
+	.footer
+		&::after
+			display: none
+		&-top
+			padding: 10px 0
+		&-wrap
+			padding: 20px 0 24px
+			position: relative
+		&-list
+			display: block
+			text-align: left
+			padding-bottom: 112px
+			margin: 0
+			li
+				line-height: 14px
+				padding-bottom: 12px
+				a
+					font-size: 12px
+					line-height: 14px
+		&-middle
+			padding: 0
+			p
+				padding-bottom: 14px
+				&:last-child
+					padding-bottom: 0
+		&-descr,&-social
+			display: none
+		&-bottom
+			position: absolute
+			top: 115px
+			left: 50%
+			transform: translate(-50%,0)
+			max-width: 220px
+			width: 100%
+			text-align: center
+			.wrapper
+				padding: 0
+		&-info
+			p
+				font-size: 8px
+				line-height: 9px
+		&-logo
+			img,svg
+				max-width: 103px
+				margin-bottom: 14px

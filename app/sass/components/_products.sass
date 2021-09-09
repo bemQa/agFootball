@@ -1,0 +1,57 @@
+@import "vars"
+
+.products
+	.page
+		&-top
+			text-align: center
+			padding-top: 68px
+			position: relative
+			z-index: 10
+		&-content
+			padding: 0 0 50px
+			.wrapper
+				max-width: 815px
+	&-row
+		display: flex
+		flex-flow: row wrap
+		margin: -163px -32.5px 0
+		position: relative
+		z-index: 20
+	&-col
+		width: 33.333%
+		padding: 0 32.5px
+		text-align: center
+		img,svg
+			display: block
+			max-width: 203px
+			margin: 0 auto 15px
+	&-name,&-weight
+		display: block
+		font-size: 18px
+		line-height: 20px
+		color: #fff
+	&-name
+		font-family: $OfficinaSansBoldC
+		font-weight: bold
+		text-transform: uppercase
+
+@media only screen and (max-width : 920px)
+	.products
+		.page
+			&-top
+				padding-top: 140px
+
+@media only screen and (max-width : 768px)
+	.products
+		.page-content
+			padding-bottom: 25px
+		&-row
+			margin-top: -203px
+		&-col
+			width: 100%
+			padding-bottom: 25px
+			img,svg
+				max-width: 117px
+				margin-bottom: 20px
+		&-name,&-weight
+			font-size: 16px
