@@ -1,21 +1,329 @@
 @import "vars"
 
+.select.select-date
+	width: 220px
+	position: relative
+	.select2
+		width: 260px!important
+	&::before
+		content: ''
+		position: absolute
+		top: 50%
+		transform: translate(0,-50%)
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+		z-index: 10
+		left: 20px
+		width: 18px
+		height: 18px
+		background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.00029 0H4.80029V3.6H6.00029V0ZM18 4.80007C18 2.81185 16.3882 1.20007 14.4 1.20007V2.40007C15.7255 2.40007 16.8 3.47459 16.8 4.80007H1.2C1.2 3.47459 2.27452 2.40007 3.6 2.40007V1.20007C1.61177 1.20007 0 2.81185 0 4.80007V14.4001C0 16.3883 1.61177 18.0001 3.6 18.0001H14.4C16.3882 18.0001 18 16.3883 18 14.4001V4.80007ZM7.19971 2.40007H10.7997V1.20007H7.19971V2.40007ZM1.19971 6V14.4C1.19971 15.7255 2.27422 16.8 3.59971 16.8H14.3997C15.7252 16.8 16.7997 15.7255 16.7997 14.4V6H1.19971ZM12 0H13.2V3.6H12V0ZM6.00015 7.20007H2.40015V10.8001H6.00015V7.20007ZM7.19971 7.20007H10.7997V10.8001H7.19971V7.20007ZM6.00015 12H2.40015V15.6H6.00015V12ZM7.19971 12H10.7997V15.6H7.19971V12ZM15.6 7.20007H12V10.8001H15.6V7.20007Z' fill='%239F0C12'/%3E%3C/svg%3E%0A")
+	.select2-container .select2-selection--single
+		display: block
+		padding: 2px 30px 0 48px
+		width: 220px
+		height: 46px
+		background: linear-gradient(90deg, #FDD000 -0.35%, #FEF035 24.74%, #FFFFC2 48.78%, #FEF035 76.48%, #FDD000 100%)
+		box-shadow: 2px 2px 2px rgba(104, 39, 0, 0.35)
+		border: none
+		border-radius: 30px
+		position: relative
+	.select2-container .select2-selection--single .select2-selection__rendered
+		font-size: 14px
+		line-height: 16px
+		color: #9F0C12
+		padding: 15px 0
+	.select2-container--default .select2-selection--single .select2-selection__arrow
+		width: 16px
+		height: 8px
+		top: 50%
+		left: auto
+		right: 10px
+		margin-top: -5px
+		width: 18px
+		height: 10px
+		background-image: url("data:image/svg+xml,%3Csvg width='18' height='10' viewBox='0 0 18 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L9 9L17 1' stroke='%239F0C12'/%3E%3C/svg%3E%0A")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+	.select2-container--default .select2-selection--single .select2-selection__arrow b
+		display: none!important
+	.select2-container--open .select2-dropdown--below
+		width: 220px!important
+
+.search
+	width: 224px
+	position: relative
+	button
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 46px
+		height: 46px
+		border-radius: 50%
+		background: linear-gradient(90deg, #FDD000 -0.35%, #FEF035 24.74%, #FFFFC2 48.78%, #FEF035 76.48%, #FDD000 100%)
+		box-shadow: 2px 2px 2px rgba(104, 39, 0, 0.35)
+		border: none
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			width: 17px
+			height: 17px
+			background-image: url("data:image/svg+xml,%3Csvg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.20711 7.5C1.20711 9.02862 1.66442 10.4504 2.4497 11.6361L0.43934 13.6464C-0.146447 14.2322 -0.146447 15.182 0.43934 15.7678C1.02513 16.3536 1.97487 16.3536 2.56066 15.7678L4.57102 13.7574C5.75667 14.5427 7.17848 15 8.70711 15C12.8492 15 16.2071 11.6421 16.2071 7.5C16.2071 3.35786 12.8492 0 8.70711 0C4.56497 0 1.20711 3.35786 1.20711 7.5ZM13.2071 7.5C13.2071 9.98528 11.1924 12 8.70711 12C6.22183 12 4.20711 9.98528 4.20711 7.5C4.20711 5.01472 6.22183 3 8.70711 3C11.1924 3 13.2071 5.01472 13.2071 7.5Z' fill='%239F0C12'/%3E%3C/svg%3E%0A")
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+	input
+		display: block
+		width: 100%
+		height: 46px
+		border: none
+		border-radius: 30px
+		box-shadow: 2px 2px 2px rgba(104, 39, 0, 0.35)
+		background-color: #fff
+		padding: 2px 10px 0 57px
+		font-size: 14px
+		line-height: 16px
+		color: #682700
+		&::-webkit-input-placeholder
+			color: rgba(#682700, 1)
+		&:-moz-placeholder
+			color: rgba(#682700, 1)
+		&::-moz-placeholder
+			color: rgba(#682700, 1)
+		&:-ms-input-placeholder
+			color: rgba(#682700, 1)
+
 .winners
-	
-@media only screen and (max-width : 1150px)
-	.header
+	.page
+		&-top
+			min-height: 347px
+			padding: 68px 0 50px
+			position: relative
+		&-title
+			margin-bottom: 27px
+		&-content
+			padding: 147px 0 100px
+	&-all
+		position: absolute
+		bottom: -97px
+		left: 50%
+		transform: translate(-50%,0)
+		max-width: 633px
+		width: 100%
+		margin: 0 auto
+		padding: 43px 0 0
+		z-index: 40
+	&-bg
+		display: block
+		width: 920px
+		position: absolute
+		top: -15px
+		left: 50%
+		transform: translate(-50%,0)
+		img,svg
+			display: block
+			max-width: 920px
+	&-wrap
+		min-height: 281px
+		text-align: center
+		position: relative
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			width: 653px
+			height: 301px
+			background-image: url("data:image/svg+xml,%3Csvg width='653' height='301' viewBox='0 0 653 301' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Cpath d='M643 239.156C432.025 308.281 221.051 308.281 10 239.156V56.5586C220.975 -5.51953 431.949 -5.51953 643 56.5586V239.156Z' fill='url(%23paint0_linear)'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0' y='0' width='653' height='301' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='5'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.745833 0 0 0 0 0.566833 0 0 0 0 0.298333 0 0 0 1 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear' x1='7.79444' y1='147.946' x2='643' y2='147.946' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FDD000'/%3E%3Cstop offset='0.25' stop-color='%23FEF035'/%3E%3Cstop offset='0.489583' stop-color='%23FFFFC2'/%3E%3Cstop offset='0.765625' stop-color='%23FEF035'/%3E%3Cstop offset='1' stop-color='%23FDD000'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+		&__info
+			padding: 106px 0 40px
+			position: relative
+			z-index: 10
+		&__title,&__subtitle
+			display: block
+			text-transform: uppercase
+			color: #9F0C12
+		&__title
+			font-family: $OfficinaSansBlackC
+			font-size: 21px
+			line-height: 26px
+			font-weight: 900
+			margin: 0 0 20px
+		&__subtitle
+			max-width: 252px
+			margin: 0 auto
+			font-family: $OfficinaSansBoldC
+			font-size: 18px
+			line-height: 20px
+			font-weight: bold
+	&-ico
+		width: 131px
+		position: absolute
+		top: -43px
+		left: 50%
+		transform: translate(-50%,0)
+		img,svg
+			display: block
+			max-width: 131px
+			margin: 0 auto
+	&-title
+		display: block
+		font-size: $OfficinaSansBlackC
+		font-size: 21px
+		line-height: 26px
+		font-weight: 900
+		color: #fff
+		text-align: center
+		text-transform: uppercase
+		margin: 0 0 21px
+	&-head
+		&__row
+			display: flex
+			flex-flow: row nowrap
+			align-items: center
+			justify-content: space-between
+			max-width: 464px
+			margin: 0 auto 28px
+	&-table
+		max-width: 820px
+		margin: 0 auto
+		background: rgba(202, 0, 0, 0.7)
+		border: 1px solid #FDD000
+		border-radius: 20px
+		padding: 39px 18px 39px 43px
+		.mCSB_inside>.mCSB_container
+			margin: 0
+	&-content
+		max-height: 280px
+	&-row
+		display: flex
+		flex-flow: row nowrap
+		font-family: $OfficinaSansBoldC
+		font-size: 18px
+		line-height: 21px
+		font-weight: bold
+		color: #fff
+		padding-bottom: 17px
+		.winners-mob
+			font-family: $OfficinaSansBookC
+			font-size: 16px
+			line-height: 18px
+			display: none
+	&-top
+		font-family: $OfficinaSansBookC
+		font-size: 16px
+		line-height: 18px
+		padding-bottom: 25px
+		b
+			font-family: $OfficinaSansBookC
+	&-col-1
+		width: 26%
+	&-col-2
+		width: 28%
+	&-col-3
+		width: 20%
+	&-col-4
+		min-width: 197px
+		width: 197px
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+		padding-right: 15px
+		div
+			min-width: 46px
+			width: 46px
+			margin-right: 4px
+			img,svg
+				display: block
+	&-bg-mob
+		display: none
 
 @media only screen and (max-width : 920px)
-	.header
+	.winners
+		.page
+			&-top
+				padding: 140px 0 50px
+			&-content
+				padding-top: 120px
+		&-all
+			bottom: -60px
+			max-width: 340px
+		&-bg
+			display: none
+			top: 20px
+			&-mob
+				display: block
+				width: 367px
+				height: 307px
+				img,svg
+					max-width: 367px
+		&-wrap
+			min-height: 274px
+			padding: 0 20px 20px
+			&__info
+				padding-top: 106px
+			&::after
+				width: 340px
+				height: 274px
+				background-image: url("data:image/svg+xml,%3Csvg width='340' height='274' viewBox='0 0 340 274' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_d)'%3E%3Cpath d='M330 217.137C223.346 279.621 116.692 279.621 10 217.137V52.085C116.654 -4.02833 223.308 -4.02833 330 52.085V217.137Z' fill='url(%23paint0_linear)'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_d' x='0' y='0' width='340' height='274' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset/%3E%3CfeGaussianBlur stdDeviation='5'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.745833 0 0 0 0 0.566833 0 0 0 0 0.298333 0 0 0 1 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow' result='shape'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear' x1='8.88502' y1='134.691' x2='330' y2='134.691' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FDD000'/%3E%3Cstop offset='0.25' stop-color='%23FEF035'/%3E%3Cstop offset='0.489583' stop-color='%23FFFFC2'/%3E%3Cstop offset='0.765625' stop-color='%23FEF035'/%3E%3Cstop offset='1' stop-color='%23FDD000'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
 
 @media only screen and (max-width : 768px)
-	.page
-	
-@media only screen and (max-width : 750px)
-	.header
-		
-@media only screen and (max-width : 540px)
-	.header
+	.winners
+		.page-content
+			padding-bottom: 50px
+		&-head
+			&__row
+				display: block
+				max-width: 220px
+				margin: 0 auto
+				padding-bottom: 45px
+				.select
+					margin-bottom: 20px
+				.search
+					width: 220px
+		&-table
+			max-width: 400px
+			padding: 38px 10px 21px 16px
+		&-col
+			&-2,&-3
+				display: none
+			&-1
+				min-width: 140px
+				width: 140px
+			&-4
+				min-width: auto
+				width: 100%
+				padding: 0
+		&-row
+			padding-bottom: 28px
+			font-size: 16px
+			line-height: 18px
+			.winners-mob
+				display: block
+				font-weight: normal
+		&-content
+			max-height: 100%
+		&-top
+			padding-bottom: 23px
+			b
+				display: none
 
 @media only screen and (max-width : 375px)
-	.header
+	.winners
+		&-table
+			padding-left: 9px
+			padding-right: 9px
+		&-col
+			&-4
+				div
+					min-width: 34px
+					width: 34px

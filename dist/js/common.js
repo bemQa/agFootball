@@ -29,6 +29,7 @@ $(document).ready(function(){
 
   $('.myCodes-content').mCustomScrollbar();
   $('.forecasts-content').mCustomScrollbar();
+  $('.winners-content').mCustomScrollbar();
 
   //scrollbar
   function scrollbar(){
@@ -45,6 +46,9 @@ $(document).ready(function(){
   });
   if($(window).outerWidth() > 890)
     scrollbar();
+
+  if($(window).outerWidth() < 768)
+    $('.winners-content').mCustomScrollbar('destroy');
 
 	//menu mob
 	$('.header-bar,.header-close').on('click', function(){
@@ -93,7 +97,7 @@ $(document).ready(function(){
       $(this).parents('.prompt').toggleClass('active');
   });
 
-	//modal
+  //modal
 	var modalCont = $('.modal');
 		
 	$('.modal-btn').on('click',function(e){
@@ -116,6 +120,27 @@ $(document).ready(function(){
 		$('.intermediate').removeClass('intermediate');
     $('html, body').removeClass('scroll-hidden');
 	});
+
+  if ($('.select').length > 0) {
+    $('.select select').select2({
+      minimumResultsForSearch: Infinity,
+      dropdownParent: $('.select')
+    });
+    $('.select-search').each(function () {
+      var $this = $(this);
+      var parent = $(this).parents('.select');
+      $this.select2({
+        dropdownParent: parent
+      });
+    });
+
+    $('.select-date .select-search').on('select2:select', function (e) {
+      var data = e.params.data.text;
+      $(this).parents('.prizes-block').find('.prizes-col').removeClass('active')
+      $(this).parents('.prizes-block').find("[data-date='" + data + "']").addClass('active');
+      //console.log(data);
+    });
+  }
 
 	//forms
 	function maskInit() {

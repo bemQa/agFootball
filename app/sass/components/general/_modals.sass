@@ -1,30 +1,172 @@
 @import "vars"
 
-.fancybox-slide--html
-	padding: 0
-	.fancybox-close-small
-		width: 50px
-		height: 50px
-		padding: 0
-		top: -10px
-		right: 0
-		img,svg
-			display: block
-			width: 50px
-			height: 50px
-		svg
-			path
-				fill: #fff
-
-.fancybox-bg
-	background: #000
-
-.fancybox-navigation .fancybox-button,.fancybox-infobar
-	display: none!important
+.modal-overlay
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: rgba(#FDD000,0.9)
+	transition: $transition
+	z-index: 2000
+	visibility: hidden
+	opacity: 0
+	&.open-overlay
+		visibility: visible
+		opacity: 1
 
 .modal
-	max-width: 640px
+	position: fixed
+	top: 0
+	left: 0
 	width: 100%
-	padding: 0 50px
-	background: transparent
-	
+	height: 100%
+	transition: $transition
+	z-index: 99999
+	visibility: hidden
+	opacity: 0
+	overflow-y: auto
+	overflow-x: hidden
+	backface-visibility: hidden
+	padding: 20px 0
+	&-attr
+		display: none
+	&-close
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translate(-50%,0)
+		width: 34px
+		height: 34px
+		cursor: pointer
+		background-image: url("data:image/svg+xml,%3Csvg width='35' height='34' viewBox='0 0 35 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='17.1114' cy='17' r='17' fill='white'/%3E%3Cpath d='M23.1114 11L11.1114 23' stroke='%239F0C12' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M11.1114 11L23.1114 23' stroke='%239F0C12' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+		background-repeat: no-repeat
+		background-position: center
+		z-index: 100
+	&.open
+		visibility: visible
+		opacity: 1
+	&-center
+		text-align: center
+		margin-bottom: 20px
+	.prompt-text.prompt
+		text-align: center
+		margin-bottom: 25px
+		.modal-link
+			opacity: 0.7
+	&-wrap
+		max-width: 350px
+		padding: 23px 14.5px 52px
+		position: relative
+		margin: 0 auto
+		&::before,&::after
+			content: ''
+			position: absolute
+			left: 50%
+			transform: translate(-50%,0)
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+			z-index: 10
+		&::before
+			top: 15px
+			width: 349px
+			height: 31px
+			background-image: url(../img/modal-top.svg)
+		&::after
+			bottom: 0
+			width: 242px
+			height: 136px
+			background-image: url(../img/modal-bottom-min.png)
+	&-content
+		width: 100%
+		max-width: 320px
+		margin: 0 auto
+		padding: 51px 20px 79px
+		position: relative
+		border-radius: 10px
+		overflow: hidden
+		background: radial-gradient(50.17% 63.64% at 49.83% 49.09%, #F70000 0%, #E50000 52.04%, #A70000 100%)
+	form,&-block
+		position: relative
+		z-index: 20
+	&-title
+		display: block
+		text-align: center
+		font-family: $OfficinaSansBoldC
+		font-size: 22px
+		line-height: 26px
+		font-weight: bold
+		text-transform: uppercase
+		color: #fff
+		margin: 0 0 20px
+	&-text
+		display: block
+		text-align: center
+		font-family: $OfficinaSansBoldC
+		font-size: 14px
+		line-height: 16px
+		font-weight: bold
+		color: #fff
+		max-width: 176px
+		margin: 0 auto 24px
+	&-checkbox
+		padding-bottom: 8px
+	&-bottom
+		max-width: 212px
+		margin: 0 auto
+		text-align: center
+		.primary-btn
+			min-width: 162px
+	&-link
+		display: inline-block
+		font-family: $OfficinaSansBoldC
+		font-size: 14px
+		line-height: 16px
+		font-weight: bold
+		color: #fff
+		text-decoration: underline
+		margin-top: 10px
+		&:hover
+			text-decoration: none
+	&-numbers
+		display: flex
+		flex-flow: row nowrap
+		justify-content: center
+		padding-bottom: 24px
+		div
+			width: 50px
+			padding: 0 5px
+			input
+				display: block
+				padding-top: 5px
+				width: 40px
+				height: 50px
+				border: none
+				border-radius: 2px
+				background-color: #fff
+				text-align: center
+				font-size: 24px
+				color: #5E140C
+	&-timer
+		display: block
+		text-align: center
+		font-size: 14px
+		line-height: 16px
+		color: rgba(#fff, 0.5)
+		margin: 0 0 24px
+	&-code
+		text-align: center
+		input
+			text-align: center
+			margin-bottom: 6px
+		.modal-link
+			font-size: 13px
+			line-height: 15px
+			opacity: 0.7
+	&-bottom
+		.primary-btn
+			padding-left: 15px
+			padding-right: 15px
+	.prompt-text.prompt .modal-link
+		opacity: 1
