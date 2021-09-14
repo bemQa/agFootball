@@ -1,24 +1,51 @@
 @import "vars"
 
 .notFound
-	
-@media only screen and (max-width : 1420px)
-	.header
-
-@media only screen and (max-width : 1150px)
-	.header
+	.page-top
+		min-height: 700px
+		padding: 124px 0 150px
+	&-wrap
+		text-align: center
+		p
+			font-family: $OfficinaSansMediumC
+			font-size: 18px
+			line-height: 21px
+			font-weight: 500
+			color: #9F0C12
+			padding: 1px 0 0
+		.primary-btn
+			min-width: 203px
+			font-size: 21px
+			margin-top: 24px
+	&-title
+		display: block
+		font-family: $OfficinaSansBoldC
+		font-size: 28px
+		line-height: 33px
+		font-weight: bold
+		text-transform: uppercase
+		color: #9F0C12
+		margin: 0
+	&-img
+		padding-bottom: 23px
+		img,svg
+			display: block
+			max-width: 492px
+			margin: 0 auto
 
 @media only screen and (max-width : 920px)
-	.header
+	.notFound
+		.page-top
+			min-height: auto
 
 @media only screen and (max-width : 768px)
-	.page
-	
-@media only screen and (max-width : 750px)
-	.header
-		
-@media only screen and (max-width : 540px)
-	.header
-
-@media only screen and (max-width : 375px)
-	.header
+	.notFound
+		.page-top
+			padding: 186px 0 50px
+		&-img
+			padding-bottom: 12px
+			img,svg
+				max-width: 285px
+		&-title
+			font-size: 21px
+			line-height: 24px

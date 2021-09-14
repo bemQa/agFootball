@@ -31,6 +31,69 @@
 	background: #F4F4F4
 
 .personalArea
+	.page
+		&-link
+			display: none
+			margin: 0
+		&-top
+			padding: 0
+			min-height: auto
+			.wrapper
+				min-height: 258px
+				padding-top: 83px
+				padding-bottom: 50px
+		&-col-2
+			padding-bottom: 30px
+		&-name
+			font-size: 21px
+			line-height: 32px
+			span
+				font-size: 28px
+		&-list
+			display: flex
+			flex-flow: row nowrap
+			align-items: center
+			li
+				padding: 0 15px
+		&-card
+			position: absolute
+			bottom: -34px
+			left: 50%
+			transform: translate(-50%,0)
+			width: 283px
+			height: 72px
+			background-image: url("data:image/svg+xml,%3Csvg width='283' height='72' viewBox='0 0 283 72' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M281 46.5642C281 55.7845 274.042 63.5067 264.893 64.3454C182.64 71.885 100.386 71.8849 18.1074 64.3449C8.95839 63.5065 2 55.784 2 46.5635V24.8716C2 15.5789 9.06554 7.82039 18.2968 7.06176C100.423 0.312601 182.55 0.312745 264.703 7.06221C273.934 7.82066 281 15.5793 281 24.8722V46.5642Z' fill='white' stroke='url(%23paint0_linear)' stroke-width='4'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='-0.986056' y1='35.3455' x2='283' y2='35.3455' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FDD000'/%3E%3Cstop offset='0.25' stop-color='%23FEF035'/%3E%3Cstop offset='0.489583' stop-color='%23FFFFC2'/%3E%3Cstop offset='0.765625' stop-color='%23FEF035'/%3E%3Cstop offset='1' stop-color='%23FDD000'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+			padding: 24px 15px 10px
+			text-align: center
+			&__title
+				display: block
+				font-family: $OfficinaSansBoldC
+				font-size: 14px
+				line-height: 16px
+				font-weight: bold
+				color: #9F0C12
+				margin: 0 0 3px
+			a
+				font-size: 14px
+				line-height: 16px
+				color: #9F0C12
+				text-decoration: underline
+				&:hover
+					text-decoration: none
+			&__img
+				position: absolute
+				top: -27px
+				left: 50%
+				transform: translate(-50%,0)
+				min-width: 65px
+				img,svg
+					display: block
+					max-width: 65px
+		&-content
+			padding-top: 84px
 	&-tabs
 		display: flex
 		flex-flow: row nowrap
@@ -235,8 +298,29 @@
 		text-transform: uppercase
 		color: #FDD000
 
+@media only screen and (max-width : 920px)
+	.personalArea
+		.page
+			&-top
+				.wrapper
+					padding-top: 140px
+
 @media only screen and (max-width : 768px)
 	.personalArea
+		.page
+			&-link
+				display: block
+			&-list
+				display: block
+				li
+					padding-bottom: 10px
+					a
+						justify-content: center
+			&-card
+				position: relative
+				transform: none
+				left: auto
+				margin: 28px auto
 		&-tabs
 			padding-bottom: 10px
 			margin-bottom: 20px
@@ -325,6 +409,11 @@
 			right: -50px
 
 @media only screen and (max-width : 375px)
+	.personalArea
+		.page
+			&-name
+				span
+					font-size: 21px
 	.myCodes,.forecasts
 		&-row
 			.myCodes,.forecasts
