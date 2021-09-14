@@ -13,11 +13,21 @@
 	border-bottom: 3px solid #FDD000
 	&-md
 		position: absolute
-		top: 180px
+		top: 205px
 		right: 0
+		.close-ico
+			min-width: 30px
+			width: 30px
+			height: 30px
+			background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='14.5412' cy='14.5412' r='14.5412' fill='white'/%3E%3Cpath d='M19.7539 9.32812L9.32812 19.7539' stroke='%2385312C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.32812 9.32812L19.7539 19.7539' stroke='%2385312C' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+			cursor: pointer
+			position: absolute
+			top: -9px
+			left: -10px
+			z-index: 10
 		img,svg
 			display: block
-			max-width: 230px
+			max-width: 207px
 	&-bg
 		position: absolute
 		top: 0
@@ -40,6 +50,7 @@
 			top: 0
 			left: -127px
 			z-index: 601
+			pointer-events: none
 			img,svg
 				display: block
 				max-width: 594px
@@ -47,6 +58,7 @@
 			position: absolute
 			top: 103px
 			right: -131px
+			pointer-events: none
 			img,svg
 				display: block
 				max-width: 735px

@@ -1,0 +1,52 @@
+@import "vars"
+
+.production
+	margin: 18px 0 70px
+	background: linear-gradient(90deg, #FDD000 -0.35%, #FEF035 24.74%, #FFFFC2 48.78%, #FEF035 76.48%, #FDD000 100%)
+	.wrapper
+		min-height: 120px
+		max-width: 792px
+		position: relative
+	&-img
+		position: absolute
+		bottom: -2px
+		left: 0
+		img,svg
+			display: block
+			max-width: 411px
+	&-button
+		padding: 28px 0 0 333px
+		.primary-btn
+			max-width: 355px
+			width: 100%
+			text-transform: uppercase
+			font-size: 21px
+			b
+				font-weight: 500
+			span
+				display: none
+
+@media only screen and (max-width : 768px)
+	.production
+		min-height: auto
+		margin: 70px 0 50px
+		.wrapper
+			min-height: 217px
+			padding: 0 5px
+		&-img
+			padding-left: 20px
+			bottom: 84px
+			left: 50%
+			transform: translate(-50%,0)
+			img,svg
+				max-width: 446px
+		&-button
+			padding: 130px 0 0
+			.primary-btn
+				display: block
+				max-width: 335px
+				margin: 0 auto
+				b
+					display: none
+				span
+					display: block

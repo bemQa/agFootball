@@ -101,13 +101,16 @@
 .winners
 	.page
 		&-top
-			min-height: 347px
-			padding: 68px 0 50px
+			padding: 0
 			position: relative
+			.wrapper
+				min-height: 347px
+				padding-top: 68px
+				padding-bottom: 50px
 		&-title
 			margin-bottom: 27px
 		&-content
-			padding: 147px 0 100px
+			padding: 147px 0 200px
 	&-all
 		position: absolute
 		bottom: -97px
@@ -251,7 +254,10 @@
 	.winners
 		.page
 			&-top
-				padding: 140px 0 50px
+				.wrapper
+					min-height: 423px
+					padding-top: 140px
+					padding-bottom: 50px
 			&-content
 				padding-top: 120px
 		&-all

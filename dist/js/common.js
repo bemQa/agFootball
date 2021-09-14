@@ -3,6 +3,7 @@ function myPrizes(){
     slidesPerView: 1,
     watchOverflow: true,
     effect: "fade",
+    noSwiping: true,
     navigation: {
       nextEl: '.myPrizes-col-first .swiper-button-next',
       prevEl: '.myPrizes-col-first .swiper-button-prev',
@@ -14,6 +15,7 @@ function myPrizes2(){
     slidesPerView: 1,
     watchOverflow: true,
     effect: "fade",
+    noSwiping: true,
     navigation: {
       nextEl: '.myPrizes-col-second .swiper-button-next',
       prevEl: '.myPrizes-col-second .swiper-button-prev',
@@ -27,12 +29,26 @@ if($('.myPrizes-slider').length){
 
 $(document).ready(function(){
 
+  //main-md
+  $('.main-md .close-ico').on('click', function(){
+    $('.main-md').remove();
+  });
+
+  //menu scroll
+  $('.scroll-link').on('click', function(e){
+    e.preventDefault();
+    var itemId = $(this).attr('href'),
+        blockTop = $(itemId).offset().top;
+    $('html, body').animate({scrollTop : blockTop - 20},500);
+  });
+
   if($('.tournament-slider').length){
     var mySwiper = new Swiper('.tournament-slider', {
       slidesPerView: 1,
       watchOverflow: true,
       effect: "fade",
       autoHeight: true,
+      loop: true,
       navigation: {
         nextEl: '.tournament-arrow .swiper-button-next',
         prevEl: '.tournament-arrow .swiper-button-prev',
@@ -42,7 +58,7 @@ $(document).ready(function(){
     $('.tournament-link').click(mySwiper,function(){
       var attr = $(this).attr('data-slide');
 
-      mySwiper.slideTo(attr);
+      mySwiper.slideTo(attr,0);
     });
   }
 
@@ -109,11 +125,10 @@ $(document).ready(function(){
 
 	});
 
-  $('.prompt-top, .prompt .close-ico').on('click', function (e) {
+  $('.prompt-text, .prompt-ico, .prompt .prompt-close').on('click', function (e) {
     e.preventDefault();
 
-    if($(window).width() <= 768)
-      $(this).parents('.prompt').toggleClass('active');
+    $(this).parents('.prompt').toggleClass('active');
   });
 
   //modal

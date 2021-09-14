@@ -53,7 +53,7 @@ body
 	text-rendering: optimizeLegibility
 	-webkit-font-smoothing: antialiased
 	position: relative
-	padding-bottom: 56px
+	//padding-bottom: 56px
 
 img
 	max-width: 100%
@@ -139,11 +139,14 @@ button
 		background-size: contain
 		z-index: 60
 		border-radius: 50%
-	&-text
+	&-text,&-link
 		font-size: 16px
 		line-height: 18px
 		color: #fff
 		text-decoration-line: underline
+	&-link
+		&:hover
+			text-decoration: none
 	&-wrap
 		display: inline-block
 		position: absolute
@@ -173,11 +176,11 @@ button
 			right: 10px
 			cursor: pointer
 			z-index: 20
-	&:hover
-		.prompt
-			&-wrap
-				opacity: 1
-				visibility: visible
+		.primary-btn
+			display: block
+			padding-left: 10px
+			padding-right: 10px
+			margin-top: 10px
 	&.active
 		.prompt
 			&-wrap
@@ -207,6 +210,7 @@ button
 @import "components/header"
 @import "components/main"
 @import "components/steps"
+@import "components/production"
 @import "components/prizes"
 @import "components/participation"
 @import "components/footer"
@@ -216,6 +220,8 @@ button
 @import "components/winners"
 @import "components/tournament"
 @import "components/faq"
+@import "components/notFound"
+@import "components/cookie"
 
 .tab
 	display: none

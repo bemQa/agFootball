@@ -100,19 +100,33 @@
 @media only screen and (max-width : 768px)
 	.prizes
 		padding-bottom: 0
+		margin-bottom: 54px
 		.wrapper
 			padding: 0
 		&-all
+			min-height: 1048px
 			padding: 40px 15px 20px
+			&::before
+				content: ''
+				position: absolute
+				left: 50%
+				transform: translate(-50%,0)
+				background-repeat: no-repeat
+				background-position: center
+				background-size: contain
+				z-index: 10
+				bottom: -46px
+				width: 248px
+				height: 140px
+				background-image: url(../img/modal-bottom-min.png)
 			&::after
 				width: 100%
 				height: 100%
 				background-size: 100% 100%
-				background-image: url("data:image/svg+xml,%3Csvg width='375' height='1284' viewBox='0 0 375 1284' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M616.2 1233C338.5 1299.7 60.8 1299.7 -217 1233V45.0002C60.7 -14.8998 338.4 -14.8998 616.2 45.0002V1233Z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='-219.903' y1='629.887' x2='616.2' y2='629.887' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FDD000'/%3E%3Cstop offset='0.25' stop-color='%23FEF035'/%3E%3Cstop offset='0.489583' stop-color='%23FFFFC2'/%3E%3Cstop offset='0.765625' stop-color='%23FEF035'/%3E%3Cstop offset='1' stop-color='%23FDD000'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+				background-image: url("data:image/svg+xml,%3Csvg width='329' height='1048' viewBox='0 0 329 1048' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_i)'%3E%3Cpath d='M278.924 -3.41267e-05C288.345 -3.45385e-05 296.474 6.3678 298.215 15.6265C339.262 233.916 339.262 814.018 298.214 1032.37C296.473 1041.63 288.345 1048 278.923 1048L46.9681 1048C37.3886 1048 29.1666 1041.4 27.5767 1031.96C-9.19249 813.486 -9.19227 234.579 27.5774 16.0437C29.1669 6.5965 37.3892 -2.35688e-05 46.9692 -2.39876e-05L278.924 -3.41267e-05Z' fill='white'/%3E%3C/g%3E%3Cpath d='M295.758 16.0885C316.235 124.987 326.5 324.385 326.5 523.975C326.5 723.565 316.235 922.979 295.757 1031.91C294.252 1039.92 287.214 1045.5 278.923 1045.5L46.9681 1045.5C38.5418 1045.5 31.4183 1039.72 30.042 1031.54C11.6947 922.528 2.49987 723.363 2.49998 524.024C2.50009 324.686 11.6951 125.505 30.0427 16.4585C31.4187 8.28027 38.5425 2.5 46.9692 2.5L278.924 2.49999C287.215 2.49999 294.252 8.0808 295.758 16.0885Z' stroke='url(%23paint0_linear)' stroke-width='5'/%3E%3Cdefs%3E%3Cfilter id='filter0_i' x='0' y='0' width='329' height='1052' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='7.5'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0'/%3E%3CfeBlend mode='normal' in2='shape' result='effect1_innerShadow'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear' x1='161.509' y1='1051.65' x2='161.509' y2='-1.74816e-05' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FDD000'/%3E%3Cstop offset='0.25' stop-color='%23FEF035'/%3E%3Cstop offset='0.489583' stop-color='%23FFFFC2'/%3E%3Cstop offset='0.765625' stop-color='%23FEF035'/%3E%3Cstop offset='1' stop-color='%23FDD000'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
 		&-bg
 			display: none
 			&-2
-				display: block
 				width: 323px
 				min-width: 323px
 				top: -62px
@@ -122,6 +136,9 @@
 					max-width: 323px
 		&-row
 			display: block
+		&-tit
+			max-width: 200px
+			margin: 0 auto 8px
 		&-col
 			margin: 0 auto 33px
 			&-1
