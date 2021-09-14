@@ -1,2 +1,112 @@
 @import "vars"
 
+.index
+	background: radial-gradient(50.17% 63.64% at 49.83% 49.09%, #F70000 0%, #E50000 52.04%, #A70000 100%)
+	.header-logo
+		display: none
+		&-2
+			display: block
+
+.main
+	display: block
+	position: relative
+	border-bottom: 3px solid #FDD000
+	&-md
+		position: absolute
+		top: 180px
+		right: 0
+		img,svg
+			display: block
+			max-width: 230px
+	&-bg
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		&-2
+			display: none
+	.wrapper
+		max-width: 1022px
+		padding-top: 440px
+		min-height: 574px
+		position: relative
+	&-img
+		&-1
+			position: absolute
+			top: 0
+			left: -127px
+			z-index: 601
+			img,svg
+				display: block
+				max-width: 594px
+		&-2
+			position: absolute
+			top: 103px
+			right: -131px
+			img,svg
+				display: block
+				max-width: 735px
+	&-button
+		position: relative
+		z-index: 10
+		.primary-btn
+			min-width: 287px
+			font-size: 21px
+			line-height: 24px
+			padding: 16px 20px 15px
+
+@media only screen and (max-width : 1420px)
+	.main
+		&-md
+			display: none
+
+@media only screen and (max-width : 1150px)
+	.main
+		&-img-1
+			top: 50px
+			left: -50px
+			img,svg
+				max-width: 550px
+		&-img-2
+			img,svg
+				max-width: 680px
+		&-button
+			padding-left: 50px
+
+@media only screen and (max-width : 920px)
+	.main
+		.wrapper
+			min-height: 689px
+		&-img-1
+			min-width: 426px
+			top: 17px
+			left: 50%
+			transform: translate(-50%,0)
+			img,svg
+				max-width: 426px
+		&-img-2
+			min-width: 431px
+			top: auto
+			bottom: -38px
+			left: 50%
+			transform: translate(-47%,0)
+			img,svg
+				max-width: 431px
+				margin: 0 auto
+		&-button
+			position: absolute
+			top: 316px
+			left: 50%
+			transform: translate(-50%,0)
+			padding: 0
+
+@media only screen and (max-width : 768px)
+	.main
+		&-bg
+			display: none
+			&-2
+				display: block

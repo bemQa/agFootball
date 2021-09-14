@@ -1,16 +1,16 @@
 function myPrizes(){
-  var mySwiper = new Swiper('.myPrizes-slider', {
+  var mySwiper = new Swiper('.myPrizes-col-first .myPrizes-slider', {
     slidesPerView: 1,
     watchOverflow: true,
     effect: "fade",
     navigation: {
-      nextEl: '.myPrizes-col .swiper-button-next',
-      prevEl: '.myPrizes-col .swiper-button-prev',
+      nextEl: '.myPrizes-col-first .swiper-button-next',
+      prevEl: '.myPrizes-col-first .swiper-button-prev',
     },
   });
 }
 function myPrizes2(){
-  var mySwiper = new Swiper('.myPrizes-slider2', {
+  var mySwiper = new Swiper('.myPrizes-col-second .myPrizes-slider', {
     slidesPerView: 1,
     watchOverflow: true,
     effect: "fade",
