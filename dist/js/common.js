@@ -27,6 +27,25 @@ if($('.myPrizes-slider').length){
 
 $(document).ready(function(){
 
+  if($('.tournament-slider').length){
+    var mySwiper = new Swiper('.tournament-slider', {
+      slidesPerView: 1,
+      watchOverflow: true,
+      effect: "fade",
+      autoHeight: true,
+      navigation: {
+        nextEl: '.tournament-arrow .swiper-button-next',
+        prevEl: '.tournament-arrow .swiper-button-prev',
+      },
+    });
+
+    $('.tournament-link').click(mySwiper,function(){
+      var attr = $(this).attr('data-slide');
+
+      mySwiper.slideTo(attr);
+    });
+  }
+
   $('.myCodes-content').mCustomScrollbar();
   $('.forecasts-content').mCustomScrollbar();
   $('.winners-content').mCustomScrollbar();

@@ -170,3 +170,36 @@
 			padding-right: 15px
 	.prompt-text.prompt .modal-link
 		opacity: 1
+	&.modal-tournament
+		padding-top: 75px
+		.tournament
+			&-wrap
+				margin-top: 0
+				padding-bottom: 78px
+				&::after
+					bottom: 0
+		.modal
+			&-content
+				max-width: 100%
+				padding: 0
+				border-radius: 0
+				background: none
+				&::after
+					display: none
+			&-wrap
+				max-width: 100%
+				padding: 0
+				&::before,&::after
+					display: none
+
+@media only screen and (max-width : 1420px)
+	.modal
+		&.modal-tournament
+			padding-top: 20px
+		
+@media only screen and (max-width : 540px)
+	.modal
+		&.modal-tournament
+			.tournament
+				&-wrap
+					padding-bottom: 50px
