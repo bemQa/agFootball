@@ -9,20 +9,34 @@
 	font-weight: 500
 	color: #fff
 	text-transform: uppercase
-	padding: 10px 17px
+	padding: 11px 17px 9px
 	border-radius: 30px
 	white-space: nowrap
 	background: radial-gradient(50.17% 63.64% at 49.83% 49.09%, #F70000 0%, #E50000 52.04%, #A70000 100%)
+	position: relative
+	&::after
+		content: ''
+		position: absolute
+		bottom: -2px
+		left: 0
+		width: 100%
+		height: 100%
+		background: #810317
+		filter: blur(2px)
+		border-radius: 30px
+		z-index: -1
 	&-big
 		font-size: 16px
-		padding: 20px 20px
+		padding: 20px
 	&-yellow
 		background: linear-gradient(90deg, #FDD000 -0.35%, #FEF035 24.74%, #FFFFC2 48.78%, #FEF035 76.48%, #FDD000 100%)
 		font-size: 21px
 		line-height: 24px
 		color: #9F0C12
-		padding: 18px 35px 14px
+		padding: 16px 35px
 		border-radius: 30px
+		&::after
+			background: linear-gradient(90deg, #FDD000 -0.35%, #FEF035 24.74%, #FFFFC2 48.78%, #FEF035 76.48%, #FDD000 100%)
 	&:disabled,&.disabled
 		opacity: 0.5
 		cursor: not-allowed

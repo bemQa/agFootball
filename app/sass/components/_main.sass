@@ -62,6 +62,8 @@
 			img,svg
 				display: block
 				max-width: 735px
+		&-mob
+			display: none
 	&-button
 		position: relative
 		z-index: 10
@@ -70,6 +72,11 @@
 			font-size: 21px
 			line-height: 24px
 			padding: 16px 20px 15px
+
+@media only screen and (max-width : 1600px)
+	.main
+		&-bg
+			background-position: top center
 
 @media only screen and (max-width : 1420px)
 	.main
@@ -93,22 +100,26 @@
 	.main
 		.wrapper
 			min-height: 689px
-		&-img-1
-			min-width: 426px
-			top: 17px
-			left: 50%
-			transform: translate(-50%,0)
-			img,svg
-				max-width: 426px
-		&-img-2
-			min-width: 431px
-			top: auto
-			bottom: -38px
-			left: 50%
-			transform: translate(-47%,0)
-			img,svg
-				max-width: 431px
-				margin: 0 auto
+		&-img
+			&-1
+				min-width: 426px
+				top: 17px
+				left: 50%
+				transform: translate(-50%,0)
+				img,svg
+					max-width: 426px
+			&-2
+				display: none
+				min-width: 431px
+				top: auto
+				bottom: -38px
+				left: 50%
+				transform: translate(-48%,0)
+				img,svg
+					max-width: 431px
+					margin: 0 auto
+			&-mob
+				display: block
 		&-button
 			position: absolute
 			top: 316px
@@ -120,5 +131,6 @@
 	.main
 		&-bg
 			display: none
+			background-position: center
 			&-2
 				display: block

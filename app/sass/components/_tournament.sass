@@ -44,6 +44,9 @@
 	&-slide
 		padding-top: 41px
 		position: relative
+		visibility: hidden
+		&.swiper-slide-active
+			visibility: visible
 	&-arrow
 		max-width: 441px
 		width: 100%
@@ -191,6 +194,8 @@
 		&-arrow
 			min-width: 396px
 			top: -10px
+			.swiper-button-prev,.swiper-button-next
+				top: 53px
 			.swiper-button-prev
 				left: 85px
 			.swiper-button-next
@@ -200,6 +205,11 @@
 			width: 74px
 			height: 74px
 			margin-top: 50px
+		&-wrap
+			max-width: 320px
+		&-content
+			min-height: 881px
+			background-image: url(../img/tournament/bg-mob.svg)
 
 @media only screen and (max-width : 375px)
 	.tournament

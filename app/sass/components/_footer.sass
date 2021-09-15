@@ -172,16 +172,22 @@
 			padding: 20px 0 24px
 			position: relative
 		&-list
-			display: block
+			display: flex
+			flex-flow: row wrap
 			text-align: left
-			padding-bottom: 112px
-			margin: 0
+			padding-bottom: 104px
+			margin: 0 auto
+			max-width: 500px
 			li
+				width: 50%
 				line-height: 14px
 				padding-bottom: 12px
+				white-space: nowrap
 				a
 					font-size: 12px
 					line-height: 14px
+				&:nth-child(2)
+					text-align: right
 		&-middle
 			padding: 0
 			p
@@ -192,7 +198,7 @@
 			display: none
 		&-bottom
 			position: absolute
-			top: 115px
+			top: 92px
 			left: 50%
 			transform: translate(-50%,0)
 			max-width: 220px

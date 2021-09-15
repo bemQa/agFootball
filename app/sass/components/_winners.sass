@@ -98,6 +98,18 @@
 		&:-ms-input-placeholder
 			color: rgba(#682700, 1)
 
+.select2-search--dropdown
+	display: none!important
+
+.select2-container--open .select2-dropdown--below
+	border-radius: 20px!important
+
+.select2-container--default .select2-results>.select2-results__options
+	border-radius: 20px
+
+.select2-results__options
+	padding: 8.5px 20px
+
 .winners
 	.page
 		&-top
@@ -298,14 +310,14 @@
 				.search
 					width: 220px
 		&-table
-			max-width: 400px
+			max-width: 350px
 			padding: 38px 10px 21px 16px
 		&-col
 			&-2,&-3
 				display: none
 			&-1
-				min-width: 140px
-				width: 140px
+				min-width: 160px
+				width: 160px
 			&-4
 				min-width: auto
 				width: 100%
@@ -330,6 +342,9 @@
 			padding-left: 9px
 			padding-right: 9px
 		&-col
+			&-1
+				min-width: 140px
+				width: 140px
 			&-4
 				div
 					min-width: 34px
