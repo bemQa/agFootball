@@ -32,7 +32,7 @@
 					<li><a href="#">Правила</a></li>
 					<li><a href="#">FAQ</a></li>
 				</ul>
-				<a href="#" class="header-link">Личный кабинет</a>
+				<a href="modal-login" class="header-link modal-btn">Личный кабинет</a>
 			</div>
 			<div class="header-logo header-logo-2"><a href="#"><img src="img/header/logo-2-min.png" alt=""></a></div>
 			<div class="header-bar"></div>
@@ -257,6 +257,31 @@
 	</footer>
 	<!-- end footer -->
 	<div class="modal-overlay"></div>
+	<!-- modal-login -->
+	<div id="modal-login" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">Авторизация</span>
+					<div class="input-text">Неправильный логин или пароль</div>
+	        <div class="input-block">
+	          <input type="Text" name="PhoneNumber" placeholder="Твой телефон" required class="phone-mask">
+	        </div>
+	        <div class="input-block">
+	          <div class="input-wrap">
+	            <input type="password" name="password" placeholder="Твой пароль" required>
+	            <a href="modal-forgot" class="input-forgot modal-btn">Забыли пароль?</a>
+	          </div>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big disabled">войти</button>
+	        	<a href="modal-checkIn" class="modal-link modal-btn">Регистрация</a>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
 	<!-- modal-tournament -->
 	<div id="modal-tournament" class="modal modal-tournament">
 		<div class="modal-wrap">
