@@ -147,7 +147,7 @@ $(document).ready(function(){
 		var id = '#' + $(this).attr('href');
 
     if(!$('.header').hasClass('header-active'))
-      $('html,body').removeClass('scroll-hidden');
+      $('html,body').addClass('scroll-hidden');
 
 		$(id).addClass('open');
 		$('.modal-overlay').addClass('open-overlay');
