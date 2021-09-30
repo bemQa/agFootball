@@ -20,6 +20,7 @@
 		background-repeat: no-repeat
 		background-position: center
 		background-size: 100% 100%
+		pointer-events: none
 	.wrapper
 		max-width: 1060px
 		position: relative
@@ -33,9 +34,15 @@
 			max-width: 107px
 		&-2
 			left: auto
-			right: 154px
+			top: 10px
+			right: 81px
+			z-index: 9
 			img,svg
-				max-width: 82px
+				max-width: 38px
+	&-wrap
+		max-width: 890px
+		padding-right: 50px
+		position: relative
 	&-list
 		display: flex
 		flex-flow: row nowrap
@@ -80,6 +87,37 @@
 			color: #FDD000
 			&::after
 				background-image: url("data:image/svg+xml,%3Csvg width='9' height='11' viewBox='0 0 9 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.74275 2.51982C1.74275 3.91147 2.9132 5.03963 4.35702 5.03963C5.80085 5.03963 6.97129 3.91147 6.97129 2.51982C6.97129 1.12816 5.80085 0 4.35702 0C2.9132 0 1.74275 1.12816 1.74275 2.51982ZM3.05581 10.9633C3.46675 10.9419 3.90385 10.9192 4.35712 10.9192C4.81039 10.9192 5.24749 10.9419 5.65843 10.9633C7.42917 11.0552 8.71424 11.1219 8.71424 9.23936C8.71424 6.91994 6.76349 5.87961 4.35712 5.87961C1.95075 5.87961 0 6.91994 0 9.23936C0 11.1219 1.28507 11.0552 3.05581 10.9633Z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='-0.030363' y1='5.40002' x2='8.71424' y2='5.40002' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FDD000'/%3E%3Cstop offset='0.25' stop-color='%23FEF035'/%3E%3Cstop offset='0.489583' stop-color='%23FFFFC2'/%3E%3Cstop offset='0.765625' stop-color='%23FEF035'/%3E%3Cstop offset='1' stop-color='%23FDD000'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+	&-info
+		text-align: right
+		max-width: 120px
+		width: 100%
+		.header-link
+			display: block
+			width: 100%
+			position: relative
+			top: auto
+			right: auto
+			left: auto
+			color: #FDD000
+			margin-bottom: 0
+			&::after
+				background-image: url("data:image/svg+xml,%3Csvg width='9' height='11' viewBox='0 0 9 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.74275 2.51982C1.74275 3.91147 2.9132 5.03963 4.35702 5.03963C5.80085 5.03963 6.97129 3.91147 6.97129 2.51982C6.97129 1.12816 5.80085 0 4.35702 0C2.9132 0 1.74275 1.12816 1.74275 2.51982ZM3.05581 10.9633C3.46675 10.9419 3.90385 10.9192 4.35712 10.9192C4.81039 10.9192 5.24749 10.9419 5.65843 10.9633C7.42917 11.0552 8.71424 11.1219 8.71424 9.23936C8.71424 6.91994 6.76349 5.87961 4.35712 5.87961C1.95075 5.87961 0 6.91994 0 9.23936C0 11.1219 1.28507 11.0552 3.05581 10.9633Z' fill='url(%23paint0_linear)'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear' x1='-0.030363' y1='5.40002' x2='8.71424' y2='5.40002' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FDD000'/%3E%3Cstop offset='0.25' stop-color='%23FEF035'/%3E%3Cstop offset='0.489583' stop-color='%23FFFFC2'/%3E%3Cstop offset='0.765625' stop-color='%23FEF035'/%3E%3Cstop offset='1' stop-color='%23FDD000'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+	&-logOff
+		font-size: 12px
+		line-height: 14px
+		color: #fff
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	&.header-second
+		.header
+			&-wrap
+				max-width: 100%
+				padding-right: 0
+			&-info
+				position: absolute
+				top: 14px
+				right: 0
 
 @media only screen and (max-width : 1150px)
 	.header
@@ -90,6 +128,7 @@
 				right: 15px
 		&-wrap
 			padding-top: 6px
+			padding-right: 0
 			display: flex
 			flex-flow: row nowrap
 			align-items: center
@@ -111,12 +150,12 @@
 			img,svg
 				max-width: 107px
 			&-2
-				top: 22px
-				right: 15px
+				top: 21px
+				right: 23px
 				left: auto
 				transform: none
 				img,svg
-					max-width: 62px
+					max-width: 36px
 		&-bar
 			position: absolute
 			top: 31px
@@ -197,10 +236,29 @@
 				width: 12px
 				height: 16px
 				background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.25703 3.65545C2.25703 5.67429 3.77284 7.31089 5.64269 7.31089C7.51254 7.31089 9.02835 5.67429 9.02835 3.65545C9.02835 1.6366 7.51254 0 5.64269 0C3.77284 0 2.25703 1.6366 2.25703 3.65545ZM3.95748 15.6857C4.48968 15.6547 5.05575 15.6218 5.64276 15.6218C6.22977 15.6218 6.79585 15.6547 7.32805 15.6857C9.62127 15.819 11.2855 15.9158 11.2855 13.1848C11.2855 9.82008 8.75918 8.31089 5.64276 8.31089C2.52635 8.31089 0 9.82008 0 13.1848C0 15.9158 1.66425 15.819 3.95748 15.6857Z' fill='white'/%3E%3C/svg%3E%0A")
+		&-logOff
+			font-size: 16px
+			line-height: 1.2
+		&.header.header-second
+			.header
+				&-info
+					max-width: 184px
+					display: flex
+					flex-flow: row wrap
+					align-items: center
+					justify-content: center
+					position: relative
+					top: auto
+					left: auto
+					right: auto
+					margin: 0 auto
+					.header-link
+						margin: 0 0 5px
 		&.header-active
 			z-index: 999
 			.header
 				&-wrap
+					z-index: 2000
 					opacity: 1
 					visibility: visible
 	

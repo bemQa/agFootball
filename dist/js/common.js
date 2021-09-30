@@ -136,6 +136,11 @@ $(document).ready(function(){
     $(this).parents('.prompt').toggleClass('active');
   });
 
+  //disabled
+  $('.disabled').on('click',function(e){
+    e.preventDefault();
+  });
+
   //modal
 	var modalCont = $('.modal');
 		

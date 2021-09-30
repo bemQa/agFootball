@@ -18,7 +18,7 @@
 </head>
 <body>
 	<!-- start header -->
-	<header class="header">
+	<header class="header header-second">
 		<div class="wrapper">
 			<div class="header-logo"><a href="#"><img src="img/header/logo-min.png" alt=""></a></div>
 			<div class="header-wrap">
@@ -26,15 +26,15 @@
 				<ul class="header-list">
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Призы</a></li>
-					<li><a href="#">Продукт</a></li>
 					<li><a href="#" class="active">Победители</a></li>
-					<li><a href="#">Турнирная таблица</a></li>
 					<li><a href="#">Правила</a></li>
 					<li><a href="#">FAQ</a></li>
 				</ul>
-				<a href="#" class="header-link">Личный кабинет</a>
+				<div class="header-info">
+					<a href="#" class="header-link">Личный кабинет</a>
+					<a href="#" class="header-logOff">Выйти</a>
+				</div>
 			</div>
-			<div class="header-logo header-logo-2"><a href="#"><img src="img/header/logo-2-min.png" alt=""></a></div>
 			<div class="header-bar"></div>
 		</div>
 	</header>
@@ -46,13 +46,13 @@
 				<div class="page-row">
 					<div class="page-col page-col-1">
 						<div class="page-btn">
-							<a href="#" class="primary-btn"><span>сделать новый прогноз</span></a>
-							<a href="#" class="page-link">Посмотреть расписание матчей</a>
+							<a href="modal-soon" class="primary-btn modal-btn"><span>сделать новый прогноз</span></a>
+							<a href="#" class="page-link disabled">Посмотреть расписание матчей</a>
 						</div>
 					</div>
 					<div class="page-col page-col-2">
 						<div class="page-name">
-							Константин аристархович
+							Константин
 							<span>Константинопольский</span>
 						</div>
 						<ul class="page-list">
@@ -65,7 +65,7 @@
 								<span>+7 (999) 999-99-99</span>
 							</a></li>
 						</ul>
-						<a href="#" class="page-link">Выйти</a>
+						<a href="#" class="page-link page-logOff">Выйти</a>
 						<div class="page-card">
 							<div class="page-card__img"><img src="img/card-min.png" alt=""></div>
 							<span class="page-card__title">Ты не добавил номер «Выручай-карты»</span>
@@ -74,6 +74,13 @@
 					</div>
 					<div class="page-col page-col-3">
 						<div class="page-points">
+							<div class="prompt">
+								<i class="prompt-ico"></i>
+								<div class="prompt-wrap">
+									<i class="prompt-close"></i>
+									Тут отображаются твои баллы,  полученные за регистрацию кодов и предсказания счета. <br>Чем больше кодов ты регистрируешь, тем больше прогнозов счета ты можешь сделать, а значит получить больше шансов на выигрыш крутых призов! 
+								</div>
+							</div>
 							<div class="points">
 								<span class="points-text">Мои баллы:</span>
 								<span class="points-num">100</span>
@@ -89,7 +96,6 @@
 					<ul class="personalArea-tabs tab-list">
 						<li><a href="#tab-1" class="active"><span><b>Мои коды</b></span></a></li>
 						<li><a href="#tab-2"><span><b>Мои призы</b></span></a></li>
-						<li><a href="#tab-3"><span><b>мои прогнозы</b></span></a></li>
 					</ul>
 					<div id="tab-1" class="tab tab-active">
 						<div class="myCodes">
@@ -97,7 +103,8 @@
 								<div class="myCodes-row myCodes-top">
 									<div class="myCodes-col myCodes-col-1">Дата регистрации</div>
 									<div class="myCodes-col myCodes-col-2">Код</div>
-									<div class="myCodes-col myCodes-col-3"><b>Ко-во начисленных баллов</b><span class="myCodes-mob">Статус</span></div>
+									<div class="myCodes-col myCodes-col-3"><b>Ко-во начисленных баллов</b><span class="myCodes-mob">Баллы</span></div>
+									<div class="myCodes-col myCodes-col-4"></div>
 								</div>
 								<div class="myCodes-content table-content">
 									<div class="myCodes-row">
@@ -105,80 +112,20 @@
 										<div class="myCodes-col myCodes-col-2">
 											<span class="myCodes-mob">ХХ.ХХ.2021</span>
 											HJFEBuh878
+											<span class="myCodes-mob"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></span>
 										</div>
 										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
+										<div class="myCodes-col myCodes-col-4"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></div>
 									</div>
 									<div class="myCodes-row">
 										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
 										<div class="myCodes-col myCodes-col-2">
 											<span class="myCodes-mob">ХХ.ХХ.2021</span>
 											HJFEBuh878
+											<span class="myCodes-mob"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></span>
 										</div>
 										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
-									</div>
-									<div class="myCodes-row">
-										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
-										<div class="myCodes-col myCodes-col-2">
-											<span class="myCodes-mob">ХХ.ХХ.2021</span>
-											HJFEBuh878
-										</div>
-										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
-									</div>
-									<div class="myCodes-row">
-										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
-										<div class="myCodes-col myCodes-col-2">
-											<span class="myCodes-mob">ХХ.ХХ.2021</span>
-											HJFEBuh878
-										</div>
-										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
-									</div>
-									<div class="myCodes-row">
-										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
-										<div class="myCodes-col myCodes-col-2">
-											<span class="myCodes-mob">ХХ.ХХ.2021</span>
-											HJFEBuh878
-										</div>
-										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
-									</div>
-									<div class="myCodes-row">
-										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
-										<div class="myCodes-col myCodes-col-2">
-											<span class="myCodes-mob">ХХ.ХХ.2021</span>
-											HJFEBuh878
-										</div>
-										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
-									</div>
-									<div class="myCodes-row">
-										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
-										<div class="myCodes-col myCodes-col-2">
-											<span class="myCodes-mob">ХХ.ХХ.2021</span>
-											HJFEBuh878
-										</div>
-										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
-									</div>
-									<div class="myCodes-row">
-										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
-										<div class="myCodes-col myCodes-col-2">
-											<span class="myCodes-mob">ХХ.ХХ.2021</span>
-											HJFEBuh878
-										</div>
-										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
-									</div>
-									<div class="myCodes-row">
-										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
-										<div class="myCodes-col myCodes-col-2">
-											<span class="myCodes-mob">ХХ.ХХ.2021</span>
-											HJFEBuh878
-										</div>
-										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
-									</div>
-									<div class="myCodes-row">
-										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
-										<div class="myCodes-col myCodes-col-2">
-											<span class="myCodes-mob">ХХ.ХХ.2021</span>
-											HJFEBuh878
-										</div>
-										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
+										<div class="myCodes-col myCodes-col-4"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></div>
 									</div>
 								</div>
 								<div class="myCodes-button">
@@ -189,131 +136,8 @@
 					</div><!-- tab -->
 					<div id="tab-2" class="tab">
 						<div class="myPrizes">
-							<div class="myPrizes-row">
-								<div class="myPrizes-col myPrizes-col-first">
-									<div class="myPrizes-wrap">
-										<h3 class="myPrizes-title">мои призы</h3>
-										<div class="myPrizes-slider swiper-container">
-											<div class="swiper-wrapper">
-												<div class="myPrizes-slide swiper-slide">
-													<div class="myPrizes-img"><img src="img/prize/img-1-min.png" alt=""></div>
-													<span class="myPrizes-name">1 месяц подписки<br>на megogo</span>
-													<a href="#" class="prompt-link">Как получить?</a>
-												</div>
-												<div class="myPrizes-slide swiper-slide">
-													<div class="myPrizes-img"><img src="img/prize/img-1-min.png" alt=""></div>
-													<span class="myPrizes-name">1 месяц подписки на megogo:</span>
-													<span class="myPrizes-code">hb2qm4txq</span>
-												</div>
-												<div class="myPrizes-slide swiper-slide">
-													<div class="myPrizes-img"><img src="img/prize/img-1-min.png" alt=""></div>
-													<span class="myPrizes-name">1 месяц подписки<br>на megogo</span>
-													<div class="prompt">
-														<span class="prompt-text">Как получить?</span>
-														<div class="prompt-wrap">
-															<i class="prompt-close"></i>
-															Приз будет отправлен <br>на электронный адрес, указанный <br>в Личном кабинете.
-														</div>
-													</div>
-												</div>
-												<div class="myPrizes-slide swiper-slide">
-													<div class="myPrizes-img"><img src="img/prize/img-2-min.png" alt=""></div>
-													<span class="myPrizes-name">555 баллов<br>на «выручай-карту»</span>
-													<div class="prompt">
-														<span class="prompt-text">Как получить?</span>
-														<div class="prompt-wrap">
-															<i class="prompt-close"></i>
-															баллы будут отправлены на твою «выручай-карту». Если ты ещё не внёс номер карты, это можно сделать в личном кабинете или сейчас:
-															<a href="#" class="primary-btn">добавить «выручай-карту»</a>
-														</div>
-													</div>
-												</div>
-												<div class="myPrizes-slide swiper-slide">
-													<div class="myPrizes-img"><img src="img/prize/img-3-min.png" alt=""></div>
-													<span class="myPrizes-name">подписка на окко.спорт номиналом 4000 рублей</span>
-													<div class="prompt">
-														<span class="prompt-text">Как получить?</span>
-														<div class="prompt-wrap">
-															<i class="prompt-close"></i>
-															Приз будет отправлен <br>на электронный адрес, указанный <br>в Личном кабинете.
-														</div>
-													</div>
-												</div>
-												<div class="myPrizes-slide swiper-slide">
-													<div class="myPrizes-img"><img src="img/prize/img-4-min.png" alt=""></div>
-													<span class="myPrizes-name">playstation 5</span>
-													<div class="prompt">
-														<span class="prompt-text">Как получить?</span>
-														<div class="prompt-wrap">
-															<i class="prompt-close"></i>
-															Для отправки приза мы свяжемся <br>с тобой по электронной почте, указанной в Личном кабинете.
-														</div>
-													</div>
-												</div>
-												<div class="myPrizes-slide swiper-slide">
-													<div class="myPrizes-img"><img src="img/prize/img-5-min.png" alt=""></div>
-													<span class="myPrizes-name">поездка на матч<br>в великобританию</span>
-													<div class="prompt">
-														<span class="prompt-text">Как получить?</span>
-														<div class="prompt-wrap">
-															<i class="prompt-close"></i>
-															Для отправки приза мы свяжемся <br>с тобой по электронной почте, указанной в Личном кабинете.
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-button-next"></div>
-										<div class="swiper-button-prev"></div>
-									</div>
-								</div><!-- col -->
-								<div class="myPrizes-col myPrizes-col-second">
-									<div class="myPrizes-wrap">
-										<h3 class="myPrizes-title">мои розыгрыши</h3>
-										<div class="myPrizes-slider swiper-container">
-											<div class="swiper-wrapper">
-												<div class="myPrizes-slide swiper-slide">
-													<span class="myPrizes-date">ХХ.ХХ.2021</span>
-													<div class="myPrizes-img"><img src="img/prize/img-3-min.png" alt=""></div>
-													<span class="myPrizes-name">подписка на окко.спорт номиналом 4000 рублей</span>
-													<span class="myPrizes-text">поздравляем с выигрышем!</span>
-												</div>
-												<div class="myPrizes-slide swiper-slide">
-													<span class="myPrizes-date">ХХ.ХХ.2021</span>
-													<div class="myPrizes-img"><img src="img/prize/img-4-min.png" alt=""></div>
-													<span class="myPrizes-name">playstation 5</span>
-													<span class="myPrizes-text">поздравляем с выигрышем!</span>
-												</div>
-												<div class="myPrizes-slide swiper-slide">
-													<span class="myPrizes-date">ХХ.ХХ.2021</span>
-													<div class="myPrizes-img"><img src="img/prize/img-5-min.png" alt=""></div>
-													<span class="myPrizes-name">поездка на матч<br>в великобританию</span>
-													<span class="myPrizes-text">поздравляем с выигрышем!</span>
-												</div>
-												<div class="myPrizes-slide swiper-slide losing">
-													<span class="myPrizes-date">ХХ.ХХ.2021</span>
-													<div class="myPrizes-img"><img src="img/prize/img-3-min.png" alt=""></div>
-													<span class="myPrizes-name">подписка на окко.спорт номиналом 4000 рублей</span>
-													<span class="myPrizes-text">ты не выиграл</span>
-												</div>
-												<div class="myPrizes-slide swiper-slide losing">
-													<span class="myPrizes-date">ХХ.ХХ.2021</span>
-													<div class="myPrizes-img"><img src="img/prize/img-4-min.png" alt=""></div>
-													<span class="myPrizes-name">playstation 5</span>
-													<span class="myPrizes-text">ты не выиграл</span>
-												</div>
-												<div class="myPrizes-slide swiper-slide losing">
-													<span class="myPrizes-date">ХХ.ХХ.2021</span>
-													<div class="myPrizes-img"><img src="img/prize/img-5-min.png" alt=""></div>
-													<span class="myPrizes-name">поездка на матч<br>в великобританию</span>
-													<span class="myPrizes-text">ты не выиграл</span>
-												</div>
-											</div>
-										</div>
-										<div class="swiper-button-next"></div>
-										<div class="swiper-button-prev"></div>
-									</div>
-								</div><!-- col -->
+							<div class="myPrizes-block">
+								<span class="myPrizes-block__title">первый розыгрыш призов пройдёт хх.хх.2021. <br><br>Желаем удачи!</span>
 							</div>
 						</div>
 					</div><!-- tab -->
@@ -547,6 +371,19 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+	<div class="modal-overlay"></div>
+	<!-- modal-soon -->
+	<div id="modal-soon" class="modal modal-soon">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<h3 class="modal-title">Ближайший матч <span>состоится 16 октября.</span> Прогноз можно будет сделать совсем скоро, мы обязательно уведомим тебя! Следи за новостями!</h3>
+				<div class="modal-bottom">
+					<a href="#" class="primary-btn primary-btn-yellow primary-btn-big modal-cross">понятно</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script defer src="js/scripts.min.js"></script>
 	<script defer src="js/common.js"></script>
 </body>
