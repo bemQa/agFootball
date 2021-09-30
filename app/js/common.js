@@ -37,10 +37,26 @@ $(document).ready(function(){
   //menu scroll
   $('.scroll-link').on('click', function(e){
     e.preventDefault();
+
+    $('.header').removeClass('header-active');
+    $('html,body').removeClass('scroll-hidden');
+
     var itemId = $(this).attr('href'),
         blockTop = $(itemId).offset().top;
     $('html, body').animate({scrollTop : blockTop - 20},500);
   });
+
+  if($('.header-list').length){
+    $('.header-list li a').each(function () {
+      $(this).on("click", function(){
+        var attr = $(this).attr('href');
+        if(!$(this).hasClass('scroll-link') || !$(this).hasClass('link-to')){
+          if(!$(this).is('[target]'))
+            $(location).attr('href', attr);
+        }
+      });
+    });
+  }
 
   if($('.tournament-slider').length){
     var mySwiper = new Swiper('.tournament-slider', {

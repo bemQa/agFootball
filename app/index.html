@@ -24,11 +24,11 @@
 			<div class="header-wrap">
 				<div class="header-close"></div>
 				<ul class="header-list">
-					<li><a href="#" class="active">Главная</a></li>
+					<li><a href="index.html" class="active">Главная</a></li>
 					<li><a href="#prizes" class="scroll-link">Призы</a></li>
-					<li><a href="#">Победители</a></li>
-					<li><a href="#">Правила</a></li>
-					<li><a href="#">FAQ</a></li>
+					<li><a href="winners.html">Победители</a></li>
+					<li><a href="#" class="link-to">Правила</a></li>
+					<li><a href="faq.html">FAQ</a></li>
 				</ul>
 				<a href="modal-login" class="header-link modal-btn">Личный кабинет</a>
 			</div>
@@ -45,7 +45,7 @@
 			<div class="main-wrap">
 				<div class="main-img main-img-1"><img src="img/main-img-1-min.png" alt=""></div>
 				<div class="main-button">
-					<a href="#" class="primary-btn">Зарегистрировать код</a>
+					<a href="modal-checkIn" class="primary-btn modal-btn">Зарегистрировать код</a>
 				</div>
 			</div>
 			<div class="main-img main-img-2"><img src="img/main-img-2-min.png" alt=""></div>
@@ -106,7 +106,7 @@
 		<div class="wrapper">
 			<div class="production-img"><img src="img/product-min.png" alt=""></div>
 			<div class="production-button">
-				<a href="modal-tournament" class="primary-btn primary-btn-big modal-btn"><b>купить продукт в «пятёрочке»</b><span>купить в «пятёрочке»</span></a>
+				<a href="#" class="primary-btn primary-btn-big"><b>купить продукт в «пятёрочке»</b><span>купить в «пятёрочке»</span></a>
 			</div>
 		</div>
 	</section>
@@ -185,6 +185,66 @@
 	</footer>
 	<!-- end footer -->
 	<div class="modal-overlay"></div>
+	<!-- modal-checkIn -->
+	<div id="modal-checkIn" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">Регистрация</span>
+					<div class="input-text">Неправильный логин или пароль</div>
+					<div class="input-block">
+	          <input type="Text" name="FullName" placeholder="Имя" required>
+	        </div>
+	        <div class="input-block">
+	          <input type="Text" name="lName" placeholder="Отчество" required>
+	        </div>
+	        <div class="input-block">
+	          <input type="Text" name="fName" placeholder="Фамилия" required>
+	        </div>
+	        <div class="input-block">
+	          <input type="Text" name="PhoneNumber" placeholder="Мобильный телефон" required class="phone-mask">
+	        </div>
+	        <div class="input-block">
+	          <input type="Text" name="email" placeholder="E-mail" required>
+	        </div>
+	        <div class="input-block">
+	        	<div class="input-wrap">
+	          	<input type="Text" name="text" placeholder="Промо-код от друга" required>
+	          	<div class="prompt">
+	          		<div class="prompt-top"><i class="hb-ico prompt-ico prompt-ico-2"></i></div>
+	          		<div class="prompt-wrap">
+	          			<i class="hb-ico close-ico"></i>
+	          			Если твой друг уже участвует в нашей акции и поделился<br>с тобой промо-кодом , вводи его сюда. После того, как ты<br>зарегистрируешь свой первый код с пачки, вы оба получите<br>дополнительный шанс на открытие 1 ячейки шоколадной плитки.
+	          		</div>
+	          	</div>
+	          </div>
+	        </div>
+	        <div class="modal-checkbox">
+	          <div class="checkbox">
+	            <input type="checkbox" name="check-rules" required>
+	            <i class="checkbox-ico"></i>
+	            <p>Я согласен с <a href="#">Правилами акции</a></p>
+	          </div>
+	          <div class="checkbox">
+	            <input type="checkbox" name="Subscribe">
+	            <i class="checkbox-ico"></i>
+	            <p>Я согласен получать рассылки по акциям Mondelez</p>
+	          </div>
+	          <div class="checkbox">
+	            <input type="checkbox" name="check-data" required>
+	            <i class="checkbox-ico"></i>
+	            <p>Я согласен на обработку моих <a href="#">персональных данных</a></p>
+	          </div>
+	        </div>
+	        <div class="modal-bottom">
+	          <button class="primary-btn primary-btn-yellow primary-btn-big disabled">отправить</button>
+	        	<a href="modal-login" class="modal-link modal-btn">Авторизация</a>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
 	<!-- modal-login -->
 	<div id="modal-login" class="modal">
 		<div class="modal-wrap">
@@ -205,6 +265,170 @@
 	        <div class="modal-bottom">
 	        	<button class="primary-btn primary-btn-yellow primary-btn-big disabled">войти</button>
 	        	<a href="modal-checkIn" class="modal-link modal-btn">Регистрация</a>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-forgot -->
+	<div id="modal-forgot" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">Сброс пароля</span>
+					<p class="modal-text">Укажи почту, с которой ты регистрировался на сайте</p>
+					<div class="input-text">Неправильный логин или пароль</div>
+	        <div class="input-block">
+	          <input type="Text" name="email" placeholder="E-mail" required>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big disabled">отправить</button>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-message -->
+	<div id="modal-message" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<div class="modal-block">
+					<span class="modal-title">восстановление пароля</span>
+					<span class="modal-text">Новый пароль выслан на указанный адрес электронной почты</span>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big">войти</button>
+	        </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal-settingPassword -->
+	<div id="modal-settingPassword" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">Установка пароля</span>
+					<div class="input-text">Неправильный пароль</div>
+	        <div class="input-block">
+	          <input type="password" name="password" placeholder="Пароль" required>
+	        </div>
+	        <div class="input-block">
+	          <input type="password" name="password" placeholder="Подтверди пароль" required>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big disabled">войти</button>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-numberConfirmation -->
+	<div id="modal-numberConfirmation" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">Подтверждение номера</span>
+					<div class="input-text">Номер неправильный</div>
+					<p class="modal-text">Введи последние 4 цифры номера, с которого был звонок на номер: +7 999 999 99 99</p>
+					<div class="modal-numbers">
+						<div>
+							<input type="Text" name="text">
+						</div>
+						<div>
+							<input type="Text" name="text">
+						</div>
+						<div>
+							<input type="Text" name="text">
+						</div>
+						<div>
+							<input type="Text" name="text">
+						</div>
+					</div>
+					<!--<p class="modal-timer">Сделать звонок повторно через 56</p>-->
+					<div class="modal-center">
+						<a href="#" class="modal-link">Сделать звонок повторно</a>
+					</div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big disabled">отправить</button>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-scores -->
+	<div id="modal-scores" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">не хватает<br>баллов</span>
+					<span class="modal-text">Для того, чтобы сделать прогноз, зарегистрируй новый код</span>
+					<div class="input-text">Сопроводительный текст, почему код не принят</div>
+					<div class="input-block">
+	          <input type="Text" name="email" placeholder="Код с упаковки" required>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big">зарегистрировать</button>
+	        </div>
+          <div class="prompt prompt-text">
+          	<div class="prompt-top"><span class="modal-link">Где найти код?</span></div>
+          	<div class="prompt-wrap">Код располагается на внутренней стороне упаковки, и состоит из 9 символов (цифр и заглавных латинских букв). Обрати внимание, что коды присутствуют только на упаковках с коммуникацией об акции.</div>
+          </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-code -->
+	<div id="modal-code" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">зарегистрировать<br>новый код</span>
+					<div class="input-text">Сопроводительный текст, почему код не принят</div>
+					<div class="input-block">
+	          <input type="Text" name="email" placeholder="Код с упаковки" required>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big">зарегистрировать</button>
+	        </div>
+          <div class="prompt prompt-text">
+          	<div class="prompt-top"><span class="modal-link">Где найти код?</span></div>
+          	<div class="prompt-wrap">Код располагается на внутренней стороне упаковки, и состоит из 9 символов (цифр и заглавных латинских букв). Обрати внимание, что коды присутствуют только на упаковках с коммуникацией об акции.</div>
+          </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-code -->
+	<div id="modal-code2" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<span class="modal-title">спасибо! <br>код принят</span>
+				<div class="modal-bottom">
+					<a href="#" class="primary-btn primary-btn-yellow primary-btn-big fancybox-close">понятно</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal-number -->
+	<div id="modal-number" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">добавить номер <br>«выручай-карты»</span>
+					<div class="input-text">Сопроводительный текст, почему код не принят</div>
+					<div class="input-block">
+	          <input type="Text" name="email" placeholder="Номер" required>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big">отправить</button>
 	        </div>
 				</form>
 			</div>
@@ -477,6 +701,18 @@
 							</div><!-- slide -->
 						</div>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal-soon -->
+	<div id="modal-soon" class="modal modal-soon">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<h3 class="modal-title">Ближайший матч <span>состоится 16 октября.</span> Прогноз можно будет сделать совсем скоро, мы обязательно уведомим тебя! Следи за новостями!</h3>
+				<div class="modal-bottom">
+					<a href="#" class="primary-btn primary-btn-yellow primary-btn-big modal-cross">понятно</a>
 				</div>
 			</div>
 		</div>

@@ -24,13 +24,13 @@
 			<div class="header-wrap">
 				<div class="header-close"></div>
 				<ul class="header-list">
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">Призы</a></li>
-					<li><a href="#">Продукт</a></li>
-					<li><a href="#">Турнирная таблица</a></li>
-					<li><a href="#">FAQ</a></li>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="index.html#prizes">Призы</a></li>
+					<li><a href="winners.html">Победители</a></li>
+					<li><a href="#" class="link-to">Правила</a></li>
+					<li><a href="faq.html">FAQ</a></li>
 				</ul>
-				<a href="#" class="header-link">Личный кабинет</a>
+				<a href="modal-login" class="header-link modal-btn">Личный кабинет</a>
 			</div>
 			<div class="header-bar"></div>
 		</div>
@@ -112,6 +112,539 @@
 		</div>
 	</footer>
 	<!-- end footer -->
+	<div class="modal-overlay"></div>
+	<!-- modal-checkIn -->
+	<div id="modal-checkIn" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">Регистрация</span>
+					<div class="input-text">Неправильный логин или пароль</div>
+					<div class="input-block">
+	          <input type="Text" name="FullName" placeholder="Имя" required>
+	        </div>
+	        <div class="input-block">
+	          <input type="Text" name="lName" placeholder="Отчество" required>
+	        </div>
+	        <div class="input-block">
+	          <input type="Text" name="fName" placeholder="Фамилия" required>
+	        </div>
+	        <div class="input-block">
+	          <input type="Text" name="PhoneNumber" placeholder="Мобильный телефон" required class="phone-mask">
+	        </div>
+	        <div class="input-block">
+	          <input type="Text" name="email" placeholder="E-mail" required>
+	        </div>
+	        <div class="input-block">
+	        	<div class="input-wrap">
+	          	<input type="Text" name="text" placeholder="Промо-код от друга" required>
+	          	<div class="prompt">
+	          		<div class="prompt-top"><i class="hb-ico prompt-ico prompt-ico-2"></i></div>
+	          		<div class="prompt-wrap">
+	          			<i class="hb-ico close-ico"></i>
+	          			Если твой друг уже участвует в нашей акции и поделился<br>с тобой промо-кодом , вводи его сюда. После того, как ты<br>зарегистрируешь свой первый код с пачки, вы оба получите<br>дополнительный шанс на открытие 1 ячейки шоколадной плитки.
+	          		</div>
+	          	</div>
+	          </div>
+	        </div>
+	        <div class="modal-checkbox">
+	          <div class="checkbox">
+	            <input type="checkbox" name="check-rules" required>
+	            <i class="checkbox-ico"></i>
+	            <p>Я согласен с <a href="#">Правилами акции</a></p>
+	          </div>
+	          <div class="checkbox">
+	            <input type="checkbox" name="Subscribe">
+	            <i class="checkbox-ico"></i>
+	            <p>Я согласен получать рассылки по акциям Mondelez</p>
+	          </div>
+	          <div class="checkbox">
+	            <input type="checkbox" name="check-data" required>
+	            <i class="checkbox-ico"></i>
+	            <p>Я согласен на обработку моих <a href="#">персональных данных</a></p>
+	          </div>
+	        </div>
+	        <div class="modal-bottom">
+	          <button class="primary-btn primary-btn-yellow primary-btn-big disabled">отправить</button>
+	        	<a href="modal-login" class="modal-link modal-btn">Авторизация</a>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-login -->
+	<div id="modal-login" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">Авторизация</span>
+					<div class="input-text">Неправильный логин или пароль</div>
+	        <div class="input-block">
+	          <input type="Text" name="PhoneNumber" placeholder="Твой телефон" required class="phone-mask">
+	        </div>
+	        <div class="input-block">
+	          <div class="input-wrap">
+	            <input type="password" name="password" placeholder="Твой пароль" required>
+	            <a href="modal-forgot" class="input-forgot modal-btn">Забыли пароль?</a>
+	          </div>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big disabled">войти</button>
+	        	<a href="modal-checkIn" class="modal-link modal-btn">Регистрация</a>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-forgot -->
+	<div id="modal-forgot" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">Сброс пароля</span>
+					<p class="modal-text">Укажи почту, с которой ты регистрировался на сайте</p>
+					<div class="input-text">Неправильный логин или пароль</div>
+	        <div class="input-block">
+	          <input type="Text" name="email" placeholder="E-mail" required>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big disabled">отправить</button>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-message -->
+	<div id="modal-message" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<div class="modal-block">
+					<span class="modal-title">восстановление пароля</span>
+					<span class="modal-text">Новый пароль выслан на указанный адрес электронной почты</span>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big">войти</button>
+	        </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal-settingPassword -->
+	<div id="modal-settingPassword" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">Установка пароля</span>
+					<div class="input-text">Неправильный пароль</div>
+	        <div class="input-block">
+	          <input type="password" name="password" placeholder="Пароль" required>
+	        </div>
+	        <div class="input-block">
+	          <input type="password" name="password" placeholder="Подтверди пароль" required>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big disabled">войти</button>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-numberConfirmation -->
+	<div id="modal-numberConfirmation" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">Подтверждение номера</span>
+					<div class="input-text">Номер неправильный</div>
+					<p class="modal-text">Введи последние 4 цифры номера, с которого был звонок на номер: +7 999 999 99 99</p>
+					<div class="modal-numbers">
+						<div>
+							<input type="Text" name="text">
+						</div>
+						<div>
+							<input type="Text" name="text">
+						</div>
+						<div>
+							<input type="Text" name="text">
+						</div>
+						<div>
+							<input type="Text" name="text">
+						</div>
+					</div>
+					<!--<p class="modal-timer">Сделать звонок повторно через 56</p>-->
+					<div class="modal-center">
+						<a href="#" class="modal-link">Сделать звонок повторно</a>
+					</div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big disabled">отправить</button>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-scores -->
+	<div id="modal-scores" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">не хватает<br>баллов</span>
+					<span class="modal-text">Для того, чтобы сделать прогноз, зарегистрируй новый код</span>
+					<div class="input-text">Сопроводительный текст, почему код не принят</div>
+					<div class="input-block">
+	          <input type="Text" name="email" placeholder="Код с упаковки" required>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big">зарегистрировать</button>
+	        </div>
+          <div class="prompt prompt-text">
+          	<div class="prompt-top"><span class="modal-link">Где найти код?</span></div>
+          	<div class="prompt-wrap">Код располагается на внутренней стороне упаковки, и состоит из 9 символов (цифр и заглавных латинских букв). Обрати внимание, что коды присутствуют только на упаковках с коммуникацией об акции.</div>
+          </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-code -->
+	<div id="modal-code" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">зарегистрировать<br>новый код</span>
+					<div class="input-text">Сопроводительный текст, почему код не принят</div>
+					<div class="input-block">
+	          <input type="Text" name="email" placeholder="Код с упаковки" required>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big">зарегистрировать</button>
+	        </div>
+          <div class="prompt prompt-text">
+          	<div class="prompt-top"><span class="modal-link">Где найти код?</span></div>
+          	<div class="prompt-wrap">Код располагается на внутренней стороне упаковки, и состоит из 9 символов (цифр и заглавных латинских букв). Обрати внимание, что коды присутствуют только на упаковках с коммуникацией об акции.</div>
+          </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-code -->
+	<div id="modal-code2" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<span class="modal-title">спасибо! <br>код принят</span>
+				<div class="modal-bottom">
+					<a href="#" class="primary-btn primary-btn-yellow primary-btn-big fancybox-close">понятно</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal-number -->
+	<div id="modal-number" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">добавить номер <br>«выручай-карты»</span>
+					<div class="input-text">Сопроводительный текст, почему код не принят</div>
+					<div class="input-block">
+	          <input type="Text" name="email" placeholder="Номер" required>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big">отправить</button>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-tournament -->
+	<div id="modal-tournament" class="modal modal-tournament">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<div class="tournament-wrap">
+					<div class="tournament-bg"><img src="img/winners-bg-min.png" alt=""></div>
+					<div class="tournament-slider swiper-container">
+						<div class="tournament-arrow">
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<div class="swiper-wrapper">
+							<div class="tournament-slide swiper-slide">
+								<div class="tournament-head">
+									<div class="tournament-link" data-slide="3"><img src="img/tournament/icon-3-min.png" alt=""></div>
+									<div class="tournament-ico"><img src="img/tournament/ico-1.svg" alt=""></div>
+									<div class="tournament-link" data-slide="2"><img src="img/tournament/icon-2-min.png" alt=""></div>
+								</div>
+								<div class="tournament-content">
+									<h3 class="tournament-title">ливерпуль</h3>
+									<div class="tournament-table">
+										<div class="tournament-row">
+											<div class="col-1">7</div>
+											<div class="col-2">
+												03.10.2021
+												<span class="tournament-mob">18:30</span>
+											</div>
+											<div class="col-3">18:30</div>
+											<div class="col-4">Ливерпуль – Манчестер Сити </div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">8</div>
+											<div class="col-2">
+												16.10.2021
+												<span class="tournament-mob">14:30</span>
+											</div>
+											<div class="col-3">14:30</div>
+											<div class="col-4">Уотфорд - Ливерпуль</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">9</div>
+											<div class="col-2">
+												24.10.2021
+												<span class="tournament-mob">18:30</span>
+											</div>
+											<div class="col-3">18:30</div>
+											<div class="col-4">Манчестер Юнайтед - Ливерпуль</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">10</div>
+											<div class="col-2">
+												30.10.2021
+												<span class="tournament-mob">17:00</span>
+											</div>
+											<div class="col-3">17:00</div>
+											<div class="col-4">Ливерпуль – Брайтон энд Хоув Альбион</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">11</div>
+											<div class="col-2">
+												06.11.2021
+												<span class="tournament-mob">18:00</span>
+											</div>
+											<div class="col-3">18:00</div>
+											<div class="col-4">Вест Хэм Юнайтед - Ливерпуль</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">12</div>
+											<div class="col-2">
+												20.11.2021
+												<span class="tournament-mob">18:00</span>
+											</div>
+											<div class="col-3">18:00</div>
+											<div class="col-4">Ливерпуль - арсенал</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">13</div>
+											<div class="col-2">
+												27.11.2021
+												<span class="tournament-mob">18:00</span>
+											</div>
+											<div class="col-3">18:00</div>
+											<div class="col-4">Ливерпуль - Саутгемптон</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">14</div>
+											<div class="col-2">
+												30.11.2021
+												<span class="tournament-mob">22:45</span>
+											</div>
+											<div class="col-3">22:45</div>
+											<div class="col-4">Эвертон - Ливерпуль</div>
+										</div><!-- row -->
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="tournament-slide swiper-slide">
+								<div class="tournament-head">
+									<div class="tournament-link" data-slide="1"><img src="img/tournament/icon-1-min.png" alt=""></div>
+									<div class="tournament-ico"><img src="img/tournament/ico-2.svg" alt=""></div>
+									<div class="tournament-link" data-slide="3"><img src="img/tournament/icon-3-min.png" alt=""></div>
+								</div>
+								<div class="tournament-content">
+									<h3 class="tournament-title">Манчестер Юнайтед</h3>
+									<div class="tournament-table">
+										<div class="tournament-row">
+											<div class="col-1">7</div>
+											<div class="col-2">
+												02.10.2021
+												<span class="tournament-mob">14:30</span>
+											</div>
+											<div class="col-3">14:30</div>
+											<div class="col-4">Манчестер Юнайтед - Эвертон</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">8</div>
+											<div class="col-2">
+												16.10.2021
+												<span class="tournament-mob">17:00</span>
+											</div>
+											<div class="col-3">17:00</div>
+											<div class="col-4">Лестер Сити – Манчестер Юнайтед</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">9</div>
+											<div class="col-2">
+												24.10.2021
+												<span class="tournament-mob">18:30</span>
+											</div>
+											<div class="col-3">18:30</div>
+											<div class="col-4">Манчестер Юнайтед - Ливерпуль</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">10</div>
+											<div class="col-2">
+												30.10.2021
+												<span class="tournament-mob">19:30</span>
+											</div>
+											<div class="col-3">19:30</div>
+											<div class="col-4">Тоттенхэм Хотспур – Манчестер Юнайтед</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">11</div>
+											<div class="col-2">
+												06.11.2021
+												<span class="tournament-mob">18:00</span>
+											</div>
+											<div class="col-3">18:00</div>
+											<div class="col-4">Манчестер Юнайтед – Манчестер Сити</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">12</div>
+											<div class="col-2">
+												20.11.2021
+												<span class="tournament-mob">18:00</span>
+											</div>
+											<div class="col-3">18:00</div>
+											<div class="col-4">Уотфорд – Манчестер Юнайтед</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">13</div>
+											<div class="col-2">
+												27.11.2021
+												<span class="tournament-mob">18:00</span>
+											</div>
+											<div class="col-3">18:00</div>
+											<div class="col-4">Челси – Манчестер Юнайтед</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">14</div>
+											<div class="col-2">
+												30.11.2021
+												<span class="tournament-mob">23:00</span>
+											</div>
+											<div class="col-3">23:00</div>
+											<div class="col-4">Манчестер Юнайтед - Арсенал</div>
+										</div><!-- row -->
+									</div>
+								</div>
+							</div><!-- slide -->
+							<div class="tournament-slide swiper-slide">
+								<div class="tournament-head">
+									<div class="tournament-link" data-slide="2"><img src="img/tournament/icon-2-min.png" alt=""></div>
+									<div class="tournament-ico"><img src="img/tournament/ico-3.svg" alt=""></div>
+									<div class="tournament-link" data-slide="1"><img src="img/tournament/icon-1-min.png" alt=""></div>
+								</div>
+								<div class="tournament-content">
+									<h3 class="tournament-title">челси</h3>
+									<div class="tournament-table">
+										<div class="tournament-row">
+											<div class="col-1">7</div>
+											<div class="col-2">
+												02.10.2021
+												<span class="tournament-mob">17:00</span>
+											</div>
+											<div class="col-3">17:00</div>
+											<div class="col-4">Челси - Саутгемптон</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">8</div>
+											<div class="col-2">
+												16.10.2021
+												<span class="tournament-mob">19:30</span>
+											</div>
+											<div class="col-3">19:30</div>
+											<div class="col-4">Брентфорд - Челси</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">9</div>
+											<div class="col-2">
+												23.10.2021
+												<span class="tournament-mob">14:30</span>
+											</div>
+											<div class="col-3">14:30</div>
+											<div class="col-4">Челси – Норвич Сити</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">10</div>
+											<div class="col-2">
+												30.10.2021
+												<span class="tournament-mob">17:00</span>
+											</div>
+											<div class="col-3">17:00</div>
+											<div class="col-4">Ньюкасл Юнайтед - Челси</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">11</div>
+											<div class="col-2">
+												06.11.2021
+												<span class="tournament-mob">18:00</span>
+											</div>
+											<div class="col-3">18:00</div>
+											<div class="col-4">Челси - Бёрнли</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">12</div>
+											<div class="col-2">
+												20.11.2021
+												<span class="tournament-mob">18:00</span>
+											</div>
+											<div class="col-3">18:00</div>
+											<div class="col-4">Лестер Сити - Челси</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">13</div>
+											<div class="col-2">
+												27.11.2021
+												<span class="tournament-mob">18:00</span>
+											</div>
+											<div class="col-3">18:00</div>
+											<div class="col-4">Челси – Манчестер Юнайтед</div>
+										</div><!-- row -->
+										<div class="tournament-row">
+											<div class="col-1">14</div>
+											<div class="col-2">
+												30.11.2021
+												<span class="tournament-mob">22:45</span>
+											</div>
+											<div class="col-3">22:45</div>
+											<div class="col-4">Уотфорд - Челси</div>
+										</div><!-- row -->
+									</div>
+								</div>
+							</div><!-- slide -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal-soon -->
+	<div id="modal-soon" class="modal modal-soon">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<h3 class="modal-title">Ближайший матч <span>состоится 16 октября.</span> Прогноз можно будет сделать совсем скоро, мы обязательно уведомим тебя! Следи за новостями!</h3>
+				<div class="modal-bottom">
+					<a href="#" class="primary-btn primary-btn-yellow primary-btn-big modal-cross">понятно</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script defer src="js/scripts.min.js"></script>
 	<script defer src="js/common.js"></script>
 </body>
