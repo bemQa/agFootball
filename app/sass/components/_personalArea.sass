@@ -214,14 +214,20 @@
 		text-decoration: underline
 		&:hover
 			text-decoration: none
+		&.disabled
+			opacity: 0.5
+			cursor: not-allowed
 
 .forecasts
 	&-row
+		min-height: 48px
 		max-width: 100%
+		padding: 0 0 10px
 		.forecasts-col-1
 			width: 22.5%
 		.forecasts-col-2
 			width: 24%
+			padding-right: 25px
 		.forecasts-col-3
 			min-width: 160px
 			width: 160px
@@ -233,6 +239,14 @@
 			align-items: flex-start
 			min-width: 106px
 			width: 106px
+		.prompt-wrap
+			max-width: 224px
+			font-family: $OfficinaSansBookC
+			font-weight: normal
+			text-transform: uppercase
+		.prompt
+			display: inline-block
+
 
 .myPrizes
 	max-width: 820px
@@ -373,6 +387,7 @@
 			overflow-y: hidden
 			overflow-x: auto
 			white-space: nowrap
+			justify-content: flex-start
 			li
 				padding: 0 5px
 	.table
@@ -454,9 +469,6 @@
 			margin-bottom: 30px
 
 @media only screen and (max-width : 540px)
-	.personalArea
-		&-tabs
-			//justify-content: flex-start
 	.forecasts,.myCodes
 		.prompt-wrap
 			right: -50px

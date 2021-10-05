@@ -170,13 +170,22 @@
 	.prompt-text.prompt .modal-link
 		opacity: 1
 	&.modal-tournament
-		padding-top: 75px
+		padding: 120px 0 30px
+		.modal-close
+			top: -45px
 		.tournament
+			&-bg
+				top: 0
 			&-wrap
 				margin-top: 0
-				padding-bottom: 78px
+				padding-bottom: 0
 				&::after
-					bottom: 0
+					display: none
+			&-content
+				padding: 64px 20px 70px
+				background-image: url(../img/tournament-bg-modal.svg)
+		.mCSB_container
+			margin: 0
 		.modal
 			&-content
 				max-width: 100%
@@ -234,11 +243,22 @@
 @media only screen and (max-width : 1420px)
 	.modal
 		&.modal-tournament
-			padding-top: 20px
+			padding-top: 50px
+			.modal-close
+				top: -16px
+
+@media only screen and (max-width : 768px)
+	.modal
+		&.modal-tournament
+			.tournament
+				&-wrap
+					padding-bottom: 0
+				&-content
+					padding: 56px 15px 67px
 		
 @media only screen and (max-width : 540px)
 	.modal
 		&.modal-tournament
 			.tournament
-				&-wrap
-					padding-bottom: 50px
+				&-content
+					background-image: url(../img/tournament-bg-big-mob.svg)

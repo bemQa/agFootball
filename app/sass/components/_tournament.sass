@@ -17,6 +17,7 @@
 		top: 30px
 		left: 50%
 		transform: translate(-50%,0)
+		z-index: 6
 		img,svg
 			display: block
 			max-width: 920px
@@ -25,8 +26,7 @@
 	&-wrap
 		max-width: 633px
 		width: 100%
-		padding-top: 42px
-		margin: -250px auto 0
+		margin: -210px auto 0
 		position: relative
 		&::after
 			content: ''
@@ -41,114 +41,54 @@
 			background-position: center
 			background-size: contain
 			z-index: 10
-	&-slide
-		padding-top: 41px
-		position: relative
-		visibility: hidden
-		&.swiper-slide-active
-			visibility: visible
-	&-arrow
-		max-width: 441px
-		width: 100%
-		height: 32px
-		position: absolute
-		top: 0
-		left: 50%
-		transform: translate(-50%,0)
-		z-index: 200
-		.swiper-button-prev,.swiper-button-next
-			width: 34px
-			height: 34px
-			top: 57px
-			margin: 0
-			transform: none
-			border-radius: 50%
-			box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
-		.swiper-button-prev
-			left: 112px
-			background-image: url("data:image/svg+xml,%3Csvg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='17' cy='17' r='17' fill='white'/%3E%3Cpath d='M20 10L12 17' stroke='%239F0C12' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 17L20 24' stroke='%239F0C12' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
-		.swiper-button-next
-			right: 112px
-			background-image: url("data:image/svg+xml,%3Csvg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='17' cy='17' r='17' transform='rotate(180 17 17)' fill='white'/%3E%3Cpath d='M14 24L22 17' stroke='%239F0C12' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M22 17L14 10' stroke='%239F0C12' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
-	&-head
-		max-width: 441px
-		width: 100%
-		position: absolute
-		top: 0
-		left: 50%
-		transform: translate(-50%,0)
-		display: flex
-		flex-flow: row nowrap
-		align-items: center
-		justify-content: space-between
-		z-index: 10
-	&-link,&-ico
-		img,svg
-			display: block
-			image-rendering: optimizequality
-			image-rendering: -webkit-optimize-contrast
-	&-link
-		display: block
-		min-width: 98px
-		width: 98px
-		margin-top: 31px
-		cursor: pointer
-		z-index: 200
-	&-ico
-		display: flex
-		align-items: center
-		justify-content: center
-		width: 128px
-		min-width: 128px
-		height: 128px
-		background-color: #fff
-		box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.35)
-		border: 4px solid #F70000
-		border-radius: 50%
 	&-content
-		padding: 98px 27px 53px 36px
 		position: relative
-		background-image: url(../img/tournament/bg-1.svg)
+		z-index: 8
+		background-image: url(../img/tournament-bg-big.svg)
 		background-repeat: no-repeat
 		background-position: center
 		background-size: 100% 100%
-	&-title
-		display: block
-		font-family: $OfficinaSansBlackC
-		font-size: 21px
-		line-height: 26px
-		font-weight: 900
-		text-transform: uppercase
-		color: #9F0C12
-		text-align: center
-		margin: 0 0 22px
-	&-row
-		display: flex
-		flex-flow: row nowrap
-		font-family: $OfficinaSansBoldC
-		font-size: 16px
-		line-height: 19px
-		font-weight: bold
-		text-transform: uppercase
-		color: #9F0C12
-		padding: 19.5px 0
-		border-bottom: 1px solid rgba(159, 12, 18, 0.5)
-		border-radius: 3px
-		.col-1
-			min-width: 40px
-			width: 40px
-		.col-2
-			min-width: 120px
-			width: 120px
-		.col-3
-			min-width: 100px
-			width: 100px
-		.col-4
-			width: 100%
-		&:last-child
-			border: none
-	&-mob
-		display: none
+		padding: 40px 20px 65px
+		p
+			font-size: 12px
+			line-height: 1
+			color: #9F0C12
+			opacity: 0.5
+			text-align: center
+			margin: -18px 0 20px
+	&-block
+		max-width: 433px
+		margin: 0 auto
+		&__title
+			display: block
+			font-family: $OfficinaSansBlackC
+			font-size: 21px
+			line-height: 26px
+			font-weight: 900
+			text-transform: uppercase
+			color: #9F0C12
+			margin: 0 0 20px
+			text-align: center
+		ul
+			padding-bottom: 16px
+			li
+				display: flex
+				flex-flow: row nowrap
+				font-family: $OfficinaSansBoldC
+				font-size: 16px
+				line-height: 19px
+				font-weight: bold
+				text-transform: uppercase
+				color: #9F0C12
+				border-top: 1px solid rgba(159, 12, 18, 0.5)
+				padding: 20px 0
+				span
+					display: block
+					min-width: 100px
+					width: 100px
+					padding-right: 20px
+	&-scroll
+		max-height: 568px
 
 @media only screen and (max-width : 920px)
 	.tournament
@@ -156,7 +96,7 @@
 			&-top
 				padding-top: 140px
 		&-wrap
-			margin-top: -210px
+			margin-top: -180px
 
 @media only screen and (max-width : 768px)
 	.tournament
@@ -169,16 +109,11 @@
 			z-index: 30
 		&-content
 			background-size: cover
-			padding: 95px 20px 40px
+			padding: 56px 15px 67px
 		&-bg
 			display: none
-		&-row
-			.col-3
-				display: none
-		&-mob
-			display: block
-		&-slide
-			padding-top: 43px
+		&-scroll
+			max-height: 100%
 		
 @media only screen and (max-width : 540px)
 	.tournament
@@ -187,34 +122,22 @@
 				width: 194px
 				height: 109px
 				bottom: -57px
-		&-slider
-			overflow: visible
-		&-head
-			min-width: 396px
-		&-arrow
-			min-width: 396px
-			top: -10px
-			.swiper-button-prev,.swiper-button-next
-				top: 53px
-			.swiper-button-prev
-				left: 85px
-			.swiper-button-next
-				right: 85px
-		&-link
-			min-width: 74px
-			width: 74px
-			height: 74px
-			margin-top: 50px
-		&-wrap
-			max-width: 320px
 		&-content
-			min-height: 881px
-			background-image: url(../img/tournament/bg-mob.svg)
-
-@media only screen and (max-width : 375px)
-	.tournament
-		&-wrap
 			max-width: 320px
-		&-content
-			min-height: 881px
-			background-image: url(../img/tournament/bg-2.svg)
+			min-height: 2796px
+			padding-bottom: 40px
+			background-image: url(../img/tournament-bg-big-mob.svg)
+			margin: 0 auto
+		&-block
+			&__title
+				max-width: 240px
+				margin: 0 auto 20px
+			ul
+				li
+					text-align: center
+					display: block
+					span
+						min-width: auto
+						width: 100%
+						display: block
+						padding: 0 0 10px

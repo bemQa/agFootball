@@ -81,6 +81,7 @@ $(document).ready(function(){
   $('.myCodes-content').mCustomScrollbar();
   $('.forecasts-content').mCustomScrollbar();
   $('.winners-content').mCustomScrollbar();
+  $('.tournament-scroll').mCustomScrollbar();
 
   //scrollbar
   function scrollbar(){

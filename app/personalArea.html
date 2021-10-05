@@ -26,7 +26,9 @@
 				<ul class="header-list">
 					<li><a href="index.html">Главная</a></li>
 					<li><a href="index.html#prizes">Призы</a></li>
+					<li><a href="products.html">Продукт</a></li>
 					<li><a href="winners.html">Победители</a></li>
+					<li><a href="tournament.html">Турнирная таблица</a></li>
 					<li><a href="#" class="link-to">Правила</a></li>
 					<li><a href="faq.html">FAQ</a></li>
 				</ul>
@@ -47,7 +49,7 @@
 					<div class="page-col page-col-1">
 						<div class="page-btn">
 							<a href="modal-soon" class="primary-btn modal-btn"><span>сделать новый прогноз</span></a>
-							<a href="#" class="page-link disabled">Посмотреть расписание матчей</a>
+							<a href="modal-tournament" class="page-link modal-btn">Посмотреть расписание матчей</a>
 						</div>
 					</div>
 					<div class="page-col page-col-2">
@@ -96,6 +98,8 @@
 					<ul class="personalArea-tabs tab-list">
 						<li><a href="#tab-1" class="active"><span><b>Мои коды</b></span></a></li>
 						<li><a href="#tab-2"><span><b>Мои призы</b></span></a></li>
+						<li><a href="#tab-3"><span><b>мои прогнозы</b></span></a></li>
+						<li><a href="#tab-4"><span><b>мои игроки</b></span></a></li>
 					</ul>
 					<div id="tab-1" class="tab tab-active">
 						<div class="myCodes">
@@ -125,7 +129,7 @@
 											<span class="myCodes-mob"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></span>
 										</div>
 										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
-										<div class="myCodes-col myCodes-col-4"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></div>
+										<div class="myCodes-col myCodes-col-4"><a href="modal-soon" class="myCodes-link modal-btn disabled">Сделать прогноз</a></div>
 									</div>
 								</div>
 								<div class="myCodes-button">
@@ -163,12 +167,12 @@
 										<div class="forecasts-col forecasts-col-3">Победа</div>
 										<div class="forecasts-col forecasts-col-4"><span class="text-yellow">2:0</span></div>
 										<div class="forecasts-col forecasts-col-5">
-											х2
+											—
 											<div class="prompt">
 												<i class="prompt-ico"></i>
 												<div class="prompt-wrap">
 													<i class="prompt-close"></i>
-													Поздравляем! это была отличная победа, но счёт ты угадал неверно. продолжай делать прогнозы и стань ближе к поездке в великобританию!
+													матч ещё не состоялся. <br>ждём результат!
 												</div>
 											</div>
 										</div>
@@ -180,11 +184,20 @@
 											<span class="forecasts-mob text-yellow">Победа</span>
 											<span class="forecasts-mob text-yellow">1:1</span>
 										</div>
-										<div class="forecasts-col forecasts-col-2">MANCHESTER UNITED</div>
+										<div class="forecasts-col forecasts-col-2">
+											MANCHESTER UNITED
+											<div class="prompt">
+												<i class="prompt-ico"></i>
+												<div class="prompt-wrap">
+													<i class="prompt-close"></i>
+													ХХ.ХХ.2021 года <br>chelsea - manchester united <br>хх:хх по московскому времени
+												</div>
+											</div>
+										</div>
 										<div class="forecasts-col forecasts-col-3"><span class="text-yellow">Ничья</span></div>
 										<div class="forecasts-col forecasts-col-4"><span class="text-yellow">1:1</span></div>
 										<div class="forecasts-col forecasts-col-5">
-											х1
+											х2
 											<div class="prompt">
 												<i class="prompt-ico"></i>
 												<div class="prompt-wrap">
@@ -205,12 +218,12 @@
 										<div class="forecasts-col forecasts-col-3">Победа</div>
 										<div class="forecasts-col forecasts-col-4"><span class="text-yellow">2:0</span></div>
 										<div class="forecasts-col forecasts-col-5">
-											х2
+											х1
 											<div class="prompt">
 												<i class="prompt-ico"></i>
 												<div class="prompt-wrap">
 													<i class="prompt-close"></i>
-													не расстраивайся.<br>Новый прогноз будет удачнее!
+													не расстраивайся. <br>Новый прогноз будет удачнее!
 												</div>
 											</div>
 										</div>
@@ -326,6 +339,8 @@
 								</div>
 							</div>
 						</div>
+					</div><!-- tab -->
+					<div id="tab-4" class="tab">
 					</div><!-- tab -->
 				</div>
 			</div>
@@ -628,264 +643,76 @@
 			<div class="modal-content">
 				<div class="tournament-wrap">
 					<div class="tournament-bg"><img src="img/winners-bg-min.png" alt=""></div>
-					<div class="tournament-slider swiper-container">
-						<div class="tournament-arrow">
-							<div class="swiper-button-next"></div>
-							<div class="swiper-button-prev"></div>
-						</div>
-						<div class="swiper-wrapper">
-							<div class="tournament-slide swiper-slide">
-								<div class="tournament-head">
-									<div class="tournament-link" data-slide="3"><img src="img/tournament/icon-3-min.png" alt=""></div>
-									<div class="tournament-ico"><img src="img/tournament/ico-1.svg" alt=""></div>
-									<div class="tournament-link" data-slide="2"><img src="img/tournament/icon-2-min.png" alt=""></div>
-								</div>
-								<div class="tournament-content">
-									<h3 class="tournament-title">ливерпуль</h3>
-									<div class="tournament-table">
-										<div class="tournament-row">
-											<div class="col-1">7</div>
-											<div class="col-2">
-												03.10.2021
-												<span class="tournament-mob">18:30</span>
-											</div>
-											<div class="col-3">18:30</div>
-											<div class="col-4">Ливерпуль – Манчестер Сити </div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">8</div>
-											<div class="col-2">
-												16.10.2021
-												<span class="tournament-mob">14:30</span>
-											</div>
-											<div class="col-3">14:30</div>
-											<div class="col-4">Уотфорд - Ливерпуль</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">9</div>
-											<div class="col-2">
-												24.10.2021
-												<span class="tournament-mob">18:30</span>
-											</div>
-											<div class="col-3">18:30</div>
-											<div class="col-4">Манчестер Юнайтед - Ливерпуль</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">10</div>
-											<div class="col-2">
-												30.10.2021
-												<span class="tournament-mob">17:00</span>
-											</div>
-											<div class="col-3">17:00</div>
-											<div class="col-4">Ливерпуль – Брайтон энд Хоув Альбион</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">11</div>
-											<div class="col-2">
-												06.11.2021
-												<span class="tournament-mob">18:00</span>
-											</div>
-											<div class="col-3">18:00</div>
-											<div class="col-4">Вест Хэм Юнайтед - Ливерпуль</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">12</div>
-											<div class="col-2">
-												20.11.2021
-												<span class="tournament-mob">18:00</span>
-											</div>
-											<div class="col-3">18:00</div>
-											<div class="col-4">Ливерпуль - арсенал</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">13</div>
-											<div class="col-2">
-												27.11.2021
-												<span class="tournament-mob">18:00</span>
-											</div>
-											<div class="col-3">18:00</div>
-											<div class="col-4">Ливерпуль - Саутгемптон</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">14</div>
-											<div class="col-2">
-												30.11.2021
-												<span class="tournament-mob">22:45</span>
-											</div>
-											<div class="col-3">22:45</div>
-											<div class="col-4">Эвертон - Ливерпуль</div>
-										</div><!-- row -->
-									</div>
-								</div>
-							</div><!-- slide -->
-							<div class="tournament-slide swiper-slide">
-								<div class="tournament-head">
-									<div class="tournament-link" data-slide="1"><img src="img/tournament/icon-1-min.png" alt=""></div>
-									<div class="tournament-ico"><img src="img/tournament/ico-2.svg" alt=""></div>
-									<div class="tournament-link" data-slide="3"><img src="img/tournament/icon-3-min.png" alt=""></div>
-								</div>
-								<div class="tournament-content">
-									<h3 class="tournament-title">Манчестер Юнайтед</h3>
-									<div class="tournament-table">
-										<div class="tournament-row">
-											<div class="col-1">7</div>
-											<div class="col-2">
-												02.10.2021
-												<span class="tournament-mob">14:30</span>
-											</div>
-											<div class="col-3">14:30</div>
-											<div class="col-4">Манчестер Юнайтед - Эвертон</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">8</div>
-											<div class="col-2">
-												16.10.2021
-												<span class="tournament-mob">17:00</span>
-											</div>
-											<div class="col-3">17:00</div>
-											<div class="col-4">Лестер Сити – Манчестер Юнайтед</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">9</div>
-											<div class="col-2">
-												24.10.2021
-												<span class="tournament-mob">18:30</span>
-											</div>
-											<div class="col-3">18:30</div>
-											<div class="col-4">Манчестер Юнайтед - Ливерпуль</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">10</div>
-											<div class="col-2">
-												30.10.2021
-												<span class="tournament-mob">19:30</span>
-											</div>
-											<div class="col-3">19:30</div>
-											<div class="col-4">Тоттенхэм Хотспур – Манчестер Юнайтед</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">11</div>
-											<div class="col-2">
-												06.11.2021
-												<span class="tournament-mob">18:00</span>
-											</div>
-											<div class="col-3">18:00</div>
-											<div class="col-4">Манчестер Юнайтед – Манчестер Сити</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">12</div>
-											<div class="col-2">
-												20.11.2021
-												<span class="tournament-mob">18:00</span>
-											</div>
-											<div class="col-3">18:00</div>
-											<div class="col-4">Уотфорд – Манчестер Юнайтед</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">13</div>
-											<div class="col-2">
-												27.11.2021
-												<span class="tournament-mob">18:00</span>
-											</div>
-											<div class="col-3">18:00</div>
-											<div class="col-4">Челси – Манчестер Юнайтед</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">14</div>
-											<div class="col-2">
-												30.11.2021
-												<span class="tournament-mob">23:00</span>
-											</div>
-											<div class="col-3">23:00</div>
-											<div class="col-4">Манчестер Юнайтед - Арсенал</div>
-										</div><!-- row -->
-									</div>
-								</div>
-							</div><!-- slide -->
-							<div class="tournament-slide swiper-slide">
-								<div class="tournament-head">
-									<div class="tournament-link" data-slide="2"><img src="img/tournament/icon-2-min.png" alt=""></div>
-									<div class="tournament-ico"><img src="img/tournament/ico-3.svg" alt=""></div>
-									<div class="tournament-link" data-slide="1"><img src="img/tournament/icon-1-min.png" alt=""></div>
-								</div>
-								<div class="tournament-content">
-									<h3 class="tournament-title">челси</h3>
-									<div class="tournament-table">
-										<div class="tournament-row">
-											<div class="col-1">7</div>
-											<div class="col-2">
-												02.10.2021
-												<span class="tournament-mob">17:00</span>
-											</div>
-											<div class="col-3">17:00</div>
-											<div class="col-4">Челси - Саутгемптон</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">8</div>
-											<div class="col-2">
-												16.10.2021
-												<span class="tournament-mob">19:30</span>
-											</div>
-											<div class="col-3">19:30</div>
-											<div class="col-4">Брентфорд - Челси</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">9</div>
-											<div class="col-2">
-												23.10.2021
-												<span class="tournament-mob">14:30</span>
-											</div>
-											<div class="col-3">14:30</div>
-											<div class="col-4">Челси – Норвич Сити</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">10</div>
-											<div class="col-2">
-												30.10.2021
-												<span class="tournament-mob">17:00</span>
-											</div>
-											<div class="col-3">17:00</div>
-											<div class="col-4">Ньюкасл Юнайтед - Челси</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">11</div>
-											<div class="col-2">
-												06.11.2021
-												<span class="tournament-mob">18:00</span>
-											</div>
-											<div class="col-3">18:00</div>
-											<div class="col-4">Челси - Бёрнли</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">12</div>
-											<div class="col-2">
-												20.11.2021
-												<span class="tournament-mob">18:00</span>
-											</div>
-											<div class="col-3">18:00</div>
-											<div class="col-4">Лестер Сити - Челси</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">13</div>
-											<div class="col-2">
-												27.11.2021
-												<span class="tournament-mob">18:00</span>
-											</div>
-											<div class="col-3">18:00</div>
-											<div class="col-4">Челси – Манчестер Юнайтед</div>
-										</div><!-- row -->
-										<div class="tournament-row">
-											<div class="col-1">14</div>
-											<div class="col-2">
-												30.11.2021
-												<span class="tournament-mob">22:45</span>
-											</div>
-											<div class="col-3">22:45</div>
-											<div class="col-4">Уотфорд - Челси</div>
-										</div><!-- row -->
-									</div>
-								</div>
-							</div><!-- slide -->
+					<div class="tournament-content">
+						<div class="tournament-scroll">
+							<div class="tournament-block">
+								<h3 class="tournament-block__title">02 октября 2021, суббота</h3>
+								<ul>
+									<li><span>14:30</span>Manchester United - Everton</li>
+									<li><span>17:00</span>Chelsea FC - Southampton</li>
+								</ul>
+							</div>
+							<div class="tournament-block">
+								<h3 class="tournament-block__title">03 октября 2021, воскресенье</h3>
+								<ul>
+									<li><span>18:30</span>Liverpool FC - Manchester City</li>
+								</ul>
+							</div>
+							<div class="tournament-block">
+								<h3 class="tournament-block__title">16 октября 2021, суббота</h3>
+								<ul>
+									<li><span>17:00</span>Watford - Liverpool FC</li>
+									<li><span>17:00</span>Leicester City - Manchester United</li>
+									<li><span>17:00</span>Brentford - Chelsea FC</li>
+								</ul>
+							</div>
+							<div class="tournament-block">
+								<h3 class="tournament-block__title">23 октября 2021, суббота</h3>
+								<ul>
+									<li><span>17:00</span>Chelsea FC - Norwich City</li>
+									<li><span>17:00</span>Manchester United - Liverpool FC</li>
+								</ul>
+							</div>
+							<div class="tournament-block">
+								<h3 class="tournament-block__title">30 октября 2021, суббота</h3>
+								<ul>
+									<li><span>17:00</span>Liverpool FC - Brighton & Hove Albion</li>
+									<li><span>19:30</span>Tottenham Hotspur - Manchester United</li>
+									<li><span>17:00</span>Newcastle United - Chelsea FC</li>
+								</ul>
+							</div>
+							<div class="tournament-block">
+								<h3 class="tournament-block__title">06 ноября 2021, суббота</h3>
+								<ul>
+									<li><span>18:00</span>West Ham United - Liverpool FC</li>
+									<li><span>18:00</span>Manchester United - Manchester City</li>
+									<li><span>18:00</span>Chelsea FC - Burnley</li>
+								</ul>
+							</div>
+							<div class="tournament-block">
+								<h3 class="tournament-block__title">20 ноября 2021, суббота</h3>
+								<ul>
+									<li><span>18:00</span>Liverpool FC - Arsenal</li>
+									<li><span>18:00</span>Watford - Manchester United</li>
+									<li><span>18:00</span>Leicester City - Chelsea FC</li>
+								</ul>
+							</div>
+							<div class="tournament-block">
+								<h3 class="tournament-block__title">27 ноября 2021, суббота</h3>
+								<ul>
+									<li><span>18:00</span>Liverpool FC - Southampton</li>
+									<li><span>18:00</span>Chelsea FC - Manchester United</li>
+								</ul>
+							</div>
+							<div class="tournament-block">
+								<h3 class="tournament-block__title">30 ноября 2021, вторник</h3>
+								<ul>
+									<li><span>22:45</span>Everton - Liverpool FC</li>
+									<li><span>23:00</span>Manchester United - Arsenal</li>
+									<li><span>22:45</span>Watford - Chelsea FC</li>
+								</ul>
+							</div>
+							<p>Время начала матча указано по московскому времени</p>
 						</div>
 					</div>
 				</div>
