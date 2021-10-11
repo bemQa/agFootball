@@ -3,7 +3,6 @@
 .index
 	background: radial-gradient(50.17% 63.64% at 49.83% 49.09%, #F70000 0%, #E50000 52.04%, #A70000 100%)
 	.header-logo
-		display: none
 		&-2
 			display: block
 
@@ -11,6 +10,14 @@
 	display: block
 	position: relative
 	border-bottom: 3px solid #FDD000
+	&-wrap
+		max-width: 935px
+		margin: 0 auto
+		text-align: center
+	&-picture
+		img,svg
+			display: block
+			margin: 0 auto
 	&-md
 		position: absolute
 		top: 205px
@@ -41,7 +48,7 @@
 			display: none
 	.wrapper
 		max-width: 1108px
-		padding-top: 392px
+		padding-top: 46px
 		min-height: 574px
 		position: relative
 	&-img
@@ -67,6 +74,7 @@
 	&-button
 		position: relative
 		z-index: 10
+		padding-top: 16px
 		.primary-btn
 			min-width: 287px
 			font-size: 21px
@@ -99,7 +107,8 @@
 @media only screen and (max-width : 920px)
 	.main
 		.wrapper
-			min-height: 689px
+			min-height: 559px
+			padding-top: 76px
 		&-img
 			&-1
 				min-width: 426px
@@ -121,14 +130,22 @@
 			&-mob
 				display: block
 		&-button
-			position: absolute
-			top: 316px
-			left: 50%
-			transform: translate(-50%,0)
-			padding: 0
+			padding: 15px 0 0
 
 @media only screen and (max-width : 768px)
 	.main
+		.wrapper
+			min-height: 429px
+		&-picture
+			min-height: 225px
+			position: relative
+			img,svg
+				position: absolute
+				top: 0
+				left: 50%
+				transform: translate(-50%,0)
+				min-width: 522px
+				max-width: 522px
 		&-bg
 			display: none
 			background-position: center

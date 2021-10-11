@@ -15,7 +15,7 @@
 	&-row
 		display: flex
 		flex-flow: row wrap
-		margin: -163px -32.5px 0
+		margin: -59px -32.5px 0
 		position: relative
 		z-index: 20
 		padding-bottom: 100px
@@ -36,6 +36,18 @@
 		font-family: $OfficinaSansBoldC
 		font-weight: bold
 		text-transform: uppercase
+	&-btn
+		padding-top: 19px
+		.primary-btn
+			min-width: 355px
+			font-family: $OfficinaSansMediumC
+			font-size: 21px
+			line-height: 24px
+			font-weight: 500
+			padding: 16px 17px 15px
+			b
+				display: none
+				font-weight: 500
 
 @media only screen and (max-width : 920px)
 	.products
@@ -53,7 +65,7 @@
 			&::after
 				content: ''
 				position: absolute
-				top: 206px
+				top: 110px
 				width: 100%
 				height: 867px
 				background-image: url(../img/page-mob.svg)
@@ -62,7 +74,7 @@
 				background-size: cover
 				z-index: 10
 		&-row
-			margin-top: -226px
+			margin-top: -150px
 			padding-bottom: 0
 		&-col
 			width: 100%
@@ -72,3 +84,12 @@
 				margin-bottom: 20px
 		&-name,&-weight
 			font-size: 16px
+		&-btn
+			.primary-btn
+				min-width: auto
+				max-width: 335px
+				width: 100%
+				span
+					display: none
+				b
+					display: block

@@ -1,5 +1,11 @@
 @import "vars"
 
+.page.page-prizes
+	.page-content
+		padding-bottom: 100px
+	.prizes-all
+		margin-top: -255px
+
 .prizes
 	padding-bottom: 114px
 	&-all
@@ -111,7 +117,19 @@
 		text-transform: uppercase
 		color: #9F0C12
 
+@media only screen and (max-width : 920px)
+	.page.page-prizes
+		.page-top
+			min-height: 423px
+		.page-content
+			padding-bottom: 100px
+		.prizes-all
+			margin-top: -283px
+
 @media only screen and (max-width : 768px)
+	.page.page-prizes
+		.prizes-all
+			margin-top: -313px
 	.prizes
 		padding-bottom: 0
 		margin-bottom: 54px

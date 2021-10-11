@@ -35,10 +35,14 @@
 		&-2
 			left: auto
 			top: 10px
-			right: 81px
+			right: 180px
 			z-index: 9
 			img,svg
 				max-width: 38px
+		&-small
+			left: -10px
+			img,svg
+				max-width: 44px
 	&-wrap
 		max-width: 890px
 		padding-right: 50px
@@ -156,6 +160,10 @@
 				transform: none
 				img,svg
 					max-width: 36px
+			&-small
+				top: 40px
+				img,svg
+					max-width: 44px
 		&-bar
 			position: absolute
 			top: 31px
@@ -266,6 +274,9 @@
 	
 @media only screen and (max-width : 540px)
 	.header
+		&-logo
+			&-small
+				top: 20px
 		&::after
 			height: 91px
 			background-image: url(../img/header/mob-bg.svg)
