@@ -158,6 +158,12 @@ $(document).ready(function(){
     e.preventDefault();
   });
 
+   //players-img
+  $('.players-img').on('click',function(e){
+    e.preventDefault();
+    $(this).addClass('active');
+  });
+
   //modal
 	var modalCont = $('.modal');
 		

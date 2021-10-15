@@ -376,6 +376,135 @@
 			text-transform: uppercase
 			color: #fff
 
+.share
+	display: flex
+	flex-flow: row nowrap
+	align-items: center
+	position: absolute
+	top: 15px
+	right: 13px
+	background-color: #fff
+	border-radius: 4px
+	padding: 6px
+	font-size: 11px
+	line-height: 12px
+	font-weight: bold
+	color: #531D0D
+	text-transform: uppercase
+	z-index: 20
+	&-list
+		display: flex
+		flex-flow: row nowrap
+		align-items: center
+		padding-left: 4px
+		li
+			padding-left: 6px
+			img,svg
+				display: block
+				min-width: 24px
+				max-width: 24px
+
+.players
+	padding-bottom: 100px
+	&-top
+		max-width: 520px
+		display: flex
+		flex-flow: row nowrap
+		margin: 0 auto
+		.participation-ico
+			position: relative
+			top: auto
+			left: auto
+			bottom: auto
+			right: auto
+			margin-right: 18px
+			z-index: 20
+	&-subtitle
+		display: block
+		font-family: $OfficinaSansBoldC
+		font-size: 18px
+		line-height: 22px
+		font-weight: bold
+		color: #fff
+		text-transform: uppercase
+	&-all
+		position: relative
+	&-wrap
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		height: 765px
+		max-width: 684px
+		border-radius: 20px
+		overflow: hidden
+		position: relative
+		margin: -20px auto 30px
+	&-img
+		position: absolute
+		cursor: pointer
+		img,svg
+			display: block
+			&.players-active
+				display: none
+		&-1
+			top: 12px
+			left: 62px
+			z-index: 1
+			img,svg
+				max-width: 540px
+		&-2
+			top: 153px
+			left: 36px
+			z-index: 2
+			img,svg
+				max-width: 317px
+		&-3
+			top: 120px
+			right: 24px
+			z-index: 3
+			img,svg
+				max-width: 359px
+		&-4
+			bottom: 0
+			left: 9px
+			z-index: 4
+			img,svg
+				max-width: 333px
+		&-5
+			bottom: 0
+			right: 50px
+			z-index: 5
+			img,svg
+				max-width: 379px
+		&-6
+			bottom: 0
+			left: 50%
+			transform: translate(-50%,0)
+			z-index: 6
+			img,svg
+				max-width: 416px
+		&.active
+			img,svg
+				display: none
+				&.players-active
+					display: block
+	&-bottom
+		text-align: center
+		max-width: 630px
+		margin: 0 auto
+	&-title
+		display: block
+		font-family: $OfficinaSansBoldC
+		font-size: 18px
+		line-height: 22px
+		font-weight: bold
+		text-transform: uppercase
+		color: #fff
+		margin: 0 0 25px
+		span
+			display: block
+			color: #FDD000
+
 @media only screen and (max-width : 920px)
 	.personalArea
 		.page
@@ -488,11 +617,75 @@
 			margin: 0 auto
 		&-block
 			margin-bottom: 30px
+	.players
+		&-all
+			padding-bottom: 46px
+			margin: 0 -15px 30px
+			.share
+				top: auto
+				right: auto
+				bottom: -46px
+				left: 50%
+				transform: translate(-50%,0)
+		&-wrap
+			margin: 0 auto
+			min-width: 375px
+			width: 375px
+			height: 420px
+			overflow: visible
+		&-img
+			&-1
+				top: 7px
+				left: 34px
+				img,svg
+					max-width: 296px
+			&-2
+				top: 84px
+				left: 20px
+				img,svg
+					max-width: 174px
+			&-3
+				top: 65px
+				right: 13px
+				img,svg
+					max-width: 197px
+			&-4
+				bottom: 0
+				left: 5px
+				img,svg
+					max-width: 183px
+			&-5
+				bottom: 0
+				right: 28px
+				img,svg
+					max-width: 208px
+			&-6
+				bottom: 0
+				img,svg
+					max-width: 228px
 
 @media only screen and (max-width : 540px)
 	.forecasts,.myCodes
 		.prompt-wrap
 			right: -50px
+	.players
+		padding-bottom: 20px
+		&-top
+			display: block
+			text-align: center
+			padding-bottom: 25px
+			.participation-ico
+				margin: 0 auto 20px
+		&-title
+			display: none
+		&-all
+			height: 466px
+			position: relative
+			.players-wrap
+				position: absolute
+				top: 0
+				left: 50%
+				transform: translate(-50%,0)
 
 @media only screen and (max-width : 375px)
 	.personalArea
