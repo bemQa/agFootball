@@ -88,7 +88,7 @@ $(document).ready(function(){
     $('.faq-block').mCustomScrollbar();
   }
 
-  $(window).on('scroll', function(){
+  $(window).on('resize', function(){
     if($(window).outerWidth() > 890)
       scrollbar();
     else{
@@ -99,8 +99,10 @@ $(document).ready(function(){
   if($(window).outerWidth() > 890)
     scrollbar();
 
-  if($(window).outerWidth() < 768)
+  if($(window).outerWidth() < 768){
     $('.winners-content').mCustomScrollbar('destroy');
+    $('.forecasts-content').mCustomScrollbar('destroy');
+  }
 
 	//menu mob
 	$('.header-bar,.header-close').on('click', function(){
@@ -161,7 +163,6 @@ $(document).ready(function(){
    //players-img
   $('.players-human .path-1,.players-human .path-2,.players-human .path-3,.players-human .path-4,.players-human .path-5,.players-human .path-6').on('click',function(e){
     e.preventDefault();
-    console.log($(this).attr('class'));
     $('.' + $(this).attr('class')).addClass('active');
     $(this).addClass('active');
   });

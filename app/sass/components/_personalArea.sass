@@ -429,19 +429,22 @@
 		text-transform: uppercase
 	&-all
 		position: relative
+		max-width: 684px
+		margin: 0 auto
 	&-wrap
 		display: flex
-		align-items: center
+		align-items: flex-end
 		justify-content: flex-end
 		background-repeat: no-repeat
 		background-position: center
 		background-size: cover
 		height: 765px
-		max-width: 684px
 		border-radius: 20px
 		overflow: hidden
 		position: relative
 		margin: -20px auto 30px
+		img,svg
+			display: block
 		.path-1,.path-2,.path-3,.path-4,.path-5,.path-6
 			cursor: pointer
 			path
@@ -454,23 +457,48 @@
 				path
 					opacity: 0
 					visibility: hidden
+	&-human
+		opacity: 0
+		.path-1,.path-2,.path-3,.path-4,.path-5,.path-6
+			position: relative
+		.path-1
+			z-index: 12
+		.path-2
+			z-index: 13
+		.path-3
+			z-index: 14
+		.path-4
+			z-index: 15
+		.path-5
+			z-index: 16
+		.path-6
+			z-index: 17
 	&-img
 		display: block
 		position: absolute
 		cursor: pointer
 		pointer-events: none
-		img,svg
-			display: none
+		img
+			display: block
+			&.players-active
+				display: none
+		svg
+			display: block
+			position: absolute
+			top: 0
+			left: 0
 		&-1
 			top: 5px
 			left: 89px
-			z-index: 1
+			z-index: 0
 			img,svg
 				max-width: 540px
+			&.active
+				z-index: 0!important
 		&-2
 			top: 145px
 			left: 45px
-			z-index: 2
+			z-index: 1
 			img,svg
 				max-width: 317px
 		&-3
@@ -498,8 +526,10 @@
 			z-index: 6
 			img,svg
 				max-width: 416px
+			&.active
+				z-index: 10!important
 		&.active
-			z-index: 0
+			z-index: 4
 			img,svg
 				display: none
 				&.players-active
@@ -640,7 +670,7 @@
 			.share
 				top: auto
 				right: auto
-				bottom: -46px
+				bottom: 0
 				left: 50%
 				transform: translate(-50%,0)
 		&-wrap
@@ -648,7 +678,6 @@
 			min-width: 375px
 			width: 375px
 			height: 420px
-			overflow: visible
 		&-human
 			display: flex
 			justify-content: flex-end
@@ -711,6 +740,8 @@
 				top: 0
 				left: 50%
 				transform: translate(-50%,0)
+		&-wrap
+			border-radius: 0
 
 @media only screen and (max-width : 375px)
 	.personalArea
