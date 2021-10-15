@@ -239,6 +239,64 @@
 					margin-bottom: 25px
 					&:last-child
 						margin-bottom: 0
+	.primary-full
+		display: block
+		width: 100%
+		margin-top: 30px
+	&-title
+		span
+			color: #FDD000
+
+.check
+	&-row
+		max-width: 244px
+		display: flex
+		flex-flow: row nowrap
+		justify-content: space-between
+		padding-bottom: 24px
+		margin: 0 auto
+		position: relative
+		&::after
+			content: ''
+			height: 110px
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translate(-50%,0)
+			width: 10px
+			height: 110px
+			background-image: url("data:image/svg+xml,%3Csvg width='10' height='26' viewBox='0 0 10 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.55 1.4C9.51667 2.33333 10 3.45 10 4.75C10 6.05 9.51667 7.16667 8.55 8.1C7.61667 9.03333 6.51667 9.5 5.25 9.5C3.98333 9.5 2.86667 9.03333 1.9 8.1C0.966666 7.16667 0.5 6.05 0.5 4.75C0.5 3.45 0.966666 2.33333 1.9 1.4C2.86667 0.466667 3.98333 0 5.25 0C6.51667 0 7.61667 0.466667 8.55 1.4ZM8.55 17.45C9.51667 18.3833 10 19.5 10 20.8C10 22.1 9.51667 23.2167 8.55 24.15C7.61667 25.0833 6.51667 25.55 5.25 25.55C3.98333 25.55 2.86667 25.0833 1.9 24.15C0.966666 23.2167 0.5 22.1 0.5 20.8C0.5 19.5 0.966666 18.3833 1.9 17.45C2.86667 16.5167 3.98333 16.05 5.25 16.05C6.51667 16.05 7.61667 16.5167 8.55 17.45Z' fill='white'/%3E%3C/svg%3E%0A")
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+	&-col
+		width: 110px
+		text-align: center
+	&-num
+		display: block
+		width: 91px
+		height: 110px
+		border-radius: 20px
+		text-align: center
+		font-family: $OfficinaSansBlackC
+		font-size: 40px
+		line-height: 110px
+		font-weight: 900
+		text-transform: uppercase
+		color: #531D0D
+		background-image: url("data:image/svg+xml,%3Csvg width='91' height='110' viewBox='0 0 91 110' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_i)'%3E%3Cpath d='M66.8608 1.24598e-05C75.4416 1.20979e-05 83.1788 5.44814 85.2838 13.7667C92.2389 41.2521 92.2387 68.7385 85.2832 96.2314C83.1784 104.551 75.4407 110 66.8592 110L23.6712 110C14.8603 110 6.98064 104.254 5.05417 95.6562C-1.01826 68.5554 -1.01806 41.4536 5.05477 14.3456C6.98104 5.74711 14.8611 1.46531e-05 23.6728 1.42814e-05L66.8608 1.24598e-05Z' fill='white'/%3E%3C/g%3E%3Cpath d='M82.8602 14.38C89.7135 41.4628 89.7133 68.5278 82.8595 95.6183C81.0639 102.716 74.4163 107.5 66.8592 107.5L23.6712 107.5C15.9156 107.5 9.14002 102.457 7.49368 95.1095C1.50192 68.3688 1.50208 41.6403 7.4943 14.8921C9.14051 7.54378 15.9165 2.50001 23.6728 2.50001L66.8608 2.50001C74.4173 2.50001 81.0644 7.28341 82.8602 14.38Z' stroke='url(%23paint0_linear)' stroke-width='5'/%3E%3Cdefs%3E%3Cfilter id='filter0_i' x='0.5' y='0' width='90' height='114' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='7.5'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0'/%3E%3CfeBlend mode='normal' in2='shape' result='effect1_innerShadow'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear' x1='44.6818' y1='110.383' x2='44.6818' y2='1.23014e-05' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FDD000'/%3E%3Cstop offset='0.25' stop-color='%23FEF035'/%3E%3Cstop offset='0.489583' stop-color='%23FFFFC2'/%3E%3Cstop offset='0.765625' stop-color='%23FEF035'/%3E%3Cstop offset='1' stop-color='%23FDD000'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+		margin: 0 auto 10px
+	&-tit
+		display: block
+		text-transform: uppercase
+		font-family: $OfficinaSansBoldC
+		font-size: 14px
+		line-height: 16px
+		font-weight: bold
+		color: #fff
 
 @media only screen and (max-width : 1420px)
 	.modal

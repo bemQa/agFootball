@@ -159,8 +159,10 @@ $(document).ready(function(){
   });
 
    //players-img
-  $('.players-img').on('click',function(e){
+  $('.players-human .path-1,.players-human .path-2,.players-human .path-3,.players-human .path-4,.players-human .path-5,.players-human .path-6').on('click',function(e){
     e.preventDefault();
+    console.log($(this).attr('class'));
+    $('.' + $(this).attr('class')).addClass('active');
     $(this).addClass('active');
   });
 
