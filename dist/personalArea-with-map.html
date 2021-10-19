@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>title</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
+	<link rel="stylesheet" href="css/main.min.css">
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<body>
+	<!-- start header -->
+	<header class="header header-second">
+		<div class="wrapper">
+			<div class="header-logo"><a href="#"><img src="img/header/logo-min.png" alt=""></a></div>
+			<div class="header-wrap">
+				<div class="header-close"></div>
+				<ul class="header-list">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="prizes.html">Призы</a></li>
+					<li><a href="products.html">Продукт</a></li>
+					<li><a href="winners.html">Победители</a></li>
+					<li><a href="tournament.html">Турнирная таблица</a></li>
+					<li><a href="#" class="link-to">Правила</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+				</ul>
+				<div class="header-info">
+					<a href="#" class="header-link">Личный кабинет</a>
+					<a href="#" class="header-logOff">Выйти</a>
+				</div>
+			</div>
+			<div class="header-bar"></div>
+		</div>
+	</header>
+	<!-- end header -->
+	<!-- start page -->
+	<section class="page personalArea">
+		<div class="page-top">
+			<div class="wrapper">
+				<div class="page-row">
+					<div class="page-col page-col-1">
+						<div class="page-btn">
+							<a href="modal-soon" class="primary-btn modal-btn"><span>сделать новый прогноз</span></a>
+							<a href="modal-tournament" class="page-link modal-btn">Посмотреть расписание матчей</a>
+						</div>
+					</div>
+					<div class="page-col page-col-2">
+						<div class="page-name">
+							Константин
+							<span>Константинопольский</span>
+						</div>
+						<ul class="page-list">
+							<li><a href="mailto:konstantinmymail@mail.com">
+								<i class="hb-ico mail-ico"></i>
+								<span>konstantinmymail@mail.com</span>
+							</a></li>
+							<li><a href="tel:+79999999999">
+								<i class="hb-ico phone-ico"></i>
+								<span>+7 (999) 999-99-99</span>
+							</a></li>
+						</ul>
+						<a href="#" class="page-link page-logOff">Выйти</a>
+						<div class="page-card">
+							<div class="page-card__img"><img src="img/card-min.png" alt=""></div>
+							<span class="page-card__title">Добавить карту</span>
+							<a href="#">Добавить</a>
+						</div>
+					</div>
+					<div class="page-col page-col-3">
+						<div class="page-points">
+							<div class="prompt">
+								<i class="prompt-ico"></i>
+								<div class="prompt-wrap">
+									<i class="prompt-close"></i>
+									Тут отображаются твои баллы,  полученные за регистрацию кодов и предсказания счета. <br>Чем больше кодов ты регистрируешь, тем больше прогнозов счета ты можешь сделать, а значит получить больше шансов на выигрыш крутых призов! 
+								</div>
+							</div>
+							<div class="points">
+								<span class="points-text">Мои баллы:</span>
+								<span class="points-num">100</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-content">
+			<div class="wrapper">
+				<div class="allTabs">
+					<ul class="personalArea-tabs tab-list">
+						<li><a href="#tab-1" class="active"><span><b>Мои коды</b></span></a></li>
+						<li><a href="#tab-2"><span><b>Мои призы</b></span></a></li>
+						<li><a href="#tab-3"><span><b>мои прогнозы</b></span></a></li>
+						<li><a href="#tab-4"><span><b>мои игроки</b></span></a></li>
+					</ul>
+					<div id="tab-1" class="tab tab-active">
+						<div class="myCodes">
+							<div class="myCodes-table table">
+								<div class="myCodes-row myCodes-top">
+									<div class="myCodes-col myCodes-col-1">Дата регистрации</div>
+									<div class="myCodes-col myCodes-col-2">Код</div>
+									<div class="myCodes-col myCodes-col-3"><b>Ко-во начисленных баллов</b><span class="myCodes-mob">Баллы</span></div>
+									<div class="myCodes-col myCodes-col-4"></div>
+								</div>
+								<div class="myCodes-content table-content">
+									<div class="myCodes-row">
+										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
+										<div class="myCodes-col myCodes-col-2">
+											<span class="myCodes-mob">ХХ.ХХ.2021</span>
+											HJFEBuh878
+											<span class="myCodes-mob"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></span>
+										</div>
+										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
+										<div class="myCodes-col myCodes-col-4"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></div>
+									</div>
+									<div class="myCodes-row">
+										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
+										<div class="myCodes-col myCodes-col-2">
+											<span class="myCodes-mob">ХХ.ХХ.2021</span>
+											HJFEBuh878
+											<span class="myCodes-mob"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></span>
+										</div>
+										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
+										<div class="myCodes-col myCodes-col-4"><a href="modal-soon" class="myCodes-link modal-btn disabled">Сделать прогноз</a></div>
+									</div>
+									<div class="myCodes-row">
+										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
+										<div class="myCodes-col myCodes-col-2">
+											<span class="myCodes-mob">ХХ.ХХ.2021</span>
+											HJFEBuh878
+											<span class="myCodes-mob"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></span>
+										</div>
+										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
+										<div class="myCodes-col myCodes-col-4"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></div>
+									</div>
+									<div class="myCodes-row">
+										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
+										<div class="myCodes-col myCodes-col-2">
+											<span class="myCodes-mob">ХХ.ХХ.2021</span>
+											HJFEBuh878
+											<span class="myCodes-mob"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></span>
+										</div>
+										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
+										<div class="myCodes-col myCodes-col-4"><a href="modal-soon" class="myCodes-link modal-btn disabled">Сделать прогноз</a></div>
+									</div>
+									<div class="myCodes-row">
+										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
+										<div class="myCodes-col myCodes-col-2">
+											<span class="myCodes-mob">ХХ.ХХ.2021</span>
+											HJFEBuh878
+											<span class="myCodes-mob"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></span>
+										</div>
+										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
+										<div class="myCodes-col myCodes-col-4"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></div>
+									</div>
+									<div class="myCodes-row">
+										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
+										<div class="myCodes-col myCodes-col-2">
+											<span class="myCodes-mob">ХХ.ХХ.2021</span>
+											HJFEBuh878
+											<span class="myCodes-mob"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></span>
+										</div>
+										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
+										<div class="myCodes-col myCodes-col-4"><a href="modal-soon" class="myCodes-link modal-btn disabled">Сделать прогноз</a></div>
+									</div>
+									<div class="myCodes-row">
+										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
+										<div class="myCodes-col myCodes-col-2">
+											<span class="myCodes-mob">ХХ.ХХ.2021</span>
+											HJFEBuh878
+											<span class="myCodes-mob"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></span>
+										</div>
+										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
+										<div class="myCodes-col myCodes-col-4"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></div>
+									</div>
+									<div class="myCodes-row">
+										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
+										<div class="myCodes-col myCodes-col-2">
+											<span class="myCodes-mob">ХХ.ХХ.2021</span>
+											HJFEBuh878
+											<span class="myCodes-mob"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></span>
+										</div>
+										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
+										<div class="myCodes-col myCodes-col-4"><a href="modal-soon" class="myCodes-link modal-btn disabled">Сделать прогноз</a></div>
+									</div>
+									<div class="myCodes-row">
+										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
+										<div class="myCodes-col myCodes-col-2">
+											<span class="myCodes-mob">ХХ.ХХ.2021</span>
+											HJFEBuh878
+											<span class="myCodes-mob"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></span>
+										</div>
+										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
+										<div class="myCodes-col myCodes-col-4"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></div>
+									</div>
+									<div class="myCodes-row">
+										<div class="myCodes-col myCodes-col-1">ХХ.ХХ.2021</div>
+										<div class="myCodes-col myCodes-col-2">
+											<span class="myCodes-mob">ХХ.ХХ.2021</span>
+											HJFEBuh878
+											<span class="myCodes-mob"><a href="modal-soon" class="myCodes-link modal-btn">Сделать прогноз</a></span>
+										</div>
+										<div class="myCodes-col myCodes-col-3">+1 <i>балл</i></div>
+										<div class="myCodes-col myCodes-col-4"><a href="modal-soon" class="myCodes-link modal-btn disabled">Сделать прогноз</a></div>
+									</div>
+								</div>
+								<div class="myCodes-button">
+									<a href="modal-code" class="primary-btn primary-btn-big primary-btn-yellow modal-btn">зарегистрировать код</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- tab -->
+					<div id="tab-2" class="tab">
+						<div class="myPrizes">
+							<div class="myPrizes-block">
+								<span class="myPrizes-block__title">первый розыгрыш призов пройдёт хх.хх.2021. <br><br>Желаем удачи!</span>
+							</div>
+						</div>
+					</div><!-- tab -->
+					<div id="tab-3" class="tab">
+						<div class="forecasts">
+							<div class="forecasts-table table">
+								<div class="forecasts-row forecasts-top">
+									<div class="forecasts-col forecasts-col-1"><b>Дата прогноза</b><span class="forecasts-mob">Прогноз</span></div>
+									<div class="forecasts-col forecasts-col-2">Команда</div>
+									<div class="forecasts-col forecasts-col-3">Результат игры</div>
+									<div class="forecasts-col forecasts-col-4">Счёт</div>
+									<div class="forecasts-col forecasts-col-5">Баллы</div>
+								</div>
+								<div class="forecasts-content table-content">
+									<div class="forecasts-row">
+										<div class="forecasts-col forecasts-col-1">
+											ХХ.ХХ.2021
+											<span class="forecasts-mob">LIVERPOOL</span>
+											<span class="forecasts-mob">Победа</span>
+											<span class="forecasts-mob text-yellow">2:0</span>
+										</div>
+										<div class="forecasts-col forecasts-col-2">LIVERPOOL</div>
+										<div class="forecasts-col forecasts-col-3">Победа</div>
+										<div class="forecasts-col forecasts-col-4"><span class="text-yellow">2:0</span></div>
+										<div class="forecasts-col forecasts-col-5">
+											—
+											<div class="prompt">
+												<i class="prompt-ico"></i>
+												<div class="prompt-wrap">
+													<i class="prompt-close"></i>
+													матч ещё не состоялся. <br>ждём результат*!<span>* после результата баллы обновятся на сайте в течении 48 часов</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="forecasts-row">
+										<div class="forecasts-col forecasts-col-1">
+											ХХ.ХХ.2021
+											<span class="forecasts-mob">
+												MANCHESTER UNITED
+												<div class="prompt">
+													<i class="prompt-ico"></i>
+													<div class="prompt-wrap">
+														<i class="prompt-close"></i>
+														ХХ.ХХ.2021 года <br>chelsea - manchester united <br>хх:хх по московскому времени
+													</div>
+												</div>
+											</span>
+											<span class="forecasts-mob text-yellow">Победа</span>
+											<span class="forecasts-mob text-yellow">1:1</span>
+										</div>
+										<div class="forecasts-col forecasts-col-2">
+											MANCHESTER UNITED
+											<div class="prompt">
+												<i class="prompt-ico"></i>
+												<div class="prompt-wrap">
+													<i class="prompt-close"></i>
+													ХХ.ХХ.2021 года <br>chelsea - manchester united <br>хх:хх по московскому времени
+												</div>
+											</div>
+										</div>
+										<div class="forecasts-col forecasts-col-3"><span class="text-yellow">Ничья</span></div>
+										<div class="forecasts-col forecasts-col-4"><span class="text-yellow">1:1</span></div>
+										<div class="forecasts-col forecasts-col-5">
+											х2
+											<div class="prompt">
+												<i class="prompt-ico"></i>
+												<div class="prompt-wrap">
+													<i class="prompt-close"></i>
+													Поздравляем! это была отличная победа, но счёт ты угадал неверно. продолжай делать прогнозы и стань ближе к поездке в великобританию!
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="forecasts-row">
+										<div class="forecasts-col forecasts-col-1">
+											ХХ.ХХ.2021
+											<span class="forecasts-mob">LIVERPOOL</span>
+											<span class="forecasts-mob">Победа</span>
+											<span class="forecasts-mob text-yellow">2:0</span>
+										</div>
+										<div class="forecasts-col forecasts-col-2">LIVERPOOL</div>
+										<div class="forecasts-col forecasts-col-3">Победа</div>
+										<div class="forecasts-col forecasts-col-4"><span class="text-yellow">2:0</span></div>
+										<div class="forecasts-col forecasts-col-5">
+											х1
+											<div class="prompt">
+												<i class="prompt-ico"></i>
+												<div class="prompt-wrap">
+													<i class="prompt-close"></i>
+													не расстраивайся. <br>Новый прогноз будет удачнее!
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="forecasts-row">
+										<div class="forecasts-col forecasts-col-1">
+											ХХ.ХХ.2021
+											<span class="forecasts-mob">LIVERPOOL</span>
+											<span class="forecasts-mob">Победа</span>
+											<span class="forecasts-mob text-yellow">2:0</span>
+										</div>
+										<div class="forecasts-col forecasts-col-2">LIVERPOOL</div>
+										<div class="forecasts-col forecasts-col-3">Победа</div>
+										<div class="forecasts-col forecasts-col-4"><span class="text-yellow">2:0</span></div>
+										<div class="forecasts-col forecasts-col-5">
+											х2
+											<div class="prompt">
+												<i class="prompt-ico"></i>
+												<div class="prompt-wrap">
+													<i class="prompt-close"></i>
+													отличный результат! Теперь ты ещё ближе к поездке в великобританию. делай прогнозы и увеличивай свои шансы на победу.
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="forecasts-row">
+										<div class="forecasts-col forecasts-col-1">
+											ХХ.ХХ.2021
+											<span class="forecasts-mob">LIVERPOOL</span>
+											<span class="forecasts-mob">Победа</span>
+											<span class="forecasts-mob text-yellow">2:0</span>
+										</div>
+										<div class="forecasts-col forecasts-col-2">LIVERPOOL</div>
+										<div class="forecasts-col forecasts-col-3">Победа</div>
+										<div class="forecasts-col forecasts-col-4"><span class="text-yellow">2:0</span></div>
+										<div class="forecasts-col forecasts-col-5">
+											х2
+											<div class="prompt">
+												<i class="prompt-ico"></i>
+												<div class="prompt-wrap">
+													<i class="prompt-close"></i>
+													Поздравляем! это была отличная победа, но счёт ты угадал неверно. продолжай делать прогнозы и стань ближе к поездке в великобританию!
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="forecasts-row">
+										<div class="forecasts-col forecasts-col-1">
+											ХХ.ХХ.2021
+											<span class="forecasts-mob">MANCHESTER UNITED</span>
+											<span class="forecasts-mob text-yellow">Победа</span>
+											<span class="forecasts-mob text-yellow">1:1</span>
+										</div>
+										<div class="forecasts-col forecasts-col-2">MANCHESTER UNITED</div>
+										<div class="forecasts-col forecasts-col-3"><span class="text-yellow">Ничья</span></div>
+										<div class="forecasts-col forecasts-col-4"><span class="text-yellow">1:1</span></div>
+										<div class="forecasts-col forecasts-col-5">
+											х1
+											<div class="prompt">
+												<i class="prompt-ico"></i>
+												<div class="prompt-wrap">
+													<i class="prompt-close"></i>
+													Поздравляем! это была отличная победа, но счёт ты угадал неверно. продолжай делать прогнозы и стань ближе к поездке в великобританию!
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="forecasts-row">
+										<div class="forecasts-col forecasts-col-1">
+											ХХ.ХХ.2021
+											<span class="forecasts-mob">LIVERPOOL</span>
+											<span class="forecasts-mob">Победа</span>
+											<span class="forecasts-mob text-yellow">2:0</span>
+										</div>
+										<div class="forecasts-col forecasts-col-2">LIVERPOOL</div>
+										<div class="forecasts-col forecasts-col-3">Победа</div>
+										<div class="forecasts-col forecasts-col-4"><span class="text-yellow">2:0</span></div>
+										<div class="forecasts-col forecasts-col-5">
+											х2
+											<div class="prompt">
+												<i class="prompt-ico"></i>
+												<div class="prompt-wrap">
+													<i class="prompt-close"></i>
+													не расстраивайся.<br>Новый прогноз будет удачнее!
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="forecasts-row">
+										<div class="forecasts-col forecasts-col-1">
+											ХХ.ХХ.2021
+											<span class="forecasts-mob">LIVERPOOL</span>
+											<span class="forecasts-mob">Победа</span>
+											<span class="forecasts-mob text-yellow">2:0</span>
+										</div>
+										<div class="forecasts-col forecasts-col-2">LIVERPOOL</div>
+										<div class="forecasts-col forecasts-col-3">Победа</div>
+										<div class="forecasts-col forecasts-col-4"><span class="text-yellow">2:0</span></div>
+										<div class="forecasts-col forecasts-col-5">
+											х2
+											<div class="prompt">
+												<i class="prompt-ico"></i>
+												<div class="prompt-wrap">
+													<i class="prompt-close"></i>
+													отличный результат! Теперь ты ещё ближе к поездке в великобританию. делай прогнозы и увеличивай свои шансы на победу.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="myCodes-button">
+									<a href="modal-code2" class="primary-btn primary-btn-big primary-btn-yellow modal-btn">сделать новый прогноз</a>
+								</div>
+							</div>
+						</div>
+					</div><!-- tab -->
+					<div id="tab-4" class="tab">
+						<div class="players">
+							<div class="players-top">
+								<div class="participation-ico"><img src="img/main-img-6-min.png" alt=""></div>
+								<span class="players-subtitle">нажимай на силуеты игроков и Собери их всех в свою команду: выиграй эксклюзивную футболку с их изображением!</span>
+							</div>
+							<div class="players-all">
+								<div class="share">
+									<span>поделиться:</span>
+									<ul class="share-list">
+										<li><a href="#"><img src="img/players/fb.svg" alt=""></a></li>
+										<li><a href="#"><img src="img/players/od.svg" alt=""></a></li>
+										<li><a href="#"><img src="img/players/vk.svg" alt=""></a></li>
+									</ul>
+								</div>
+								<div class="players-wrap" style="background-image: url(img/players/bg-min.jpg);">
+									<div class="players-human">
+										<img src="img/players/map.png" usemap="#image-map" class="desktop-visible">
+										<map name="image-map" class="desktop-visible">
+										    <area target="" alt="team1" title="team1" href="#!" class="path-1" coords="114,160,150,47,351,0,607,62,623,148,611,253,576,291,567,280,558,263,541,203,498,183,501,145,492,118,432,115,445,143,454,181,414,207,394,198,364,211,367,244,370,268,348,276,337,262,320,253,321,216,313,185,283,183,265,198,265,219,241,244,201,273,191,249,155,237,169,155,143,150" shape="poly">
+										    <area target="" alt="team2" title="team2" href="#!" class="path-2" coords="31,301,109,164,142,153,164,158,154,236,187,254,197,274,264,226,269,194,309,187,318,219,314,254,343,273,337,304,332,332,340,342,338,367,321,387,320,408,326,432,313,444,323,473,308,499,288,495,295,467,292,431,261,424,235,434,235,456,238,479,206,452,177,441,177,395,166,372,124,373,119,408,128,443,86,483,31,330,30,316" shape="poly">
+										    <area target="" alt="team3" title="team3" href="#!" class="path-3" coords="348,353,338,330,346,279,377,271,370,214,396,203,418,209,457,182,447,129,467,118,491,122,498,147,496,182,541,205,562,285,574,302,602,302,622,313,683,565,679,582,664,581,584,498,553,462,508,445,512,409,500,379,463,383,450,393,451,424,459,438,446,465,431,471,410,431,377,418,377,398,364,373" shape="poly">
+										    <area target="" alt="team4" title="team4" href="#!" class="path-4" coords="3,561,88,485,131,446,123,410,127,378,165,377,175,398,176,441,209,455,239,480,237,434,261,425,291,435,291,466,287,494,310,504,316,558,321,573,278,601,249,652,236,639,238,597,221,577,193,580,175,591,174,610,180,641,190,659,186,674,187,701,172,718,187,766,180,782,38,783" shape="poly">
+										    <area target="" alt="team5" title="team5" href="#!" class="path-5" coords="311,501,327,473,320,446,332,430,323,389,339,370,360,373,374,400,371,418,407,433,429,474,461,454,462,435,455,420,453,395,469,385,499,383,509,408,505,444,550,462,608,529,656,662,649,781,568,779,569,731,544,651,530,628,502,617,511,587,501,561,486,551,453,560,449,586,448,617,410,641,406,597,372,581,374,544,368,516,355,500,327,507,320,515,318,533" shape="poly">
+										    <area target="" alt="team6" title="team6" href="#!" class="path-6" coords="182,782,192,762,187,706,190,671,196,657,179,619,177,594,221,580,232,598,233,641,249,654,278,609,324,574,319,542,324,514,352,502,368,521,371,548,371,579,404,600,406,642,451,614,457,565,483,553,499,564,507,585,498,618,528,632,543,652,565,728,564,783" shape="poly">
+										</map>
+										<img src="img/players/map.png" usemap="#image-map-mob" class="mobile-visible">
+										<map name="image-map-mob" class="mobile-visible">
+										    <area target="" alt="team1" title="team1" href="#!" class="path-1" coords="60,80,78,22,183,1,309,25,318,34,326,81,317,130,305,146,295,146,292,135,281,105,261,95,257,60,222,56,231,74,237,93,216,105,193,105,189,128,190,139,181,141,166,129,167,97,149,95,136,104,137,113,105,137,83,118,88,79,87,78" shape="poly">
+										    <area target="" alt="team2" title="team2" href="#!" class="path-2" coords="55,84,85,82,82,119,102,138,139,115,137,105,162,99,164,130,176,143,162,174,159,190,168,198,168,224,166,245,160,257,150,254,154,225,130,220,121,225,120,242,91,231,94,198,69,193,59,205,64,230,43,250,11,167" shape="poly">
+										    <area target="" alt="team3" title="team3" href="#!" class="path-3" coords="225,246,210,223,198,216,188,191,166,192,163,177,177,143,192,139,196,107,219,105,240,93,232,73,238,61,254,60,259,94,278,106,293,145,312,155,324,164,354,295,353,305,316,271,289,240,266,230,268,209,259,194,234,197,234,221,232,242" shape="poly">
+										    <area target="" alt="team4" title="team4" href="#!" class="path-4" coords="0,292,44,252,67,230,61,206,69,194,90,200,89,231,121,244,121,227,130,222,150,226,148,256,163,264,164,289,166,297,143,314,133,331,130,339,122,330,125,312,117,299,101,299,91,306,89,320,93,336,97,348,94,363,96,395,93,407,20,408" shape="poly">
+										    <area target="" alt="team5" title="team5" href="#!" class="path-5" coords="170,192,185,195,197,213,208,226,224,249,237,240,237,199,257,196,264,210,264,230,288,240,316,276,334,320,344,347,330,407,296,406,298,379,280,332,265,323,265,300,257,287,237,289,232,302,236,321,214,330,212,309,193,299,197,277,184,262,168,261" shape="poly">
+										    <area target="" alt="team6" title="team6" href="#!" class="path-6" coords="96,408,97,367,98,344,91,321,92,306,105,300,115,300,122,311,120,331,128,341,144,320,161,304,170,297,166,267,177,263,186,268,194,276,190,299,208,310,211,332,237,320,234,300,238,289,257,290,262,300,261,323,278,333,295,378,293,408" shape="poly">
+										</map>
+									</div>
+									<div class="players-img players-img-1 path-1">
+										<img src="img/players/img-1-min.png" alt="">
+										<img src="img/players/img-1-1-min.png" alt="" class="players-active">
+									</div>
+									<div class="players-img players-img-2 path-2">
+										<img src="img/players/img-2-min.png" alt="">
+										<img src="img/players/img-2-2-min.png" alt="" class="players-active">
+									</div>
+									<div class="players-img players-img-3 path-3">
+										<img src="img/players/img-3-min.png" alt="">
+										<img src="img/players/img-3-3-min.png" alt="" class="players-active">
+									</div>
+									<div class="players-img players-img-4 path-4">
+										<img src="img/players/img-4-min.png" alt="">
+										<img src="img/players/img-4-4-min.png" alt="" class="players-active">
+									</div>
+									<div class="players-img players-img-5 path-5">
+										<img src="img/players/img-5-min.png" alt="">
+										<img src="img/players/img-5-5-min.png" alt="" class="players-active">
+									</div>
+									<div class="players-img players-img-6 path-6">
+										<img src="img/players/img-6-min.png" alt="">
+										<img src="img/players/img-6-6-min.png" alt="" class="players-active">
+									</div>
+								</div>
+							</div>
+							<div class="players-bottom">
+								<h3 class="players-title">каждый раз, открывая игроков, ты получаешь шанс сделать прогноз на ближайший матч этой команды. <span>верный исход матча увеличит твои баллы х2, а угаданный счёт — х10!</span> регистрируй коды и увеличивай свои шансы на победу. <br>Удачи!</h3>
+								<a href="modal-code" class="primary-btn primary-btn-big primary-btn-yellow modal-btn">зарегистрировать код</a>
+							</div>
+						</div>
+					</div><!-- tab -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end page -->
+	<!-- start footer -->
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="footer-toggle">Юридическая информация. Развернуть</div>
+		</div>
+		<div class="footer-wrap">
+			<div class="footer-middle">
+				<div class="wrapper">
+					<ul class="footer-list">
+						<li><a href="#">Политика конфиденциальности</a></li>
+						<li><a href="#">Правила акции</a></li>
+						<li><a href="#">Пользовательское соглашение</a></li>
+					</ul>
+					<p>Информацию об организаторе Акции, правилах ее проведения, количестве призов по результатам Акции, сроках, месте и порядке их получения см.на сайте 5KA.ALPENGOLD.ME. Акция проводится на территории Российской Федерации и распространяется на продукцию, купленную на территории этой страны. Общий срок проведения Акции с 01.10.2021 по 30.03.2022. Период регистрации кодов для участия с 01.10.2021 по 30.11.2021.</p>
+					<p>*Бренд Alpen Gold находится на первом месте в денежном выражении за период Февраль 2020 – Январь 2021 в сегменте рынка «Шоколадные плитки» в Российской Федерации на основании данных Nielsen RMS для категории «Шоколадные плитки» за 12 месяцев, завершившихся 31.01.2021, для общего рынка розничной торговли в Российской Федерации, действительно по состоянию на 11.03.2021 (© ООО «ЭЙ СИ НИЛЬСЕН», 2021г.) </p>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<div class="wrapper">
+					<div class="footer-descr">
+						<a href="#" class="footer-phone">8-800-555-8000</a>
+						<a href="#" class="footer-mail">mailmail@brand.ru</a>
+					</div>
+					<div class="footer-info">
+						<div class="footer-logo"><a href="#"><img src="img/logo-footer.svg" alt=""></a></div>
+						<p>ООО «Мон’дэлис Русь». Часть группы компаний Mondelēz International. Все права защищены.</p>
+					</div>
+					<div class="footer-social">
+						<ul class="social-list">
+							<li><a href="#" class="hb-ico vk-ico"></a></li>
+							<li><a href="#" class="hb-ico youtube-ico"></a></li>
+							<li><a href="#" class="hb-ico inst-ico"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+	<div class="modal-overlay"></div>
+	<!-- modal-checkIn -->
+	<div id="modal-checkIn" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">Регистрация</span>
+					<div class="input-text">Неправильный логин или пароль</div>
+					<div class="input-block">
+	          <input type="Text" name="FullName" placeholder="Имя" required>
+	        </div>
+	        <div class="input-block">
+	          <input type="Text" name="lName" placeholder="Отчество" required>
+	        </div>
+	        <div class="input-block">
+	          <input type="Text" name="fName" placeholder="Фамилия" required>
+	        </div>
+	        <div class="input-block">
+	          <input type="Text" name="PhoneNumber" placeholder="Мобильный телефон" required class="phone-mask">
+	        </div>
+	        <div class="input-block">
+	          <input type="Text" name="email" placeholder="E-mail" required>
+	        </div>
+	        <div class="input-block">
+	        	<div class="input-wrap">
+	          	<input type="Text" name="text" placeholder="Промо-код от друга" required>
+	          	<div class="prompt">
+	          		<div class="prompt-top"><i class="hb-ico prompt-ico prompt-ico-2"></i></div>
+	          		<div class="prompt-wrap">
+	          			<i class="hb-ico close-ico"></i>
+	          			Если твой друг уже участвует в нашей акции и поделился<br>с тобой промо-кодом , вводи его сюда. После того, как ты<br>зарегистрируешь свой первый код с пачки, вы оба получите<br>дополнительный шанс на открытие 1 ячейки шоколадной плитки.
+	          		</div>
+	          	</div>
+	          </div>
+	        </div>
+	        <div class="modal-checkbox">
+	          <div class="checkbox">
+	            <input type="checkbox" name="check-rules" required>
+	            <i class="checkbox-ico"></i>
+	            <p>Я согласен с <a href="#">Правилами акции</a></p>
+	          </div>
+	          <div class="checkbox">
+	            <input type="checkbox" name="Subscribe">
+	            <i class="checkbox-ico"></i>
+	            <p>Я согласен получать рассылки по акциям Mondelez</p>
+	          </div>
+	          <div class="checkbox">
+	            <input type="checkbox" name="check-data" required>
+	            <i class="checkbox-ico"></i>
+	            <p>Я согласен на обработку моих <a href="#">персональных данных</a></p>
+	          </div>
+	        </div>
+	        <div class="modal-bottom">
+	          <button class="primary-btn primary-btn-yellow primary-btn-big disabled">отправить</button>
+	        	<a href="modal-login" class="modal-link modal-btn">Авторизация</a>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-login -->
+	<div id="modal-login" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">Авторизация</span>
+					<div class="input-text">Неправильный логин или пароль</div>
+	        <div class="input-block">
+	          <input type="Text" name="PhoneNumber" placeholder="Твой телефон" required class="phone-mask">
+	        </div>
+	        <div class="input-block">
+	          <div class="input-wrap">
+	            <input type="password" name="password" placeholder="Твой пароль" required>
+	            <a href="modal-forgot" class="input-forgot modal-btn">Забыли пароль?</a>
+	          </div>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big disabled">войти</button>
+	        	<a href="modal-checkIn" class="modal-link modal-btn">Регистрация</a>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-forgot -->
+	<div id="modal-forgot" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">Сброс пароля</span>
+					<p class="modal-text">Укажи почту, с которой ты регистрировался на сайте</p>
+					<div class="input-text">Неправильный логин или пароль</div>
+	        <div class="input-block">
+	          <input type="Text" name="email" placeholder="E-mail" required>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big disabled">отправить</button>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-message -->
+	<div id="modal-message" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<div class="modal-block">
+					<span class="modal-title">восстановление пароля</span>
+					<span class="modal-text">Новый пароль выслан на указанный адрес электронной почты</span>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big">войти</button>
+	        </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal-settingPassword -->
+	<div id="modal-settingPassword" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">Установка пароля</span>
+					<div class="input-text">Неправильный пароль</div>
+	        <div class="input-block">
+	          <input type="password" name="password" placeholder="Пароль" required>
+	        </div>
+	        <div class="input-block">
+	          <input type="password" name="password" placeholder="Подтверди пароль" required>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big disabled">войти</button>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-numberConfirmation -->
+	<div id="modal-numberConfirmation" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">Подтверждение номера</span>
+					<div class="input-text">Номер неправильный</div>
+					<p class="modal-text">Введи последние 4 цифры номера, с которого был звонок на номер: +7 999 999 99 99</p>
+					<div class="modal-numbers">
+						<div>
+							<input type="Text" name="text">
+						</div>
+						<div>
+							<input type="Text" name="text">
+						</div>
+						<div>
+							<input type="Text" name="text">
+						</div>
+						<div>
+							<input type="Text" name="text">
+						</div>
+					</div>
+					<!--<p class="modal-timer">Сделать звонок повторно через 56</p>-->
+					<div class="modal-center">
+						<a href="#" class="modal-link">Сделать звонок повторно</a>
+					</div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big disabled">отправить</button>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-scores -->
+	<div id="modal-scores" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">не хватает<br>баллов</span>
+					<span class="modal-text">Для того, чтобы сделать прогноз, зарегистрируй новый код</span>
+					<div class="input-text">Сопроводительный текст, почему код не принят</div>
+					<div class="input-block">
+	          <input type="Text" name="email" placeholder="Код с упаковки" required>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big">зарегистрировать</button>
+	        </div>
+          <div class="prompt prompt-text">
+          	<div class="prompt-top"><span class="modal-link">Где найти код?</span></div>
+          	<div class="prompt-wrap">Код располагается на внутренней стороне упаковки, и состоит из 9 символов (цифр и заглавных латинских букв). Обрати внимание, что коды присутствуют только на упаковках с коммуникацией об акции.</div>
+          </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-code -->
+	<div id="modal-code" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">зарегистрировать<br>новый код</span>
+					<div class="input-text">Сопроводительный текст, почему код не принят</div>
+					<div class="input-block">
+	          <input type="Text" name="email" placeholder="Код с упаковки" required>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big">зарегистрировать</button>
+	        </div>
+          <div class="prompt">
+          	<div class="prompt-text"><span class="modal-link">Где найти код?</span></div>
+          	<div class="prompt-wrap"><i class="prompt-close"></i>Код располагается на внутренней стороне упаковки, и состоит из 9 символов (цифр и заглавных латинских букв). Обрати внимание, что коды присутствуют только на упаковках с коммуникацией об акции.</div>
+          </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-code -->
+	<div id="modal-code2" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<span class="modal-title">спасибо! <br>код принят</span>
+				<div class="modal-bottom">
+					<a href="#" class="primary-btn primary-btn-yellow primary-btn-big fancybox-close">понятно</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal-number -->
+	<div id="modal-number" class="modal">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<form action="">
+					<span class="modal-title">добавить номер <br>«выручай-карты»</span>
+					<div class="input-text">Сопроводительный текст, почему код не принят</div>
+					<div class="input-block">
+	          <input type="Text" name="email" placeholder="Номер" required>
+	        </div>
+	        <div class="modal-bottom">
+	        	<button class="primary-btn primary-btn-yellow primary-btn-big">отправить</button>
+	        </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- modal-tournament -->
+	<div id="modal-tournament" class="modal modal-tournament">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<div class="tournament-wrap">
+					<div class="tournament-bg"><img src="img/winners-bg-min.png" alt=""></div>
+					<div class="tournament-content">
+						<div class="tournament-scroll">
+							<div class="tournament-block">
+								<h3 class="tournament-block__title">23 октября 2021, суббота</h3>
+								<ul>
+									<li><span>17:00</span>Chelsea FC - Norwich City</li>
+									<li><span>17:00</span>Manchester United - Liverpool FC</li>
+								</ul>
+							</div>
+							<div class="tournament-block">
+								<h3 class="tournament-block__title">30 октября 2021, суббота</h3>
+								<ul>
+									<li><span>17:00</span>Liverpool FC - Brighton & Hove Albion</li>
+									<li><span>19:30</span>Tottenham Hotspur - Manchester United</li>
+									<li><span>17:00</span>Newcastle United - Chelsea FC</li>
+								</ul>
+							</div>
+							<div class="tournament-block">
+								<h3 class="tournament-block__title">06 ноября 2021, суббота</h3>
+								<ul>
+									<li><span>18:00</span>West Ham United - Liverpool FC</li>
+									<li><span>18:00</span>Manchester United - Manchester City</li>
+									<li><span>18:00</span>Chelsea FC - Burnley</li>
+								</ul>
+							</div>
+							<div class="tournament-block">
+								<h3 class="tournament-block__title">20 ноября 2021, суббота</h3>
+								<ul>
+									<li><span>18:00</span>Liverpool FC - Arsenal</li>
+									<li><span>18:00</span>Watford - Manchester United</li>
+									<li><span>18:00</span>Leicester City - Chelsea FC</li>
+								</ul>
+							</div>
+							<div class="tournament-block">
+								<h3 class="tournament-block__title">27 ноября 2021, суббота</h3>
+								<ul>
+									<li><span>18:00</span>Liverpool FC - Southampton</li>
+									<li><span>18:00</span>Chelsea FC - Manchester United</li>
+								</ul>
+							</div>
+							<div class="tournament-block">
+								<h3 class="tournament-block__title">30 ноября 2021, вторник</h3>
+								<ul>
+									<li><span>22:45</span>Everton - Liverpool FC</li>
+									<li><span>23:00</span>Manchester United - Arsenal</li>
+									<li><span>22:45</span>Watford - Chelsea FC</li>
+								</ul>
+							</div>
+							<p>Время начала матча указано по московскому времени</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- modal-soon -->
+	<div id="modal-soon" class="modal modal-soon">
+		<div class="modal-wrap">
+			<div class="modal-close"></div>
+			<div class="modal-content">
+				<h3 class="modal-title">Ближайший матч <span>состоится 16 октября.</span> Прогноз можно будет сделать совсем скоро, мы обязательно уведомим тебя! Следи за новостями!</h3>
+				<div class="modal-bottom">
+					<a href="#" class="primary-btn primary-btn-yellow primary-btn-big modal-cross">понятно</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script defer src="js/scripts.min.js"></script>
+	<script defer src="js/common.js"></script>
+
+	<style>
+		body .mobile-visible {
+		    display: none;
+		}
+		@media (max-width: 768px) {
+		    body .mobile-visible {
+		        display: block;
+		    }
+
+		    body .desktop-visible {
+		        display: none;
+		    }
+		}
+	</style>
+</body>
+</html>

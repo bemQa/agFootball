@@ -161,10 +161,10 @@ $(document).ready(function(){
   });
 
    //players-img
-  $('.players-human .path-1,.players-human .path-2,.players-human .path-3,.players-human .path-4,.players-human .path-5,.players-human .path-6').on('click',function(e){
-    e.preventDefault();
-    $('.' + $(this).attr('class')).addClass('active');
-    $(this).addClass('active');
+  $('.players-human .path-1,.players-human .path-2,.players-human .path-3,.players-human .path-4,.players-human .path-5,.players-human .path-6').on('click', function(e) {
+      e.preventDefault();
+      $('.' + $(this).attr('class')).addClass('active');
+      $(this).addClass('active');
   });
 
   //modal
