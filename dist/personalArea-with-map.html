@@ -467,26 +467,32 @@
 									</div>
 									<div class="players-img players-img-1 path-1">
 										<img src="img/players/img-1-min.png" alt="">
+										<img src="img/players/img-1-hover-min.png" alt="" data-player="hover" style="display: none;">
 										<img src="img/players/img-1-1-min.png" alt="" class="players-active">
 									</div>
 									<div class="players-img players-img-2 path-2">
 										<img src="img/players/img-2-min.png" alt="">
+										<img src="img/players/img-2-hover-min.png" alt="" data-player="hover" style="display: none;">
 										<img src="img/players/img-2-2-min.png" alt="" class="players-active">
 									</div>
 									<div class="players-img players-img-3 path-3">
 										<img src="img/players/img-3-min.png" alt="">
+										<img src="img/players/img-3-hover-min.png" alt="" data-player="hover" style="display: none;">
 										<img src="img/players/img-3-3-min.png" alt="" class="players-active">
 									</div>
 									<div class="players-img players-img-4 path-4">
 										<img src="img/players/img-4-min.png" alt="">
+										<img src="img/players/img-4-hover-min.png" alt="" data-player="hover" style="display: none;">
 										<img src="img/players/img-4-4-min.png" alt="" class="players-active">
 									</div>
 									<div class="players-img players-img-5 path-5">
 										<img src="img/players/img-5-min.png" alt="">
+										<img src="img/players/img-5-hover-min.png" alt="" data-player="hover" style="display: none;">
 										<img src="img/players/img-5-5-min.png" alt="" class="players-active">
 									</div>
 									<div class="players-img players-img-6 path-6">
 										<img src="img/players/img-6-min.png" alt="">
+										<img src="img/players/img-6-hover-min.png" alt="" data-player="hover" style="display: none;">
 										<img src="img/players/img-6-6-min.png" alt="" class="players-active">
 									</div>
 								</div>
@@ -880,6 +886,11 @@
 		    body .desktop-visible {
 		        display: none;
 		    }
+		}
+		.players-img img[data-player] {
+			position: absolute;
+			top: 0;
+			pointer-events: none;
 		}
 	</style>
 </body>

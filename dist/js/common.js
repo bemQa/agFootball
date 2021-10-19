@@ -167,6 +167,17 @@ $(document).ready(function(){
       $(this).addClass('active');
   });
 
+    if (window.innerWidth >= 768) {
+        //players hover
+        $('.players-human .path-1,.players-human .path-2,.players-human .path-3,.players-human .path-4,.players-human .path-5,.players-human .path-6').on('mouseenter', function(e) {
+            $('.' + $(this).attr('class') + ' img[data-player="hover"]').fadeIn(100);
+        });
+
+        $('.players-human .path-1,.players-human .path-2,.players-human .path-3,.players-human .path-4,.players-human .path-5,.players-human .path-6').on('mouseleave', function(e) {
+            $('.' + $(this).attr('class') + ' img[data-player="hover"]').fadeOut(100);
+        });
+    }
+
   //modal
 	var modalCont = $('.modal');
 		
