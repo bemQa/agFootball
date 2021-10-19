@@ -102,6 +102,8 @@ $(document).ready(function(){
   if($(window).outerWidth() < 768){
     $('.winners-content').mCustomScrollbar('destroy');
     $('.forecasts-content').mCustomScrollbar('destroy');
+    $('.myCodes-content .myCodes-row').unwrap();
+    $('.forecasts-content .forecasts-row').unwrap();
   }
 
 	//menu mob
