@@ -22,9 +22,25 @@ function myPrizes2(){
     },
   });
 }
+function mainWinner(){
+  var mySwiper = new Swiper('.mainWinner-slider', {
+    slidesPerView: 1,
+    watchOverflow: true,
+    effect: "fade",
+    noSwiping: true,
+    navigation: {
+      nextEl: '.mainWinner-slider .swiper-button-next',
+      prevEl: '.mainWinner-slider .swiper-button-prev',
+    },
+  });
+}
 if($('.myPrizes-slider').length){
 	myPrizes();
 	myPrizes2();
+}
+
+if($('.mainWinner-slider').length){
+    mainWinner();
 }
 
 $(document).ready(function(){
