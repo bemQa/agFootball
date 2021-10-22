@@ -18,10 +18,13 @@ body .mobile-visible {
     pointer-events: none;
 }
 
-.forecasts-content,
-.myCodes-content {
-    min-height: auto;
-    max-height: none;
+.forecasts .table {
+    min-height: 416px;
+}
+
+.forecasts .mCustomScrollBox,
+.forecasts .mCSB_inside>.mCSB_container {
+    min-height: 290px;
 }
 
 @media (max-width: 1280px) and (min-width: 1024px) {
