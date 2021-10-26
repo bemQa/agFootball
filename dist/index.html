@@ -583,7 +583,7 @@
 				            </div>
 				            <div class="spin-wrap">
 				            	<div class="spin-box">
-				                    <div class="spin-items" id="sp-b2" style="transform:rotateX(60deg)">
+				                    <div class="spin-items" id="sp-b2">
 				                        <div class="spin-item sp6"><span>4</span></div>
 				                        <div class="spin-item sp5"><span>2</span></div>
 				                        <div class="spin-item sp4"><span>3</span></div>
@@ -607,7 +607,7 @@
 						<span class="check-tit">liverpool<br>FC</span>
 					</div>
 				</div> -->
-				<h3 class="modal-title">исход матча: <span>победа</span></h3>
+				<h3 class="modal-title">исход матча: <span class="spin-result" style="display: none;">победа</span></h3>
 				<button class="primary-btn primary-btn-yellow primary-btn-big primary-full fancybox-close">понятно</button>
 			</div>
 		</div>
@@ -634,6 +634,9 @@
 	        $("#sp-b2").addClass("spin2");
 	        var number2 = obj.list[num2];
 	        $("head").append('<style class="keyframes2">@keyframes rotate2{0%{transform:rotateX(0)}100%{transform:rotateX(' + number2 + "deg)}}</style>"), setTimeout(function() { $(".keyframes2").remove(), $("#sp-b2").css("transform", "rotateX(" + number2 + "deg)"), $(".spin-items").removeClass("spin2") }, 4e3)
+	        setTimeout(function() { 
+	        	$(".spin-result").fadeIn(); 
+	        }, 4e3);
 		}
 	</script>
 </body>
