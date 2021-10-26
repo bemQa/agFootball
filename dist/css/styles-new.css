@@ -27,7 +27,7 @@ body .mobile-visible {
     min-height: 290px;
 }
 
-.swiper-slide.swiper-slide-prev {
+.swiper-slide:not(.swiper-slide-active) {
     opacity: 0 !important;
 }
 
