@@ -565,7 +565,39 @@
 			<div class="modal-close"></div>
 			<div class="modal-content">
 				<h3 class="modal-title">Твой прогноз в игре против команды <Название команды> хх.хх.2021, хх:хх</h3>
-				<div class="check-row">
+				<div id="slma">
+				    <div class="gm">
+				        <div class="spin-b">
+				            <div class="spin-wrap">
+				            	<div class="spin-box">
+				                    <div class="spin-items" id="sp-b1">
+				                        <div class="spin-item sp6"><span>4</span></div>
+				                        <div class="spin-item sp5"><span>2</span></div>
+				                        <div class="spin-item sp4"><span>3</span></div>
+				                        <div class="spin-item sp3"><span>5</span></div>
+				                        <div class="spin-item sp2"><span>1</span></div>
+				                        <div class="spin-item sp1"><span>0</span></div>
+				                    </div>
+				                </div>
+				                <div class="check-tit">Manchester United FC</div>
+				            </div>
+				            <div class="spin-wrap">
+				            	<div class="spin-box">
+				                    <div class="spin-items" id="sp-b2" style="transform:rotateX(60deg)">
+				                        <div class="spin-item sp6"><span>4</span></div>
+				                        <div class="spin-item sp5"><span>2</span></div>
+				                        <div class="spin-item sp4"><span>3</span></div>
+				                        <div class="spin-item sp3"><span>5</span></div>
+				                        <div class="spin-item sp2"><span>1</span></div>
+				                        <div class="spin-item sp1"><span>0</span></div>
+				                    </div>
+				                </div>
+				                <div class="check-tit">liverpool<br>FC</div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+				<!-- <div class="check-row">
 					<div class="check-col">
 						<div class="check-num">2</div>
 						<span class="check-tit">Manchester United FC</span>
@@ -574,7 +606,7 @@
 						<div class="check-num">1</div>
 						<span class="check-tit">liverpool<br>FC</span>
 					</div>
-				</div>
+				</div> -->
 				<h3 class="modal-title">исход матча: <span>победа</span></h3>
 				<button class="primary-btn primary-btn-yellow primary-btn-big primary-full fancybox-close">понятно</button>
 			</div>
@@ -582,5 +614,27 @@
 	</div>
 	<script defer src="js/scripts.min.js"></script>
 	<script defer src="js/common.js"></script>
+	<script defer>
+		function spinGame(num1, num2) {
+			if ($("div").is("#slma")) {
+		        var obj = {
+	                    "list": [
+	                        "1800", 
+	                        "1860",
+	                        "1920", 
+	                        "1980", 
+	                        "2040",
+	                        "2100"
+	                    ]
+	                };
+		    }
+	        $('#spin').prop("disabled", !0), $("#sp-b1").addClass("spin");
+	        var number1 = obj.list[num1];
+	        $("head").append('<style class="keyframes1">@keyframes rotate1{0%{transform:rotateX(0)}100%{transform:rotateX(' + number1 + "deg)}}</style>"), setTimeout(function() { $(".keyframes1").remove(), $("#sp-b1").css("transform", "rotateX(" + number1 + "deg)"), $(".spin-items").removeClass("spin") }, 3e3), setTimeout(function() { $("#spin").prop("disabled", !1) }, 5e3)
+	        $("#sp-b2").addClass("spin2");
+	        var number2 = obj.list[num2];
+	        $("head").append('<style class="keyframes2">@keyframes rotate2{0%{transform:rotateX(0)}100%{transform:rotateX(' + number2 + "deg)}}</style>"), setTimeout(function() { $(".keyframes2").remove(), $("#sp-b2").css("transform", "rotateX(" + number2 + "deg)"), $(".spin-items").removeClass("spin2") }, 4e3)
+		}
+	</script>
 </body>
 </html>

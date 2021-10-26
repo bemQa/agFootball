@@ -57,6 +57,184 @@ body .mobile-visible {
     background-size: auto;
 }
 
+/*spin game*/
+#slma{
+    display:none;
+}
+
+@supports (display: -moz-flex) or ((display: -webkit-box) or (display: flex)) {
+    #slma {
+        display:block;
+        margin: 0 auto 25px;
+        width: 244px;
+    }
+}
+
+.gm {
+    position: relative;
+}
+
+.spin-b {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.spin-b::after {
+    content: '';
+    height: 110px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+    -ms-transform: translate(-50%,0);
+    transform: translate(-50%,0);
+    width: 10px;
+    height: 110px;
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='26' viewBox='0 0 10 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.55 1.4C9.51667 2.33333 10 3.45 10 4.75C10 6.05 9.51667 7.16667 8.55 8.1C7.61667 9.03333 6.51667 9.5 5.25 9.5C3.98333 9.5 2.86667 9.03333 1.9 8.1C0.966666 7.16667 0.5 6.05 0.5 4.75C0.5 3.45 0.966666 2.33333 1.9 1.4C2.86667 0.466667 3.98333 0 5.25 0C6.51667 0 7.61667 0.466667 8.55 1.4ZM8.55 17.45C9.51667 18.3833 10 19.5 10 20.8C10 22.1 9.51667 23.2167 8.55 24.15C7.61667 25.0833 6.51667 25.55 5.25 25.55C3.98333 25.55 2.86667 25.0833 1.9 24.15C0.966666 23.2167 0.5 22.1 0.5 20.8C0.5 19.5 0.966666 18.3833 1.9 17.45C2.86667 16.5167 3.98333 16.05 5.25 16.05C6.51667 16.05 7.61667 16.5167 8.55 17.45Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.spin-b>div:nth-child(-n+3){
+    width: 110px;
+}
+
+.spin-wrap {
+    position: relative;
+    text-align: center;
+}
+
+.spin-wrap::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 91px;
+    height: 110px;
+    background-image: url(../img/spin-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.spin-box {
+    -webkit-perspective: 500px;
+    perspective: 500px;
+    -webkit-perspective-origin: center;
+    perspective-origin: center;
+    text-align: center;
+    height: 100px;
+    margin: 5px auto 15px;
+    overflow: hidden;
+}
+
+.spin-item, .spin-items {
+    width: 91px;
+    height: 100px;
+}
+
+.spin-items {
+    display: inline-block;
+    margin: 0 auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.spin{
+    -webkit-animation: rotate1 3s cubic-bezier(0.22, 0.61, 0.36, 1);
+    animation: rotate1 3s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.spin2{
+    -webkit-animation: rotate2 4s cubic-bezier(0.22, 0.61, 0.36, 1);
+    animation: rotate2 4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.spin-item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 73px;
+    height: 100px;
+    font-family: OfficinaSansBlackC, sans-serif;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #531d0d;
+    /*background-color: #fff;
+    border: 1px solid #bdbdbd;*/
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.spin-item span {
+    display: inline-block;
+    line-height: 80px;
+    background: #fff;
+}
+
+.spin-static {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50%;
+    height: 75%;
+    background: #fff;
+}
+
+.sp6 {
+    -webkit-transform: translateY(-50px) rotateX(30deg);
+    transform: rotateX(120deg) translateY(0px) translateZ(100px);
+}
+
+.sp5 {
+    -webkit-transform: translateY(-50px) rotateX(30deg);
+    transform: rotateX(-120deg) translateY(0px) translateZ(100px);
+}
+
+.sp4 {
+    -webkit-transform: translateY(-49.7px) rotateX(90deg);
+    transform: translateZ(-100px) rotateX(180deg);
+}
+
+.sp3 {
+    -webkit-transform: translateZ(-50px) rotateX(180deg);
+    transform: rotateX(60deg) translateY(0px) translateZ(100px);
+}
+
+.sp2 {
+    -webkit-transform: translateY(50px) rotateX(-45deg);
+    transform: rotateX(-60deg) translateY(0px) translateZ(100px);
+}
+
+.sp1 {
+    -webkit-transform: translateZ(50px);
+    transform: translateZ(100px);
+}
+/*end spin game*/
+
 @media (max-width: 1280px) and (min-width: 1024px) {
     .header-logo-2 {
         right: 9%;
