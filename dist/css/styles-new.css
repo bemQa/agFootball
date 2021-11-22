@@ -269,6 +269,54 @@ body .mobile-visible {
     line-height: 24px;
 }
 
+.myCodes-row .myCodes-col-0 {
+    width: 100px;
+}
+
+.myChecks .myCodes-content .myCodes-row {
+    align-items: center;
+}
+
+.myChecks .prompt {
+    display: inline-block;
+}
+
+.preview-check {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.reject {
+    color: #EB9616;
+}
+
+.reject + .prompt .prompt-ico {
+    background-image: url('../img/prompt-yellow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.iframe-wrap,
+.iframe-wrap iframe {
+    scrollbar-width: none;
+}
+
+.iframe-wrap {
+    height: 100%;
+    min-height: 340px;
+    width: 100%;
+}
+
+.iframe-wrap iframe {
+    height: 100vh;
+    max-height: 340px;
+    width: 100%;
+}
+
 @media (max-width: 1280px) and (min-width: 1024px) {
     .header-logo-2 {
         right: 9%;
@@ -299,5 +347,11 @@ body .mobile-visible {
 
     .popup-prizes .primary-btn {
         top: 1012px;
+    }
+}
+
+@media (max-width: 768px) {
+    .myCodes-row .myCodes-col-0 {
+        display: none;
     }
 }
