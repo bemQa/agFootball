@@ -354,4 +354,9 @@ body .mobile-visible {
     .myCodes-row .myCodes-col-0 {
         display: none;
     }
+
+    .reject + .prompt .prompt-wrap {
+        left: -82px;
+        right: auto;
+    }
 }
