@@ -1,20 +1,35 @@
 @font-face {
     font-family: 'OfficinaSans';
-    src: url('https://alpengold.me/fonts/OfficinaSansBookC.eot');
-    src: url('https://alpengold.me/fonts/OfficinaSansBookC.eot?#iefix') format('embedded-opentype'),
-        url('https://alpengold.me/fonts/OfficinaSansBookC.woff2') format('woff2'),
-        url('https://alpengold.me/fonts/OfficinaSansBookC.woff') format('woff');
+    src: url('https://5ka.alpengold.me/fonts/OfficinaSansBook.woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'OfficinaSans';
-    src: url('https://alpengold.me/fonts/OfficinaSansBoldC.eot');
-    src: url('https://alpengold.me/fonts/OfficinaSansBoldC.eot?#iefix') format('embedded-opentype'),
-        url('https://alpengold.me/fonts/OfficinaSansBoldC.woff2') format('woff2'),
-        url('https://alpengold.me/fonts/OfficinaSansBoldC.woff') format('woff');
+    src: url('https://5ka.alpengold.me/fonts/OfficinaSansMedium.woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OfficinaSans';
+    src: url('https://5ka.alpengold.me/fonts/OfficinaSansBold.woff2');
     font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OfficinaSans';
+    src: url('https://5ka.alpengold.me/fonts/OfficinaSansExtraBold.woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OfficinaSans';
+    src: url('https://5ka.alpengold.me/fonts/OfficinaSansBlack.woff2');
+    font-weight: 900;
     font-style: normal;
 }
 
@@ -38,12 +53,12 @@ body {
     -webkit-overflow-scrolling: touch;
     box-sizing: content-box;
     height: 100%;
-    color: #682700;
+    color: #fff;
 }
 
 .container.uf-container.container--custom {
-    color: #682700;
-    font-size: 18px;
+    color: #fff;
+    font-size: 14px;
     position: fixed;
     top: 0;
     right: 0;
@@ -64,8 +79,9 @@ body {
 .container-tutorial__text {
     font-family: 'OfficinaSans';
     font-weight: normal;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -75,16 +91,16 @@ body {
 
 .dropzone.dropzone--custom.dz-clickable {
     background-color: transparent;
-    border: 2px solid rgba(39, 98, 158, .3);
+    border: 2px dashed #fff;
     text-align: center;
-    border-radius: 0;
+    border-radius: 30px;
 }
 
 .dropzone .dz-preview.dz-image-preview {
     margin: 16px auto;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
-    border: 3px solid #682700;
+    border: none;
 }
 
 @media screen and (max-width:768px) {
@@ -102,18 +118,19 @@ body {
 .dropzone .dz-preview .dz-remove {
     position: absolute;
     top: 0;
+    left: 0;
     right: 0;
+    margin: auto;
     font-size: 0 !important;
     font-weight: bold;
-    background-color: #fff;
-    border-color: #fff;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
+    background: linear-gradient(90deg, #FDD000 -0.35%, #FEF035 24.74%, #FFFFC2 48.78%, #FEF035 76.48%, #FDD000 100%);
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
     padding: 0;
-    border-radius: 0;
+    border-radius: 34px;
     z-index: 21;
-    color: #27629E;
+    color: #9F0C12;
     -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out;
     text-decoration: none;
@@ -126,7 +143,7 @@ body {
     left: 0;
     right: 0;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 34px;
     font-weight: bold;
 }
 
@@ -151,9 +168,10 @@ body {
     font-size: 21px;
     line-height: 1;
     text-align: center;
-    color: #fff;
-    background: radial-gradient(50.17% 63.64% at 49.83% 49.09%, #F70000 0%, #E50000 52.04%, #A70000 100%);
-    box-shadow: 2px 2px 5px #870b18;
+    text-transform: uppercase;
+    color: #9F0C12;
+    background: linear-gradient(90deg,#fdd000 -.35%,#fef035 24.74%,#ffffc2 48.78%,#fef035 76.48%,#fdd000 100%);
+    box-shadow: 0px 2px 0px #fdd000;
     transition: all .2s linear;
     cursor: pointer;
     outline: none;
@@ -172,30 +190,23 @@ body {
 
 .dropzone.dz-started .dz-message span,
 .uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 240px;
-    height: 56px;
+    width: 100%;
     margin: auto;
-    padding: 17px 0;
     font-weight: bold;
-    font-size: 21px;
-    line-height: 1;
+    font-size: 14px;
+    line-height: 16px;
     text-align: center;
+    text-decoration: underline;
     color: #fff;
-    background: radial-gradient(47.11% 35.28% at 48.87% 49.18%, #E9C026 0%, #F6A51B 98.4%);
-    box-shadow: 2px 2px 5px #870B18;
-    transition: all .2s linear;
     cursor: pointer;
     outline: none;
+    background: none;
     border: none;
-    border-radius: 33px;
 }
 
 .dropzone.dz-started .dz-message span:hover,
 .uf-switchToManuallyButton-wrapper.switchToManuallyButton-wrapper--custom button:hover {
-    box-shadow: none;
+    text-decoration: none;
 }
 
 .uf-controls-wrapper {
@@ -203,44 +214,43 @@ body {
 }
 
 .uf-controls-wrapper .form-control {
-    max-width: 290px;
+    max-width: 280px;
     width: 100%;
-    height: 54px;
+    height: 48px;
     padding-left: 15px !important;
     font-family: 'OfficinaSans';
     font-size: 16px;
     line-height: 1;
-    color: #682700;
+    color: #9F0C12;
     background: #fff;
     border: 1px solid transparent;
-    border-radius: 10px;
+    border-radius: 25px;
     transition: all .2s linear;
-    margin: 10px auto;
+    margin: 12px auto;
     box-sizing: border-box;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.07);
 }
 
 .uf-controls-wrapper .form-control:focus {
-    border: 1px solid #682700;
+    border: 1px solid #9F0C12;
 }
 
 .input-group.date {
     /*overflow: hidden;*/
-    margin: 10px auto;
+    margin: 12px auto;
     width: 100%;
-    min-width: 250px;
-    max-width: 290px;
+    min-width: 240px;
+    max-width: 280px;
 }
 
 .input-group.date input {
     margin: 0;
-    min-width: 250px;
+    min-width: 240px;
 }
 
 .input-group.date .input-group-addon {
     border-radius: 0;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
     border: 1px solid transparent;
     border-left: none;
 }
@@ -257,20 +267,20 @@ body {
 
 .angular-uf-container.angular-uf-message p {
     font-weight: 300;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 16px;
     text-align: center;
-    color: #572A13;
+    color: #fff;
     margin-bottom: 20px;
 }
 
 zxing-scanner {
-    border-color: #682700 !important;
+    border-color: #9F0C12 !important;
     border: 2px solid;
     width: 200px !important;
     height: 200px !important;
     margin: 0 auto 20px !important;
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -288,9 +298,10 @@ app-root button {
     font-size: 21px;
     line-height: 1;
     text-align: center;
-    color: #fff;
-    background: radial-gradient(50.17% 63.64% at 49.83% 49.09%, #F70000 0%, #E50000 52.04%, #A70000 100%);
-    box-shadow: 2px 2px 5px #870B18;
+    text-transform: uppercase;
+    color: #9F0C12;
+    background: linear-gradient(90deg,#fdd000 -.35%,#fef035 24.74%,#ffffc2 48.78%,#fef035 76.48%,#fdd000 100%);
+    box-shadow: 0px 2px 0px #fdd000;
     border-radius: 30px;
     border: none;
     z-index: 1;
@@ -307,8 +318,8 @@ dropzone {
     max-width: 240px;
     min-height: 156px;
     background: transparent;
-    border: 2px solid #682700;
-    border-radius: 10px;
+    border: 2px solid #9F0C12;
+    border-radius: 20px;
     margin: 0 auto 25px;
 }
 
@@ -363,5 +374,7 @@ app-root .dropzone .dz-preview .dz-image {
 .angular-uf-no-device-message,
 .angular-uf-device-check-err-message,
 .angular-uf-restrict-message {
+    font-size: 14px;
+    line-height: 16px;
     text-align: center;
 }
