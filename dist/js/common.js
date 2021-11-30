@@ -47,7 +47,7 @@ $(document).ready(function(){
 
   //main-md
   $('.main-md .close-ico').on('click', function(){
-    $('.main-md').remove();
+    $(this).parent().fadeOut();
   });
 
   //menu scroll
